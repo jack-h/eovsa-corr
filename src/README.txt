@@ -3,4 +3,4 @@
 
 Directory for EOVSA related Simulink model files.
 
-Library files use clone of git clone git://github.com/ska-sa/mlib_devel.git
+Library files use clone of git clone git://github.com/casper-astro/mlib_devel.git

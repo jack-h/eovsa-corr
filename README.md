@@ -26,9 +26,12 @@ To check the status of changes:
 
 	git status
 
+To push chnages to the remote repository:
+
 [one-time] git remote add origin https://github.com/eovsa/eovsa-corr.git
 
 	git push origin master
+
 
 To update the repository at any time run:
 
