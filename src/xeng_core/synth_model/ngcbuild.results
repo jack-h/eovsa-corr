@@ -1,0 +1,64 @@
+Release 14.5 ngcbuild P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line:
+/home/observer/tools/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -p
+xc6vsx475t-1ff1759 xeng_core xeng_core_complete.ngc
+
+Reading NGO file
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/xeng_core.ngc" ...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/mult_11_2_d5ff2753
+429af9d0.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/cntr_11_0_54ae29da
+2816c092.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/bmg_72_bf890e4806a
+4306d.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/cntr_11_0_6a79e2c9
+0664744f.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/cntr_11_0_62790f85
+7e3f8294.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/bmg_72_24d0754b1ef
+55a90.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/cntr_11_0_1f06b716
+32254894.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/mult_11_2_8b0c6cbb
+a9b2df30.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/cntr_11_0_601fed0d
+dd9eff6a.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/cntr_11_0_5f22a153
+812a8bc9.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/bmg_72_4fcfcc7deb4
+cdf86.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/xeng_core/synth_model/cntr_11_0_66aa4524
+955422eb.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 479076 kilobytes
+
+Writing NGC file "xeng_core_complete.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "xeng_core_complete.blc"...

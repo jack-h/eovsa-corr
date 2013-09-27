@@ -1,0 +1,418 @@
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Block_Memory_Generator virtex6 Xilinx,_Inc. 7.2
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET algorithm = Minimum_Area
+CSET assume_synchronous_clk = false
+CSET byte_size = 9
+CSET coe_file = bmg_72_24d0754b1ef55a90.coe
+CSET collision_warnings = ALL
+CSET disable_collision_warnings = false
+CSET ecc = false
+CSET enable_a = Use_ENA_Pin
+CSET enable_b = Always_Enabled
+CSET error_injection_type = Single_Bit_Error_Injection
+CSET fill_remaining_memory_locations = false
+CSET load_init_file = TRUE
+CSET memory_type = Single_Port_RAM
+CSET operating_mode_a = READ_FIRST
+CSET operating_mode_b = WRITE_FIRST
+CSET output_reset_value_a = 0
+CSET output_reset_value_b = 0
+CSET pipeline_stages = 0
+CSET primitive = 8kx2
+CSET read_width_a = 16
+CSET read_width_b = 16
+CSET register_porta_output_of_memory_core = false
+CSET register_porta_output_of_memory_primitives = true
+CSET register_portb_output_of_memory_core = false
+CSET register_portb_output_of_memory_primitives = false
+CSET remaining_memory_locations = 0
+CSET reset_type = SYNC
+CSET use_byte_write_enable = false
+CSET use_error_injection_pins = false
+CSET use_regcea_pin = false
+CSET use_regceb_pin = false
+CSET use_rsta_pin = false
+CSET use_rstb_pin = false
+CSET write_depth_a = 128
+CSET write_width_a = 16
+CSET write_width_b = 16
+CSET component_name = bmg_72_24d0754b1ef55a90
+GENERATE
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Block_Memory_Generator virtex6 Xilinx,_Inc. 7.2
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET algorithm = Minimum_Area
+CSET assume_synchronous_clk = true
+CSET byte_size = 9
+CSET coe_file = bmg_72_4fcfcc7deb4cdf86.coe
+CSET collision_warnings = ALL
+CSET disable_collision_warnings = false
+CSET ecc = false
+CSET enable_a = Use_ENA_Pin
+CSET enable_b = Use_ENB_Pin
+CSET error_injection_type = Single_Bit_Error_Injection
+CSET fill_remaining_memory_locations = false
+CSET load_init_file = TRUE
+CSET memory_type = True_Dual_Port_RAM
+CSET operating_mode_a = NO_CHANGE
+CSET operating_mode_b = NO_CHANGE
+CSET output_reset_value_a = 0
+CSET output_reset_value_b = 0
+CSET pipeline_stages = 0
+CSET primitive = 8kx2
+CSET read_width_a = 32
+CSET read_width_b = 128
+CSET register_porta_output_of_memory_core = false
+CSET register_portb_output_of_memory_core = false
+CSET register_portb_output_of_memory_primitives = false
+CSET register_portb_output_of_memory_primitives = false
+CSET remaining_memory_locations = 0
+CSET reset_type = SYNC
+CSET use_byte_write_enable = false
+CSET use_error_injection_pins = false
+CSET use_regcea_pin = false
+CSET use_regceb_pin = false
+CSET use_rsta_pin = false
+CSET use_rstb_pin = false
+CSET write_depth_a = 44
+CSET write_width_a = 32
+CSET write_width_b = 128
+CSET component_name = bmg_72_4fcfcc7deb4cdf86
+GENERATE
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Block_Memory_Generator virtex6 Xilinx,_Inc. 7.2
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET algorithm = Minimum_Area
+CSET assume_synchronous_clk = false
+CSET byte_size = 9
+CSET coe_file = bmg_72_bf890e4806a4306d.coe
+CSET collision_warnings = ALL
+CSET disable_collision_warnings = false
+CSET ecc = false
+CSET enable_a = Use_ENA_Pin
+CSET enable_b = Always_Enabled
+CSET error_injection_type = Single_Bit_Error_Injection
+CSET fill_remaining_memory_locations = false
+CSET load_init_file = TRUE
+CSET memory_type = Single_Port_RAM
+CSET operating_mode_a = READ_FIRST
+CSET operating_mode_b = WRITE_FIRST
+CSET output_reset_value_a = 0
+CSET output_reset_value_b = 0
+CSET pipeline_stages = 0
+CSET primitive = 8kx2
+CSET read_width_a = 16
+CSET read_width_b = 16
+CSET register_porta_output_of_memory_core = false
+CSET register_porta_output_of_memory_primitives = true
+CSET register_portb_output_of_memory_core = false
+CSET register_portb_output_of_memory_primitives = false
+CSET remaining_memory_locations = 0
+CSET reset_type = SYNC
+CSET use_byte_write_enable = false
+CSET use_error_injection_pins = false
+CSET use_regcea_pin = false
+CSET use_regceb_pin = false
+CSET use_rsta_pin = false
+CSET use_rstb_pin = false
+CSET write_depth_a = 256
+CSET write_width_a = 16
+CSET write_width_b = 16
+CSET component_name = bmg_72_bf890e4806a4306d
+GENERATE
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Binary_Counter virtex6 Xilinx,_Inc. 11.0
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET ainit_value = 0
+CSET ce = true
+CSET count_mode = UP
+CSET fb_latency = 0
+CSET final_count_value = 1
+CSET implementation = Fabric
+CSET increment_value = 1
+CSET latency = 1
+CSET load = false
+CSET output_width = 9
+CSET restrict_count = false
+CSET sclr = false
+CSET sinit = true
+CSET sinit_value = 0
+CSET sset = false
+CSET sync_ce_priority = Sync_Overrides_CE
+CSET sync_threshold_output = false
+CSET syncctrlpriority = Reset_Overrides_Set
+CSET component_name = cntr_11_0_1f06b71632254894
+GENERATE
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Binary_Counter virtex6 Xilinx,_Inc. 11.0
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET ainit_value = 0
+CSET ce = true
+CSET count_mode = UP
+CSET fb_latency = 0
+CSET final_count_value = 1
+CSET implementation = Fabric
+CSET increment_value = 1
+CSET latency = 1
+CSET load = false
+CSET output_width = 7
+CSET restrict_count = false
+CSET sclr = false
+CSET sinit = true
+CSET sinit_value = 0
+CSET sset = false
+CSET sync_ce_priority = Sync_Overrides_CE
+CSET sync_threshold_output = false
+CSET syncctrlpriority = Reset_Overrides_Set
+CSET component_name = cntr_11_0_54ae29da2816c092
+GENERATE
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Binary_Counter virtex6 Xilinx,_Inc. 11.0
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET ainit_value = 0
+CSET ce = true
+CSET count_mode = DOWN
+CSET fb_latency = 0
+CSET final_count_value = 1
+CSET implementation = Fabric
+CSET increment_value = 1
+CSET latency = 1
+CSET load = true
+CSET output_width = 8
+CSET restrict_count = false
+CSET sclr = false
+CSET sinit = true
+CSET sinit_value = 0
+CSET sset = false
+CSET sync_ce_priority = Sync_Overrides_CE
+CSET sync_threshold_output = false
+CSET syncctrlpriority = Reset_Overrides_Set
+CSET component_name = cntr_11_0_62790f857e3f8294
+GENERATE
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Binary_Counter virtex6 Xilinx,_Inc. 11.0
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET ainit_value = 0
+CSET ce = true
+CSET count_mode = UP
+CSET fb_latency = 0
+CSET final_count_value = 1
+CSET implementation = Fabric
+CSET increment_value = 1
+CSET latency = 1
+CSET load = false
+CSET output_width = 6
+CSET restrict_count = false
+CSET sclr = false
+CSET sinit = true
+CSET sinit_value = 0
+CSET sset = false
+CSET sync_ce_priority = Sync_Overrides_CE
+CSET sync_threshold_output = false
+CSET syncctrlpriority = Reset_Overrides_Set
+CSET component_name = cntr_11_0_66aa4524955422eb
+GENERATE
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Binary_Counter virtex6 Xilinx,_Inc. 11.0
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET ainit_value = 0
+CSET ce = true
+CSET count_mode = UP
+CSET fb_latency = 0
+CSET final_count_value = 1
+CSET implementation = Fabric
+CSET increment_value = 1
+CSET latency = 1
+CSET load = false
+CSET output_width = 8
+CSET restrict_count = false
+CSET sclr = false
+CSET sinit = true
+CSET sinit_value = 0
+CSET sset = false
+CSET sync_ce_priority = Sync_Overrides_CE
+CSET sync_threshold_output = false
+CSET syncctrlpriority = Reset_Overrides_Set
+CSET component_name = cntr_11_0_6a79e2c90664744f
+GENERATE
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Multiplier virtex6 Xilinx,_Inc. 11.2
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET ccmimp = Distributed_Memory
+CSET clockenable = true
+CSET constvalue = 129
+CSET internaluser = 0
+CSET multiplier_construction = Use_Mults
+CSET multtype = Parallel_Multiplier
+CSET optgoal = Speed
+CSET outputwidthhigh = 7
+CSET outputwidthlow = 0
+CSET pipestages = 2
+CSET portatype = Signed
+CSET portawidth = 4
+CSET portbtype = Signed
+CSET portbwidth = 4
+CSET roundpoint = 0
+CSET sclrcepriority = CE_Overrides_SCLR
+CSET syncclear = true
+CSET use_custom_output_width = true
+CSET userounding = false
+CSET zerodetect = false
+CSET component_name = mult_11_2_8b0c6cbba9b2df30
+GENERATE
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vsx475t
+SET package = ff1759
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Multiplier virtex6 Xilinx,_Inc. 11.2
+# 14.5_P.55
+# DEVICE virtex6
+# VHDL
+CSET ccmimp = Distributed_Memory
+CSET clockenable = true
+CSET constvalue = 129
+CSET internaluser = 0
+CSET multiplier_construction = Use_LUTs
+CSET multtype = Parallel_Multiplier
+CSET optgoal = Speed
+CSET outputwidthhigh = 7
+CSET outputwidthlow = 0
+CSET pipestages = 2
+CSET portatype = Signed
+CSET portawidth = 4
+CSET portbtype = Signed
+CSET portbwidth = 4
+CSET roundpoint = 0
+CSET sclrcepriority = CE_Overrides_SCLR
+CSET syncclear = true
+CSET use_custom_output_width = true
+CSET userounding = false
+CSET zerodetect = false
+CSET component_name = mult_11_2_d5ff2753429af9d0
+GENERATE

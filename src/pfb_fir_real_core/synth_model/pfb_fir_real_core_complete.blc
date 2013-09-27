@@ -1,0 +1,89 @@
+Release 14.5 ngcbuild P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line:
+/home/observer/tools/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -p
+xc6vsx475t-1ff1759 pfb_fir_real_core pfb_fir_real_core_complete.ngc
+
+Reading NGO file
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/pfb_fir_re
+al_core.ngc" ...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/cntr_11_0_
+bf568bdf3cd9f9c7.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_098
+2e05b26d41eef.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_967
+630e6b2a5c300.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_2ee
+c44623d367658.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_3e0
+5483b044fa88c.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_9be
+7d465d5eaaba3.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_48a
+ecbcc669a19be.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_b69
+451ed038a8d73.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_654
+583903c8e8194.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_c7a
+ab016f93a6382.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_2e2
+8d8b7ce374e24.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_0eb
+e52f0796e6018.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_246
+e222abe66c216.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_956
+50c95bb98bfbd.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_912
+f853d170eb76f.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_3fc
+848ca6f2fb3e5.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_e0b
+3efafc42ce43e.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/addsb_11_0
+_f65c3b4ad8785c13.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/bmg_72_962
+8accf375c9240.ngc"...
+Loading design module
+"/home/observer/projects/eovsa-corr/src/pfb_fir_real_core/synth_model/cntr_11_0_
+9f2a2f53426c6ba5.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 472180 kilobytes
+
+Writing NGC file "pfb_fir_real_core_complete.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "pfb_fir_real_core_complete.blc"...

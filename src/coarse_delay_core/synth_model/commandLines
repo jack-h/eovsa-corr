@@ -1,0 +1,2 @@
+/home/observer/tools/Xilinx/14.5/ISE_DS/ISE/sysgen/bin/lin64/saferun -- /home/observer/tools/Xilinx/14.5/ISE_DS/ISE//bin/lin64/xst -ifn xst_coarse_delay_core.scr -ofn coarse_delay_core.syr
+/home/observer/tools/Xilinx/14.5/ISE_DS/ISE/sysgen/bin/lin64/saferun -- /home/observer/tools/Xilinx/14.5/ISE_DS/ISE//bin/lin64/ngcbuild -p xc6vsx475t-1ff1759 coarse_delay_core coarse_delay_core_complete.ngc

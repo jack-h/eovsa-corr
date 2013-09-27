@@ -1,0 +1,2 @@
+/home/observer/tools/Xilinx/14.5/ISE_DS/ISE/sysgen/bin/lin64/saferun -- /home/observer/tools/Xilinx/14.5/ISE_DS/ISE//bin/lin64/xst -ifn xst_pfb_fir_real_core.scr -ofn pfb_fir_real_core.syr
+/home/observer/tools/Xilinx/14.5/ISE_DS/ISE/sysgen/bin/lin64/saferun -- /home/observer/tools/Xilinx/14.5/ISE_DS/ISE//bin/lin64/ngcbuild -p xc6vsx475t-1ff1759 pfb_fir_real_core pfb_fir_real_core_complete.ngc
