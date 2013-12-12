@@ -9,7 +9,7 @@ entity xeng_core is
     mcnt_in: in std_logic_vector(47 downto 0); 
     sync_in: in std_logic; 
     window_valid: in std_logic; 
-    acc: out std_logic_vector(31 downto 0); 
+    acc: out std_logic_vector(63 downto 0); 
     gateway_out2: out std_logic; 
     gateway_out3: out std_logic; 
     gateway_out55: out std_logic; 
