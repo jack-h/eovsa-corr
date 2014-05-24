@@ -23,17 +23,18 @@ function [x, y, out] = run_xeng_test()
     simout = sim('xeng_test', 'ReturnWorkspaceOutputs', 'on');
     
     sync_out = simout.get('sync_out');
-    acc      = simout.get('acc');
+    acc0     = simout.get('acc0');
+    acc1     = simout.get('acc1');
     valid    = simout.get('valid');
     
     % Find sync_out pulse
     s=find(sync_out,1);
     % Clear validity flags before sync pulse
     valid(1:s)=0;
-    % Find indexes of first 40 valid samples 
-    idx=find(valid,40);
-    % Get values for first 40 valid samples
-    out=acc(idx);
+    % Find indexes of first 20 valid samples 
+    idx=find(valid,20);
+    % Get values for first 20 valid samples
+    out=reshape([acc0(idx), acc1(idx)].', [], 1);
     
     nerr = 0;
     
