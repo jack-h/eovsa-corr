@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.36"
+    ComputedModelVersion    "1.38"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-8.0, -51.0, 1920.0, 1030.0]
+      Location		      [-13.0, -75.0, 1920.0, 1030.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -66,9 +66,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "observer"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Sep 24 19:13:33 2013"
-  RTWModifiedTimeStamp	  301950810
-  ModelVersionFormat	  "1.%<AutoIncrement:36>"
+  LastModifiedDate	  "Fri Nov 08 15:10:42 2013"
+  RTWModifiedTimeStamp	  305824213
+  ModelVersionFormat	  "1.%<AutoIncrement:38>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -744,7 +744,7 @@ Model {
   }
   System {
     Name		    "xeng_core_bb"
-    Location		    [-8, -51, 1912, 979]
+    Location		    [-13, -75, 1907, 955]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -758,7 +758,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "121"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "54"
+    SIDHighWatermark	    "57"
     Block {
       BlockType		      Reference
       Name		      " System Generator"
@@ -808,6 +808,42 @@ Model {
       " 0.203922 0.141176 ]);\npatch([11.975 42.98 33.98 24.98 15.98 2.975 11.975 ],[4.99 4.99 13.99 4.99 13.99 13.99 4"
       ".99 ],[0.698039 0.0313725 0.219608 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin ic"
       "on text');\nfprintf('','COMMENT: end icon text');"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Black Box"
+      SID		      "57"
+      Ports		      [4, 4]
+      Position		      [390, 126, 525, 284]
+      ZOrder		      7
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/Black Box"
+      SourceType	      "Xilinx Black Box Block"
+      infoedit		      " Incorporates black box HDL and simulation model into a System Generator design.<br><br>You mus"
+      "t supply a Black Box with certain information about the HDL component you would like to bring into System Genera"
+      "tor. This information is provided through a Matlab function.<br><br>When \"Simulation mode\" is set to \"Inactiv"
+      "e\", you will typically want to provide a separate simulation model by using a Simulation Multiplexer.<br>When \""
+      "Simulation mode\" is set to \"External co-simulator\", you must include a ModelSim block in the design."
+      init_code		      "xeng_core_config"
+      sim_method	      "Inactive"
+      verbose		      off
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      has_advanced_control    "0"
+      sggui_pos		      "15,25,436,479"
+      block_type	      "blackbox2"
+      sg_icon_stat	      "135,158,4,4,white,blue,0,22c1e3bc,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 135 135 0 0 ],[0 0 158 158 0 ],[0.7"
+      "7 0.82 0.91 ]);\nplot([0 135 135 0 0 ],[0 0 158 158 0 ]);\npatch([24.725 52.18 71.18 90.18 109.18 71.18 43.725 2"
+      "4.725 ],[100.09 100.09 119.09 100.09 119.09 119.09 119.09 100.09 ],[1 1 1 ]);\npatch([43.725 71.18 52.18 24.725 "
+      "43.725 ],[81.09 81.09 100.09 100.09 81.09 ],[0.931 0.946 0.973 ]);\npatch([24.725 52.18 71.18 43.725 24.725 ],[6"
+      "2.09 62.09 81.09 81.09 62.09 ],[1 1 1 ]);\npatch([43.725 109.18 90.18 71.18 52.18 24.725 43.725 ],[43.09 43.09 6"
+      "2.09 43.09 62.09 62.09 43.09 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','CO"
+      "MMENT: begin icon text');\ncolor('black');port_label('input',1,'sync_in');\ncolor('black');port_label('input',2,"
+      "'ant');\ncolor('black');port_label('input',3,'window_valid');\ncolor('black');port_label('input',4,'mcnt_in');\n"
+      "color('black');port_label('output',1,'sync_out');\ncolor('black');port_label('output',2,'acc');\ncolor('black');"
+      "port_label('output',3,'valid');\ncolor('black');port_label('output',4,'mcnt_out');\nfprintf('','COMMENT: end ico"
+      "n text');"
     }
     Block {
       BlockType		      Constant
@@ -1202,41 +1238,6 @@ Model {
       "port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfp"
       "rintf('','COMMENT: end icon text');"
     }
-    Block {
-      BlockType		      Reference
-      Name		      "xeng"
-      SID		      "54"
-      Ports		      [4, 4]
-      Position		      [400, 123, 515, 287]
-      ZOrder		      4
-      LibraryVersion	      "1.2"
-      SourceBlock	      "xbsIndex_r4/Black Box"
-      SourceType	      "Xilinx Black Box Block"
-      infoedit		      " Incorporates black box HDL and simulation model into a System Generator design.<br><br>You mus"
-      "t supply a Black Box with certain information about the HDL component you would like to bring into System Genera"
-      "tor. This information is provided through a Matlab function.<br><br>When \"Simulation mode\" is set to \"Inactiv"
-      "e\", you will typically want to provide a separate simulation model by using a Simulation Multiplexer.<br>When \""
-      "Simulation mode\" is set to \"External co-simulator\", you must include a ModelSim block in the design."
-      init_code		      "xeng_core_config"
-      sim_method	      "Inactive"
-      verbose		      off
-      xl_use_area	      off
-      xl_area		      "[0,0,0,0,0,0,0]"
-      has_advanced_control    "0"
-      sggui_pos		      "-1,-1,-1,-1"
-      block_type	      "blackbox2"
-      sg_icon_stat	      "115,164,4,4,white,blue,0,22c1e3bc,right,,[ ],[ ]"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 115 115 0 0 ],[0 0 164 164 0 ],[0.7"
-      "7 0.82 0.91 ]);\nplot([0 115 115 0 0 ],[0 0 164 164 0 ]);\npatch([21.4 44.52 60.52 76.52 92.52 60.52 37.4 21.4 ]"
-      ",[99.76 99.76 115.76 99.76 115.76 115.76 115.76 99.76 ],[1 1 1 ]);\npatch([37.4 60.52 44.52 21.4 37.4 ],[83.76 8"
-      "3.76 99.76 99.76 83.76 ],[0.931 0.946 0.973 ]);\npatch([21.4 44.52 60.52 37.4 21.4 ],[67.76 67.76 83.76 83.76 67"
-      ".76 ],[1 1 1 ]);\npatch([37.4 92.52 76.52 60.52 44.52 21.4 37.4 ],[51.76 51.76 67.76 51.76 67.76 67.76 51.76 ],["
-      "0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor"
-      "('black');port_label('input',1,'sync_in');\ncolor('black');port_label('input',2,'ant');\ncolor('black');port_lab"
-      "el('input',3,'window_valid');\ncolor('black');port_label('input',4,'mcnt_in');\ncolor('black');port_label('outpu"
-      "t',1,'sync_out');\ncolor('black');port_label('output',2,'acc');\ncolor('black');port_label('output',3,'valid');\n"
-      "color('black');port_label('output',4,'mcnt_out');\nfprintf('','COMMENT: end icon text');"
-    }
     Line {
       SrcBlock		      "Constant"
       SrcPort		      1
@@ -1282,35 +1283,35 @@ Model {
     Line {
       SrcBlock		      "ant"
       SrcPort		      1
-      DstBlock		      "xeng"
+      DstBlock		      "Black Box"
       DstPort		      2
     }
     Line {
       SrcBlock		      "window_valid"
       SrcPort		      1
-      DstBlock		      "xeng"
+      DstBlock		      "Black Box"
       DstPort		      3
     }
     Line {
       SrcBlock		      "mcnt_in"
       SrcPort		      1
-      DstBlock		      "xeng"
+      DstBlock		      "Black Box"
       DstPort		      4
     }
     Line {
-      SrcBlock		      "xeng"
+      SrcBlock		      "Black Box"
       SrcPort		      1
       DstBlock		      "sync_out"
       DstPort		      1
     }
     Line {
-      SrcBlock		      "xeng"
+      SrcBlock		      "Black Box"
       SrcPort		      3
       DstBlock		      "valid"
       DstPort		      1
     }
     Line {
-      SrcBlock		      "xeng"
+      SrcBlock		      "Black Box"
       SrcPort		      4
       DstBlock		      "mcnt_out"
       DstPort		      1
@@ -1324,11 +1325,11 @@ Model {
     Line {
       SrcBlock		      "sync_in"
       SrcPort		      1
-      DstBlock		      "xeng"
+      DstBlock		      "Black Box"
       DstPort		      1
     }
     Line {
-      SrcBlock		      "xeng"
+      SrcBlock		      "Black Box"
       SrcPort		      2
       DstBlock		      "acc"
       DstPort		      1
