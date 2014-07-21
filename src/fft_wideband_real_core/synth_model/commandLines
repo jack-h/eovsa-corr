@@ -1,3 +1,0 @@
-/opt/Xilinx/11.1/DSP_Tools/lin64/sysgen/bin/saferun -- /opt/Xilinx/11.1/ISE/bin/lin64/xtclsh xreport.tcl
-/opt/Xilinx/11.1/DSP_Tools/lin64/sysgen/bin/saferun -- /opt/Xilinx/11.1/ISE/bin/lin64/xst -ifn xst_fft_wideband_real_core.scr -ofn fft_wideband_real_core.syr -ise fft_wideband_real_core.ise
-/opt/Xilinx/11.1/DSP_Tools/lin64/sysgen/bin/saferun -- /opt/Xilinx/11.1/ISE/bin/lin64/ngcbuild -p xc6vsx475t-1ff1759 fft_wideband_real_core fft_wideband_real_core_complete.ngc

@@ -1,0 +1,20 @@
+# Ignore files
+/*.autosave
+/*.log
+
+# Ignore all files in *_core directories
+/*_core/*
+# Then UN-ignore the FOO_core/FOO_core.ngc files
+!/coarse_delay_core/coarse_delay_core.ngc
+!/fft_wideband_real_core/fft_wideband_real_core.ngc
+!/pfb_fir_real_core/pfb_fir_real_core.ngc
+!/xeng_core/xeng_core.ngc
+
+# Ignore all files in eovsa_corr_200_v9 directory...
+/eovsa_corr_200_v9/*
+# ...then UN-ignore eovsa_corr_200_v9/bit_files directory...
+!/eovsa_corr_200_v9/bit_files
+# ...then ignore all files in eovsa_corr_200_v9/bit_files directory...
+/eovsa_corr_200_v9/bit_files/*
+# ...then UN-ignore eovsa_corr_200_v9/bit_files/*.bof.gz files.
+!/eovsa_corr_200_v9/bit_files/*.bof.gz

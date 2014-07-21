@@ -1,1 +1,0 @@
-/opt/Xilinx/11.1/DSP_Tools/lin64/sysgen/bin/saferun -a /home/observer/projects/eovsa/src/fft_wideband_real_core/fft_wideband_real_core_cw_import.log -- /opt/Xilinx/11.1/ISE/bin/lin64/xtclsh fft_wideband_real_core_cw_import.tcl

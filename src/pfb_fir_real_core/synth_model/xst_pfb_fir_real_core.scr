@@ -1,1 +1,0 @@
-run -ifn xst_pfb_fir_real_core.prj -ifmt mixed -ofn pfb_fir_real_core.ngc -ofmt NGC -p xc6vsx475t-1ff1759 -ent pfb_fir_real_core -keep_hierarchy NO -iobuf NO -bus_delimiter () -top pfb_fir_real_core -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto

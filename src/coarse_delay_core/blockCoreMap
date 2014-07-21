@@ -1,4 +1,0 @@
-{
-  'addsub' => 'SELECT Adder_Subtracter virtex6 Xilinx,_Inc. 11.0',
-  'dpram' => 'SELECT Block_Memory_Generator virtex6 Xilinx,_Inc. 7.2'
-}

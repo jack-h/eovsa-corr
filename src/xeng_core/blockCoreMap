@@ -1,6 +1,0 @@
-{
-  'counter' => 'SELECT Binary_Counter virtex6 Xilinx,_Inc. 11.0',
-  'dpram' => 'SELECT Block_Memory_Generator virtex6 Xilinx,_Inc. 7.2',
-  'mult' => 'SELECT Multiplier virtex6 Xilinx,_Inc. 11.2',
-  'spram' => 'SELECT Block_Memory_Generator virtex6 Xilinx,_Inc. 7.2'
-}

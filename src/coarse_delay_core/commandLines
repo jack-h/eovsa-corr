@@ -1,1 +1,0 @@
-/home/observer/tools/Xilinx/14.5/ISE_DS/ISE/sysgen/bin/lin64/saferun -a /home/observer/projects/eovsa-corr/src/coarse_delay_core/coarse_delay_core_cw_import.log -- /home/observer/tools/Xilinx/14.5/ISE_DS/ISE//bin/lin64/xtclsh ProjectGeneration.tcl
