@@ -31,90 +31,17 @@ function [sync_out, acc0, acc1, valid] = run_x_op_select_test()
     acc0     = simout.get('acc0');
     acc1     = simout.get('acc1');
     valid    = simout.get('valid');
-end
 
-function nerr = foo
-    % Find sync_out pulse
-    s=find(sync_out,1);
-    % Clear validity flags before sync pulse
-    valid_in(1:s)=0;
-    % Find indexes of first 11 valid samples 
-    idx=find(valid_in,11);
-    % Get values for first 11+11 valid samples
-    acc=reshape([acc0(idx), acc1(idx)].', [], 1);
-    
-    nerr = 0;
-    
-    % MIRIAD Baseline 1-1
-    nerr = nerr + xeng_check(out,  1, x(1), x(1));
-    nerr = nerr + xeng_check(out,  2, y(1), y(1));
-    nerr = nerr + xeng_check(out,  3, x(1), y(1));
-    nerr = nerr + xeng_check(out,  4, y(1), x(1));
-    
-    % MIRIAD Baseline 1-2
-    nerr = nerr + xeng_check(out,  5, x(1), x(2));
-    nerr = nerr + xeng_check(out,  6, y(1), y(2));
-    nerr = nerr + xeng_check(out,  7, x(1), y(2));
-    nerr = nerr + xeng_check(out,  8, y(1), x(2));
-    
-    % MIRIAD Baseline 2-2
-    nerr = nerr + xeng_check(out,  9, x(2), x(2));
-    nerr = nerr + xeng_check(out, 10, y(2), y(2));
-    nerr = nerr + xeng_check(out, 11, x(2), y(2));
-    nerr = nerr + xeng_check(out, 12, y(2), x(2));
+    s=find(sync_out);
+    valid(1:s)=0;
+    idx=find(valid,33);
+    expected = [4 6 12 14 36 38 16 18 24 26 28]';
+    expected0 = [expected  ; expected+40; expected  ];
+    expected1 = [expected+1; expected+41; expected+1];
 
-    % MIRIAD Baseline 1-3
-    nerr = nerr + xeng_check(out, 13, x(1), x(3));
-    nerr = nerr + xeng_check(out, 14, y(1), y(3));
-    nerr = nerr + xeng_check(out, 15, x(1), y(3));
-    nerr = nerr + xeng_check(out, 16, y(1), x(3));
-
-    % MIRIAD Baseline 2-3
-    nerr = nerr + xeng_check(out, 17, x(2), x(3));
-    nerr = nerr + xeng_check(out, 18, y(2), y(3));
-    nerr = nerr + xeng_check(out, 19, x(2), y(3));
-    nerr = nerr + xeng_check(out, 20, y(2), x(3));
-
-    % MIRIAD Baseline 3-3
-    nerr = nerr + xeng_check(out, 21, x(3), x(3));
-    nerr = nerr + xeng_check(out, 22, y(3), y(3));
-    nerr = nerr + xeng_check(out, 23, x(3), y(3));
-    nerr = nerr + xeng_check(out, 24, y(3), x(3));
-
-    % MIRIAD Baseline 2-4
-    nerr = nerr + xeng_check(out, 25, x(2), x(4));
-    nerr = nerr + xeng_check(out, 26, y(2), y(4));
-    nerr = nerr + xeng_check(out, 27, x(2), y(4));
-    nerr = nerr + xeng_check(out, 28, y(2), x(4));
-
-    % MIRIAD Baseline 3-4
-    nerr = nerr + xeng_check(out, 29, x(3), x(4));
-    nerr = nerr + xeng_check(out, 30, y(3), y(4));
-    nerr = nerr + xeng_check(out, 31, x(3), y(4));
-    nerr = nerr + xeng_check(out, 32, y(3), x(4));
-
-    % MIRIAD Baseline 4-4
-    nerr = nerr + xeng_check(out, 33, x(4), x(4));
-    nerr = nerr + xeng_check(out, 34, y(4), y(4));
-    nerr = nerr + xeng_check(out, 35, x(4), y(4));
-    nerr = nerr + xeng_check(out, 36, y(4), x(4));
-
-    % MIRIAD Baseline 1-4
-    nerr = nerr + xeng_check(out, 37, x(1), x(4));
-    nerr = nerr + xeng_check(out, 38, y(1), y(4));
-    nerr = nerr + xeng_check(out, 39, x(1), y(4));
-    nerr = nerr + xeng_check(out, 40, y(1), x(4));
-
-    fprintf('found %d errors\n', nerr);
-end
-
-function err = xeng_check(out, idx, a, b)
-    expected = a * conj(b);
-    err = 0;
-    if out(idx) ~= expected
-        fprintf('expected output %d to be %d%+di, but got %d%+di\n', ...
-            idx, real(expected), imag(expected), ...
-                 real(out(idx)), imag(out(idx)));
-        err = 1;
+    if all(acc0(idx) == expected0) && all(acc1(idx) == expected1)
+        fprintf('PASS: got expected output\n');
+    else
+        fprintf('FAIL: did not get expected output\n');
     end
 end
