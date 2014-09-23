@@ -11,11 +11,11 @@
 !/pfb_fir_real_core/pfb_fir_real_core.ngc
 !/xeng_core/xeng_core.ngc
 
-# Ignore all files in eovsa_corr_200_v9 directory...
-/eovsa_corr_200_v9/*
-# ...then UN-ignore eovsa_corr_200_v9/bit_files directory...
-!/eovsa_corr_200_v9/bit_files
-# ...then ignore all files in eovsa_corr_200_v9/bit_files directory...
-/eovsa_corr_200_v9/bit_files/*
-# ...then UN-ignore eovsa_corr_200_v9/bit_files/*.bof.gz files.
-!/eovsa_corr_200_v9/bit_files/*.bof.gz
+# Ignore all files in eovsa_corr directory...
+/eovsa_corr/*
+# ...then UN-ignore eovsa_corr/bit_files directory...
+!/eovsa_corr/bit_files
+# ...then ignore all files in eovsa_corr/bit_files directory...
+/eovsa_corr/bit_files/*
+# ...then UN-ignore eovsa_corr/bit_files/*.bof.gz files.
+!/eovsa_corr/bit_files/*.bof.gz
