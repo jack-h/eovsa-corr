@@ -29,6 +29,12 @@ function [x, y, out] = run_xeng_test()
     
     % Find sync_out pulse
     s=find(sync_out,1);
+    if length(s) == 0
+      fprintf('Error: no sync_out pulse detected.\nIs simulation stop time large enough?\n');
+      out=[];
+      return
+    end
+
     % Clear validity flags before sync pulse
     valid(1:s)=0;
     % Find indexes of first 20 valid samples 
