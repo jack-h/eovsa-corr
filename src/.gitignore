@@ -19,3 +19,5 @@
 /eovsa_corr/bit_files/*
 # ...then UN-ignore eovsa_corr/bit_files/*.bof.gz files.
 !/eovsa_corr/bit_files/*.bof.gz
+# ...also UN-ignore eovsa_corr/ucf directory...
+!/eovsa_corr/ucf
