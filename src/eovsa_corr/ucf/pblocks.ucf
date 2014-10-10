@@ -66,6 +66,12 @@ INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/acc_sy
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/fifo2/*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/f_x_*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
 
-#AREA_GROUP "clkreg_x1y6_pblock" RANGE=CLOCKREGION_X1Y6:CLOCKREGION_X1Y6;
-#INST "*sys_block_inst/*" AREA_GROUP = "clkreg_x1y6_pblock";
-#INST "*qdr?_sniffer/*"   AREA_GROUP = "clkreg_x1y6_pblock";
+# Put QDR controllers and QDR sniffers near other QDR areas
+AREA_GROUP "qdr_pblock" RANGE=SLICE_X76Y200:SLICE_X117Y359;
+INST "qdr?_controller/*" AREA_GROUP = "qdr_pblock";
+INST "qdr?_sniffer/*"   AREA_GROUP = "qdr_pblock";
+# Put these instances in qdr_pblock as their inputs are clocked by adc1_clk180
+# yet these instances themsleves are clocked by adc1_clk, so the setup/hold
+# requirement is half a clock cycle!
+INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/f_x_*/adress_select40/*" AREA_GROUP = "qdr_pblock";
+INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/f_x_*/adress_select46/*" AREA_GROUP = "qdr_pblock";
