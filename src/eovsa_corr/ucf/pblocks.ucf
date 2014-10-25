@@ -10,45 +10,6 @@ INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/pfb_ff
 AREA_GROUP "packetizer_x_pblock" RANGE=CLOCKREGION_X0Y7:CLOCKREGION_X1Y8;
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/xeng*" AREA_GROUP = "packetizer_x_pblock";
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/packetizer_x*" AREA_GROUP = "packetizer_x_pblock";
-# These delays follow the xeng blocks which until recently had BRAMs with
-# insufficient latency on its outputs.  The following constraints are intended
-# to keep these delays somewhat closer to the xeng blocks.  Commented out lines
-# correspond to delay blocks that get optimized away or absorbed into other
-# logic.  These constraints were created before the xeng netlist was
-# regenerated with higher BRAM latency so maybe these are no longer strictly
-# necessary (though they don't seem to hurt things).
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay21/*"  AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay28/*"  AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay38/*"  AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay112/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay115/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay118/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay307/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay310/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay313/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay434/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay435/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay436/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay442/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay443/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay444/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay445/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay471/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay472/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay473/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay474/*" AREA_GROUP = "packetizer_x_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay475/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay476/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay515/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay516/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay517/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay518/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay519/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay520/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay521/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay522/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay523/*" AREA_GROUP = "packetizer_x_pblock";
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/Delay524/*" AREA_GROUP = "packetizer_x_pblock";
 
 # polarimetry is pretty huge
 AREA_GROUP "clkreg_x1y0_x1y1_pblock" RANGE=CLOCKREGION_X1Y0:CLOCKREGION_X1Y1;
