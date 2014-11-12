@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.24"
+    ComputedModelVersion    "1.26"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [268.0, 21.0, 1510.0, 798.0]
+      Location		      [263.0, -3.0, 1520.0, 827.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,7 +55,7 @@ Model {
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1269.0, 621.0]
+	  Extents		  [1279.0, 650.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [459.0, 106.0]
 	}
@@ -64,9 +64,9 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "499"
-	  Extents		  [1269.0, 621.0]
+	  Extents		  [1279.0, 650.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [-122.0, -50.5]
+	  Offset		  [-487.0, -50.0]
 	}
 	PropName		"EditorsInfo"
       }
@@ -78,9 +78,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "davidm"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Nov 11 14:08:10 2014"
-  RTWModifiedTimeStamp	  337614897
-  ModelVersionFormat	  "1.%<AutoIncrement:24>"
+  LastModifiedDate	  "Tue Nov 11 19:46:13 2014"
+  RTWModifiedTimeStamp	  337635757
+  ModelVersionFormat	  "1.%<AutoIncrement:26>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -884,7 +884,7 @@ Model {
   }
   System {
     Name		    "eovsa_fx_snoop"
-    Location		    [268, 21, 1778, 819]
+    Location		    [263, -3, 1783, 824]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -898,7 +898,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "557"
+    SIDHighWatermark	    "597"
     Block {
       BlockType		      Reference
       Name		      " System Generator"
@@ -8626,7 +8626,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"288"
+	SIDHighWatermark	"309"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -8639,10 +8639,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_arm_pcap_user_data_out"
-	  SID			  "190:282"
+	  SID			  "190:303"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  275
+	  ZOrder		  296
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway In"
 	  SourceType		  "Xilinx Gateway In Block"
@@ -8685,10 +8685,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "190:283"
+	  SID			  "190:304"
 	  Ports			  [1, 1]
 	  Position		  [1000, 100, 1050, 120]
-	  ZOrder		  276
+	  ZOrder		  297
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -8704,22 +8704,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "190:288"
+	  SID			  "190:309"
 	  Ports			  [1, 1]
 	  Position		  [1300, 100, 1350, 120]
-	  ZOrder		  281
+	  ZOrder		  302
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -8747,10 +8747,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "slice_reg"
-	  SID			  "190:287"
+	  SID			  "190:308"
 	  Ports			  [1, 1]
 	  Position		  [1100, 100, 1150, 120]
-	  ZOrder		  280
+	  ZOrder		  301
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Slice"
 	  SourceType		  "Xilinx Bit Slice Extractor Block"
@@ -8972,7 +8972,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"309"
+	SIDHighWatermark	"330"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -8985,10 +8985,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_counter_ctrl_user_data_out"
-	  SID			  "305:303"
+	  SID			  "305:324"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  296
+	  ZOrder		  317
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway In"
 	  SourceType		  "Xilinx Gateway In Block"
@@ -9031,10 +9031,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "305:304"
+	  SID			  "305:325"
 	  Ports			  [1, 1]
 	  Position		  [1000, 100, 1050, 120]
-	  ZOrder		  297
+	  ZOrder		  318
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -9050,22 +9050,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "305:309"
+	  SID			  "305:330"
 	  Ports			  [1, 1]
 	  Position		  [1300, 100, 1350, 120]
-	  ZOrder		  302
+	  ZOrder		  323
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -9093,10 +9093,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "slice_reg"
-	  SID			  "305:308"
+	  SID			  "305:329"
 	  Ports			  [1, 1]
 	  Position		  [1100, 100, 1150, 120]
-	  ZOrder		  301
+	  ZOrder		  322
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Slice"
 	  SourceType		  "Xilinx Bit Slice Extractor Block"
@@ -10312,7 +10312,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"pcap0"
-	Location		[268, 21, 1778, 819]
+	Location		[263, -3, 1783, 824]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -10329,7 +10329,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "arm"
 	  SID			  "480"
-	  Position		  [20, 163, 50, 177]
+	  Position		  [20, 178, 50, 192]
 	  ZOrder		  591
 	  IconDisplay		  "Port number"
 	  Port {
@@ -10343,7 +10343,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "data_in"
 	  SID			  "481"
-	  Position		  [20, 268, 50, 282]
+	  Position		  [20, 273, 50, 287]
 	  ZOrder		  593
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -10358,7 +10358,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "valid"
 	  SID			  "482"
-	  Position		  [20, 118, 50, 132]
+	  Position		  [20, 108, 50, 122]
 	  ZOrder		  595
 	  Port			  "3"
 	  IconDisplay		  "Port number"
@@ -10367,7 +10367,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "src_ip_in"
 	  SID			  "483"
-	  Position		  [30, 383, 60, 397]
+	  Position		  [30, 388, 60, 402]
 	  ZOrder		  608
 	  Port			  "4"
 	  IconDisplay		  "Port number"
@@ -10376,7 +10376,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "src_port_in"
 	  SID			  "484"
-	  Position		  [30, 448, 60, 462]
+	  Position		  [30, 453, 60, 467]
 	  ZOrder		  607
 	  Port			  "5"
 	  IconDisplay		  "Port number"
@@ -10385,7 +10385,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "eof"
 	  SID			  "485"
-	  Position		  [20, 198, 50, 212]
+	  Position		  [20, 213, 50, 227]
 	  ZOrder		  592
 	  Port			  "6"
 	  IconDisplay		  "Port number"
@@ -10401,7 +10401,7 @@ Model {
 	  Name			  "BitBasher"
 	  SID			  "521"
 	  Ports			  [1, 1]
-	  Position		  [935, 119, 990, 141]
+	  Position		  [935, 109, 990, 131]
 	  ZOrder		  633
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -10444,7 +10444,7 @@ Model {
 	  Name			  "Convert"
 	  SID			  "486"
 	  Ports			  [1, 1]
-	  Position		  [1055, 122, 1090, 138]
+	  Position		  [1055, 112, 1090, 128]
 	  ZOrder		  604
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -10489,7 +10489,7 @@ Model {
 	  Name			  "Convert1"
 	  SID			  "487"
 	  Ports			  [1, 1]
-	  Position		  [680, 457, 715, 473]
+	  Position		  [680, 462, 715, 478]
 	  ZOrder		  613
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -10534,7 +10534,7 @@ Model {
 	  Name			  "Delay"
 	  SID			  "489"
 	  Ports			  [1, 1]
-	  Position		  [685, 99, 740, 121]
+	  Position		  [685, 89, 740, 111]
 	  ZOrder		  619
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -10566,7 +10566,7 @@ Model {
 	  Name			  "Register"
 	  SID			  "490"
 	  Ports			  [3, 1]
-	  Position		  [815, 102, 875, 158]
+	  Position		  [815, 92, 875, 148]
 	  ZOrder		  620
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -10595,7 +10595,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator1"
 	  SID			  "519"
-	  Position		  [1280, 125, 1290, 135]
+	  Position		  [1280, 115, 1290, 125]
 	  ZOrder		  628
 	  ShowName		  off
 	}
@@ -10603,7 +10603,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator6"
 	  SID			  "513"
-	  Position		  [1070, 270, 1080, 280]
+	  Position		  [1070, 275, 1080, 285]
 	  ZOrder		  624
 	  ShowName		  off
 	}
@@ -10611,7 +10611,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator7"
 	  SID			  "514"
-	  Position		  [1035, 395, 1045, 405]
+	  Position		  [1035, 400, 1045, 410]
 	  ZOrder		  625
 	  ShowName		  off
 	}
@@ -10619,7 +10619,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator8"
 	  SID			  "515"
-	  Position		  [1035, 460, 1045, 470]
+	  Position		  [1035, 465, 1045, 475]
 	  ZOrder		  626
 	  ShowName		  off
 	}
@@ -10628,7 +10628,7 @@ Model {
 	  Name			  "addr"
 	  SID			  "488"
 	  Ports			  [2, 1]
-	  Position		  [540, 190, 600, 250]
+	  Position		  [540, 195, 600, 255]
 	  ZOrder		  598
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Counter"
@@ -10678,7 +10678,7 @@ Model {
 	  SID			  "516"
 	  Tag			  "xps:bram"
 	  Ports			  [3, 1]
-	  Position		  [920, 192, 1015, 358]
+	  Position		  [920, 197, 1015, 363]
 	  ZOrder		  621
 	  BackgroundColor	  "[1.000000, 1.000000, 0.000000]"
 	  AncestorBlock		  "xps_library/Shared BRAM"
@@ -15495,7 +15495,7 @@ Model {
 	  Name			  "edge_detect"
 	  SID			  "498"
 	  Ports			  [1, 1]
-	  Position		  [690, 140, 735, 160]
+	  Position		  [690, 130, 735, 150]
 	  ZOrder		  618
 	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
 	  ShowName		  off
@@ -15773,7 +15773,7 @@ Model {
 	  SID			  "520"
 	  Tag			  "xps:sw_reg"
 	  Ports			  [1, 1]
-	  Position		  [1165, 117, 1265, 143]
+	  Position		  [1165, 107, 1265, 133]
 	  ZOrder		  627
 	  BackgroundColor	  "[1.000000, 1.000000, 0.000000]"
 	  AttributesFormatString  "1output"
@@ -15921,7 +15921,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "102"
+	    SIDHighWatermark	    "117"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
@@ -15933,10 +15933,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "520:101"
+	      SID		      "520:116"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      94
+	      ZOrder		      109
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -15971,10 +15971,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "520:99"
+	      SID		      "520:114"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      92
+	      ZOrder		      107
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -16010,10 +16010,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_length_user_data_in"
-	      SID		      "520:100"
+	      SID		      "520:115"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      93
+	      ZOrder		      108
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -16045,10 +16045,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "520:98"
+	      SID		      "520:113"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      91
+	      ZOrder		      106
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -16065,22 +16065,22 @@ Model {
 	      has_advanced_control    "0"
 	      sggui_pos		      "-1,-1,-1,-1"
 	      block_type	      "delay"
-	      sg_icon_stat	      "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0"
-	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[1"
-	      "2.22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.2"
-	      "2 12.22 12.22 10.22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.2"
-	      "2 ],[1 1 1 ]);\npatch([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931"
-	      " 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor"
-	      "('black');disp('z^{-0}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	      sg_icon_stat	      "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.8"
+	      "8 36.88 44.88 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.8"
+	      "8 36.88 28.88 ],[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1"
+	      " 1 1 ]);\npatch([20.2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0"
+	      ".946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('"
+	      "black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
 	    }
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "520:102"
+	      SID		      "520:117"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      95
+	      ZOrder		      110
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -16155,8 +16155,8 @@ Model {
 	  BlockType		  SubSystem
 	  Name			  "run_stop"
 	  SID			  "499"
-	  Ports			  [2, 2]
-	  Position		  [130, 150, 215, 225]
+	  Ports			  [3, 2]
+	  Position		  [140, 133, 215, 237]
 	  ZOrder		  617
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
@@ -16180,7 +16180,7 @@ Model {
 	  }
 	  System {
 	    Name		    "run_stop"
-	    Location		    [268, 21, 1778, 819]
+	    Location		    [263, -3, 1783, 824]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -16195,19 +16195,28 @@ Model {
 	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
+	      Name		      "valid"
+	      SID		      "558"
+	      Position		      [20, 288, 50, 302]
+	      ZOrder		      599
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
 	      Name		      "arm"
 	      SID		      "500"
 	      Position		      [20, 148, 50, 162]
 	      ZOrder		      589
+	      Port		      "2"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "eof"
 	      SID		      "501"
-	      Position		      [20, 268, 50, 282]
+	      Position		      [20, 248, 50, 262]
 	      ZOrder		      590
-	      Port		      "2"
+	      Port		      "3"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
@@ -16215,7 +16224,7 @@ Model {
 	      Name		      "Constant6"
 	      SID		      "502"
 	      Ports		      [0, 1]
-	      Position		      [320, 86, 345, 104]
+	      Position		      [365, 86, 390, 104]
 	      ZOrder		      596
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
@@ -16257,7 +16266,7 @@ Model {
 	      Name		      "Logical"
 	      SID		      "503"
 	      Ports		      [2, 1]
-	      Position		      [485, 230, 540, 290]
+	      Position		      [530, 230, 585, 290]
 	      ZOrder		      597
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
@@ -16289,10 +16298,45 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Reference
+	      Name		      "Logical1"
+	      SID		      "559"
+	      Ports		      [2, 1]
+	      Position		      [125, 235, 180, 315]
+	      ZOrder		      600
+	      ShowName		      off
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Logical"
+	      SourceType	      "Xilinx Logical Block Block"
+	      logical_function	      "AND"
+	      inputs		      "2"
+	      en		      off
+	      latency		      "0"
+	      precision		      "Full"
+	      arith_type	      "Unsigned"
+	      n_bits		      "16"
+	      bin_pt		      "0"
+	      align_bp		      on
+	      dbl_ovrd		      off
+	      xl_use_area	      off
+	      xl_area		      "[0,0,0,0,0,0,0]"
+	      has_advanced_control    "0"
+	      sggui_pos		      "-1,-1,-1,-1"
+	      block_type	      "logical"
+	      sg_icon_stat	      "55,80,2,1,white,blue,0,83a4b621,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 55 55 0 0 ],[0 0 80 80 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 55 55 0 0 ],[0 0 80 80 0 ]);\npatch([11.425 21.54 28.54 35.54 42.54 28.54 18.425 11.425 ]"
+	      ",[47.77 47.77 54.77 47.77 54.77 54.77 54.77 47.77 ],[1 1 1 ]);\npatch([18.425 28.54 21.54 11.425 18.425 ],[40.7"
+	      "7 40.77 47.77 47.77 40.77 ],[0.931 0.946 0.973 ]);\npatch([11.425 21.54 28.54 18.425 11.425 ],[33.77 33.77 40.7"
+	      "7 40.77 33.77 ],[1 1 1 ]);\npatch([18.425 42.54 35.54 28.54 21.54 11.425 18.425 ],[26.77 26.77 33.77 26.77 33.7"
+	      "7 33.77 26.77 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin i"
+	      "con text');\n\n\n\ncolor('black');disp('and');\nfprintf('','COMMENT: end icon text');"
+	    }
+	    Block {
+	      BlockType		      Reference
 	      Name		      "capture"
 	      SID		      "504"
 	      Ports		      [3, 1]
-	      Position		      [385, 79, 435, 181]
+	      Position		      [430, 79, 480, 181]
 	      ZOrder		      595
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Register"
@@ -16322,7 +16366,7 @@ Model {
 	      Name		      "rungen"
 	      SID		      "505"
 	      Ports		      [2, 1]
-	      Position		      [200, 146, 250, 184]
+	      Position		      [245, 146, 295, 184]
 	      ZOrder		      587
 	      LibraryVersion	      "1.42"
 	      SourceBlock	      "casper_library_misc/armed_trigger"
@@ -16338,7 +16382,7 @@ Model {
 	      BlockType		      Outport
 	      Name		      "capt_en"
 	      SID		      "506"
-	      Position		      [620, 122, 650, 138]
+	      Position		      [665, 122, 695, 138]
 	      ZOrder		      592
 	      IconDisplay	      "Port number"
 	    }
@@ -16346,7 +16390,7 @@ Model {
 	      BlockType		      Outport
 	      Name		      "rst"
 	      SID		      "507"
-	      Position		      [620, 27, 650, 43]
+	      Position		      [665, 27, 695, 43]
 	      ZOrder		      598
 	      Port		      "2"
 	      IconDisplay	      "Port number"
@@ -16374,9 +16418,9 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      SrcBlock		      "eof"
+	      SrcBlock		      "Logical1"
 	      SrcPort		      1
-	      Points		      [118, 0]
+	      Points		      [33, 0]
 	      Branch {
 		DstBlock		"Logical"
 		DstPort			2
@@ -16414,6 +16458,18 @@ Model {
 	      DstBlock		      "capture"
 	      DstPort		      2
 	    }
+	    Line {
+	      SrcBlock		      "valid"
+	      SrcPort		      1
+	      DstBlock		      "Logical1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "eof"
+	      SrcPort		      1
+	      DstBlock		      "Logical1"
+	      DstPort		      1
+	    }
 	  }
 	}
 	Block {
@@ -16422,7 +16478,7 @@ Model {
 	  SID			  "517"
 	  Tag			  "xps:sw_reg"
 	  Ports			  [1, 1]
-	  Position		  [920, 387, 1020, 413]
+	  Position		  [920, 392, 1020, 418]
 	  ZOrder		  622
 	  BackgroundColor	  "[1.000000, 1.000000, 0.000000]"
 	  AttributesFormatString  "1output"
@@ -16570,7 +16626,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "97"
+	    SIDHighWatermark	    "112"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
@@ -16582,10 +16638,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "517:96"
+	      SID		      "517:111"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      89
+	      ZOrder		      104
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -16620,10 +16676,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "517:94"
+	      SID		      "517:109"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      87
+	      ZOrder		      102
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -16659,10 +16715,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_src_ip_user_data_in"
-	      SID		      "517:95"
+	      SID		      "517:110"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      88
+	      ZOrder		      103
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -16694,10 +16750,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "517:93"
+	      SID		      "517:108"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      86
+	      ZOrder		      101
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -16714,22 +16770,22 @@ Model {
 	      has_advanced_control    "0"
 	      sggui_pos		      "-1,-1,-1,-1"
 	      block_type	      "delay"
-	      sg_icon_stat	      "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0"
-	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[1"
-	      "2.22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.2"
-	      "2 12.22 12.22 10.22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.2"
-	      "2 ],[1 1 1 ]);\npatch([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931"
-	      " 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor"
-	      "('black');disp('z^{-0}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	      sg_icon_stat	      "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.8"
+	      "8 36.88 44.88 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.8"
+	      "8 36.88 28.88 ],[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1"
+	      " 1 1 ]);\npatch([20.2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0"
+	      ".946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('"
+	      "black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
 	    }
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "517:97"
+	      SID		      "517:112"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      90
+	      ZOrder		      105
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -16805,7 +16861,7 @@ Model {
 	  Name			  "src_ip_reg"
 	  SID			  "508"
 	  Ports			  [2, 1]
-	  Position		  [540, 381, 600, 414]
+	  Position		  [540, 386, 600, 419]
 	  ZOrder		  605
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Register"
@@ -16841,7 +16897,7 @@ Model {
 	  SID			  "518"
 	  Tag			  "xps:sw_reg"
 	  Ports			  [1, 1]
-	  Position		  [920, 452, 1020, 478]
+	  Position		  [920, 457, 1020, 483]
 	  ZOrder		  623
 	  BackgroundColor	  "[1.000000, 1.000000, 0.000000]"
 	  AttributesFormatString  "1output"
@@ -16989,7 +17045,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "102"
+	    SIDHighWatermark	    "117"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
@@ -17001,10 +17057,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "518:101"
+	      SID		      "518:116"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      94
+	      ZOrder		      109
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -17039,10 +17095,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "518:99"
+	      SID		      "518:114"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      92
+	      ZOrder		      107
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -17078,10 +17134,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_src_port_user_data_in"
-	      SID		      "518:100"
+	      SID		      "518:115"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      93
+	      ZOrder		      108
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -17113,10 +17169,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "518:98"
+	      SID		      "518:113"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      91
+	      ZOrder		      106
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -17133,22 +17189,22 @@ Model {
 	      has_advanced_control    "0"
 	      sggui_pos		      "-1,-1,-1,-1"
 	      block_type	      "delay"
-	      sg_icon_stat	      "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0"
-	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[1"
-	      "2.22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.2"
-	      "2 12.22 12.22 10.22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.2"
-	      "2 ],[1 1 1 ]);\npatch([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931"
-	      " 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor"
-	      "('black');disp('z^{-0}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	      sg_icon_stat	      "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.8"
+	      "8 36.88 44.88 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.8"
+	      "8 36.88 28.88 ],[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1"
+	      " 1 1 ]);\npatch([20.2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0"
+	      ".946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('"
+	      "black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
 	    }
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "518:102"
+	      SID		      "518:117"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      95
+	      ZOrder		      110
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -17224,7 +17280,7 @@ Model {
 	  Name			  "src_port_reg"
 	  SID			  "509"
 	  Ports			  [2, 1]
-	  Position		  [540, 446, 600, 479]
+	  Position		  [540, 451, 600, 484]
 	  ZOrder		  606
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Register"
@@ -17259,7 +17315,7 @@ Model {
 	  Name			  "we"
 	  SID			  "510"
 	  Ports			  [2, 1]
-	  Position		  [315, 102, 365, 193]
+	  Position		  [315, 92, 365, 183]
 	  ZOrder		  596
 	  NamePlacement		  "alternate"
 	  LibraryVersion	  "1.2"
@@ -17300,14 +17356,23 @@ Model {
 	  Labels		  [0, 1]
 	  SrcBlock		  "run_stop"
 	  SrcPort		  1
+	  Points		  [80, 0]
 	  DstBlock		  "we"
 	  DstPort		  2
 	}
 	Line {
 	  SrcBlock		  "valid"
 	  SrcPort		  1
-	  DstBlock		  "we"
-	  DstPort		  1
+	  Points		  [40, 0]
+	  Branch {
+	    Points		    [0, 35]
+	    DstBlock		    "run_stop"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "we"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  Name			  "we"
@@ -17316,11 +17381,7 @@ Model {
 	  SrcPort		  1
 	  Points		  [81, 0]
 	  Branch {
-	    DstBlock		    "edge_detect"
-	    DstPort		    1
-	  }
-	  Branch {
-	    Points		    [0, 85]
+	    Points		    [0, 100]
 	    Branch {
 	      Points		      [0, 95]
 	      Branch {
@@ -17346,6 +17407,10 @@ Model {
 	      DstPort		      2
 	    }
 	  }
+	  Branch {
+	    DstBlock		    "edge_detect"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  Name			  "addr"
@@ -17353,7 +17418,7 @@ Model {
 	  SrcPort		  1
 	  Points		  [27, 0]
 	  Branch {
-	    Points		    [0, -110]
+	    Points		    [0, -125]
 	    DstBlock		    "Delay"
 	    DstPort		    1
 	  }
@@ -17420,13 +17485,13 @@ Model {
 	  SrcPort		  2
 	  Points		  [277, 0]
 	  Branch {
-	    DstBlock		    "addr"
-	    DstPort		    1
-	  }
-	  Branch {
-	    Points		    [0, -75]
+	    Points		    [0, -90]
 	    DstBlock		    "Register"
 	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "addr"
+	    DstPort		    1
 	  }
 	}
 	Line {
@@ -17435,7 +17500,7 @@ Model {
 	  SrcBlock		  "arm"
 	  SrcPort		  1
 	  DstBlock		  "run_stop"
-	  DstPort		  1
+	  DstPort		  2
 	}
 	Line {
 	  Name			  "eof"
@@ -17443,7 +17508,7 @@ Model {
 	  SrcBlock		  "eof"
 	  SrcPort		  1
 	  DstBlock		  "run_stop"
-	  DstPort		  2
+	  DstPort		  3
 	}
 	Line {
 	  SrcBlock		  "Delay"
@@ -17497,7 +17562,7 @@ Model {
 	Annotation {
 	  SID			  "512"
 	  Name			  "length is number of 32-bit words"
-	  Position		  [1167, 94]
+	  Position		  [1167, 84]
 	}
 	Annotation {
 	  SID			  "511"
@@ -17510,10 +17575,10 @@ Model {
     Block {
       BlockType		      SubSystem
       Name		      "pcap1"
-      SID		      "522"
+      SID		      "560"
       Ports		      [6]
-      Position		      [1700, 763, 1785, 922]
-      ZOrder		      701
+      Position		      [1705, 763, 1790, 922]
+      ZOrder		      702
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
       RTWSystemCode	      "Auto"
@@ -17523,7 +17588,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"pcap1"
-	Location		[268, 21, 1778, 819]
+	Location		[263, -3, 1783, 824]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -17539,8 +17604,8 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "arm"
-	  SID			  "523"
-	  Position		  [20, 163, 50, 177]
+	  SID			  "561"
+	  Position		  [20, 178, 50, 192]
 	  ZOrder		  591
 	  IconDisplay		  "Port number"
 	  Port {
@@ -17553,8 +17618,8 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "data_in"
-	  SID			  "524"
-	  Position		  [20, 268, 50, 282]
+	  SID			  "562"
+	  Position		  [20, 273, 50, 287]
 	  ZOrder		  593
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -17568,8 +17633,8 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "valid"
-	  SID			  "525"
-	  Position		  [20, 118, 50, 132]
+	  SID			  "563"
+	  Position		  [20, 108, 50, 122]
 	  ZOrder		  595
 	  Port			  "3"
 	  IconDisplay		  "Port number"
@@ -17577,8 +17642,8 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "src_ip_in"
-	  SID			  "526"
-	  Position		  [30, 383, 60, 397]
+	  SID			  "564"
+	  Position		  [30, 388, 60, 402]
 	  ZOrder		  608
 	  Port			  "4"
 	  IconDisplay		  "Port number"
@@ -17586,8 +17651,8 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "src_port_in"
-	  SID			  "527"
-	  Position		  [30, 448, 60, 462]
+	  SID			  "565"
+	  Position		  [30, 453, 60, 467]
 	  ZOrder		  607
 	  Port			  "5"
 	  IconDisplay		  "Port number"
@@ -17595,8 +17660,8 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "eof"
-	  SID			  "528"
-	  Position		  [20, 198, 50, 212]
+	  SID			  "566"
+	  Position		  [20, 213, 50, 227]
 	  ZOrder		  592
 	  Port			  "6"
 	  IconDisplay		  "Port number"
@@ -17610,9 +17675,9 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "BitBasher"
-	  SID			  "529"
+	  SID			  "567"
 	  Ports			  [1, 1]
-	  Position		  [935, 119, 990, 141]
+	  Position		  [935, 109, 990, 131]
 	  ZOrder		  633
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -17653,9 +17718,9 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Convert"
-	  SID			  "530"
+	  SID			  "568"
 	  Ports			  [1, 1]
-	  Position		  [1055, 122, 1090, 138]
+	  Position		  [1055, 112, 1090, 128]
 	  ZOrder		  604
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -17698,9 +17763,9 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Convert1"
-	  SID			  "531"
+	  SID			  "569"
 	  Ports			  [1, 1]
-	  Position		  [680, 457, 715, 473]
+	  Position		  [680, 462, 715, 478]
 	  ZOrder		  613
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -17743,9 +17808,9 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Delay"
-	  SID			  "532"
+	  SID			  "570"
 	  Ports			  [1, 1]
-	  Position		  [685, 99, 740, 121]
+	  Position		  [685, 89, 740, 111]
 	  ZOrder		  619
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -17775,9 +17840,9 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Register"
-	  SID			  "533"
+	  SID			  "571"
 	  Ports			  [3, 1]
-	  Position		  [815, 102, 875, 158]
+	  Position		  [815, 92, 875, 148]
 	  ZOrder		  620
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
@@ -17805,41 +17870,41 @@ Model {
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator1"
-	  SID			  "534"
-	  Position		  [1280, 125, 1290, 135]
+	  SID			  "572"
+	  Position		  [1280, 115, 1290, 125]
 	  ZOrder		  628
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator6"
-	  SID			  "535"
-	  Position		  [1070, 270, 1080, 280]
+	  SID			  "573"
+	  Position		  [1070, 275, 1080, 285]
 	  ZOrder		  624
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator7"
-	  SID			  "536"
-	  Position		  [1035, 395, 1045, 405]
+	  SID			  "574"
+	  Position		  [1035, 400, 1045, 410]
 	  ZOrder		  625
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator8"
-	  SID			  "537"
-	  Position		  [1035, 460, 1045, 470]
+	  SID			  "575"
+	  Position		  [1035, 465, 1045, 475]
 	  ZOrder		  626
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "addr"
-	  SID			  "538"
+	  SID			  "576"
 	  Ports			  [2, 1]
-	  Position		  [540, 190, 600, 250]
+	  Position		  [540, 195, 600, 255]
 	  ZOrder		  598
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Counter"
@@ -17886,10 +17951,10 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "data"
-	  SID			  "539"
+	  SID			  "577"
 	  Tag			  "xps:bram"
 	  Ports			  [3, 1]
-	  Position		  [920, 192, 1015, 358]
+	  Position		  [920, 197, 1015, 363]
 	  ZOrder		  621
 	  BackgroundColor	  "[1.000000, 1.000000, 0.000000]"
 	  AncestorBlock		  "xps_library/Shared BRAM"
@@ -18021,7 +18086,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "addr"
-	      SID		      "539:1"
+	      SID		      "577:1"
 	      Position		      [25, 193, 55, 207]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -18029,7 +18094,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "data_in"
-	      SID		      "539:2"
+	      SID		      "577:2"
 	      Position		      [25, 238, 55, 252]
 	      ZOrder		      -2
 	      Port		      "2"
@@ -18038,7 +18103,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "we"
-	      SID		      "539:3"
+	      SID		      "577:3"
 	      Position		      [25, 283, 55, 297]
 	      ZOrder		      -3
 	      Port		      "3"
@@ -18047,7 +18112,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "calc_add"
-	      SID		      "539:4"
+	      SID		      "577:4"
 	      Ports		      [1, 1]
 	      Position		      [130, 190, 170, 210]
 	      ZOrder		      -4
@@ -18107,7 +18172,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "in"
-		  SID			  "539:5"
+		  SID			  "577:5"
 		  Position		  [15, 253, 45, 267]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -18115,7 +18180,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "add_sub"
-		  SID			  "539:6"
+		  SID			  "577:6"
 		  Ports			  [2, 1]
 		  Position		  [250, 201, 285, 279]
 		  ZOrder		  -2
@@ -18156,7 +18221,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "concat"
-		  SID			  "539:7"
+		  SID			  "577:7"
 		  Ports			  [2, 1]
 		  Position		  [340, 150, 360, 270]
 		  ZOrder		  -3
@@ -18184,7 +18249,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "const"
-		  SID			  "539:8"
+		  SID			  "577:8"
 		  Ports			  [0, 1]
 		  Position		  [175, 211, 195, 229]
 		  ZOrder		  -4
@@ -18229,7 +18294,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "convert_addr"
-		  SID			  "539:9"
+		  SID			  "577:9"
 		  Ports			  [1, 1]
 		  Position		  [80, 248, 115, 272]
 		  ZOrder		  -5
@@ -18268,7 +18333,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "lsw"
-		  SID			  "539:10"
+		  SID			  "577:10"
 		  Ports			  [1, 1]
 		  Position		  [170, 249, 200, 271]
 		  ZOrder		  -6
@@ -18302,7 +18367,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "manipulate"
-		  SID			  "539:11"
+		  SID			  "577:11"
 		  Ports			  [0, 1]
 		  Position		  [350, 71, 370, 89]
 		  ZOrder		  -7
@@ -18347,7 +18412,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "msw"
-		  SID			  "539:12"
+		  SID			  "577:12"
 		  Ports			  [1, 1]
 		  Position		  [165, 169, 195, 191]
 		  ZOrder		  -8
@@ -18381,7 +18446,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "mux"
-		  SID			  "539:13"
+		  SID			  "577:13"
 		  Ports			  [3, 1]
 		  Position		  [420, 46, 445, 244]
 		  ZOrder		  -9
@@ -18417,7 +18482,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "out"
-		  SID			  "539:14"
+		  SID			  "577:14"
 		  Position		  [505, 138, 535, 152]
 		  ZOrder		  -10
 		  IconDisplay		  "Port number"
@@ -18492,12 +18557,12 @@ Model {
 		  DstPort		  1
 		}
 		Annotation {
-		  SID			  "539:16"
+		  SID			  "577:16"
 		  Name			  "Use behavioural HDL\nso that gets optimised \nto minimum logic"
 		  Position		  [232, 322]
 		}
 		Annotation {
-		  SID			  "539:15"
+		  SID			  "577:15"
 		  Name			  "If reading/writing words\nsmaller than 32 bits,\nchange address so\nthat addressing is\nbig endian inste"
 		  "ad of\nlittle, otherwise\npass through"
 		  Position		  [235, 77]
@@ -18507,7 +18572,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "convert_addr"
-	      SID		      "539:17"
+	      SID		      "577:17"
 	      Ports		      [1, 1]
 	      Position		      [255, 188, 290, 212]
 	      ZOrder		      -5
@@ -18547,7 +18612,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "convert_din1"
-	      SID		      "539:18"
+	      SID		      "577:18"
 	      Ports		      [1, 1]
 	      Position		      [255, 233, 290, 257]
 	      ZOrder		      -6
@@ -18587,7 +18652,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "convert_we"
-	      SID		      "539:19"
+	      SID		      "577:19"
 	      Ports		      [1, 1]
 	      Position		      [255, 278, 290, 302]
 	      ZOrder		      -7
@@ -18627,7 +18692,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_data_addr"
-	      SID		      "539:50"
+	      SID		      "577:50"
 	      Ports		      [1, 1]
 	      Position		      [425, 189, 480, 211]
 	      ZOrder		      -11
@@ -18666,7 +18731,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_data_data_in"
-	      SID		      "539:51"
+	      SID		      "577:51"
 	      Ports		      [1, 1]
 	      Position		      [425, 234, 480, 256]
 	      ZOrder		      -12
@@ -18705,7 +18770,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_data_data_out"
-	      SID		      "539:52"
+	      SID		      "577:52"
 	      Ports		      [1, 1]
 	      Position		      [735, 235, 790, 255]
 	      ZOrder		      -13
@@ -18755,7 +18820,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_data_we"
-	      SID		      "539:53"
+	      SID		      "577:53"
 	      Ports		      [1, 1]
 	      Position		      [425, 279, 480, 301]
 	      ZOrder		      -14
@@ -18794,7 +18859,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "mem"
-	      SID		      "539:20"
+	      SID		      "577:20"
 	      Ports		      [3, 1]
 	      Position		      [565, 179, 640, 311]
 	      ZOrder		      -8
@@ -18823,7 +18888,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "In1"
-		  SID			  "539:21"
+		  SID			  "577:21"
 		  Position		  [45, 153, 75, 167]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -18831,7 +18896,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "In2"
-		  SID			  "539:22"
+		  SID			  "577:22"
 		  Position		  [45, 193, 75, 207]
 		  ZOrder		  -2
 		  Port			  "2"
@@ -18840,7 +18905,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "In3"
-		  SID			  "539:23"
+		  SID			  "577:23"
 		  Position		  [45, 233, 75, 247]
 		  ZOrder		  -3
 		  Port			  "3"
@@ -18849,7 +18914,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "Disregard Subsystem"
-		  SID			  "539:24"
+		  SID			  "577:24"
 		  Tag			  "discardX"
 		  Ports			  []
 		  Position		  [44, 20, 95, 70]
@@ -18875,7 +18940,7 @@ Model {
 		Block {
 		  BlockType		  SubSystem
 		  Name			  "calc_add"
-		  SID			  "539:25"
+		  SID			  "577:25"
 		  Ports			  [1, 1]
 		  Position		  [225, 150, 265, 170]
 		  ZOrder		  -5
@@ -18935,7 +19000,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "in"
-		    SID			    "539:26"
+		    SID			    "577:26"
 		    Position		    [15, 253, 45, 267]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -18943,7 +19008,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "add_sub"
-		    SID			    "539:27"
+		    SID			    "577:27"
 		    Ports		    [2, 1]
 		    Position		    [250, 201, 285, 279]
 		    ZOrder		    -2
@@ -18984,7 +19049,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "concat"
-		    SID			    "539:28"
+		    SID			    "577:28"
 		    Ports		    [2, 1]
 		    Position		    [340, 150, 360, 270]
 		    ZOrder		    -3
@@ -19012,7 +19077,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "const"
-		    SID			    "539:29"
+		    SID			    "577:29"
 		    Ports		    [0, 1]
 		    Position		    [175, 211, 195, 229]
 		    ZOrder		    -4
@@ -19057,7 +19122,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "convert_addr"
-		    SID			    "539:30"
+		    SID			    "577:30"
 		    Ports		    [1, 1]
 		    Position		    [80, 248, 115, 272]
 		    ZOrder		    -5
@@ -19097,7 +19162,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "lsw"
-		    SID			    "539:31"
+		    SID			    "577:31"
 		    Ports		    [1, 1]
 		    Position		    [170, 249, 200, 271]
 		    ZOrder		    -6
@@ -19131,7 +19196,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "manipulate"
-		    SID			    "539:32"
+		    SID			    "577:32"
 		    Ports		    [0, 1]
 		    Position		    [350, 71, 370, 89]
 		    ZOrder		    -7
@@ -19176,7 +19241,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "msw"
-		    SID			    "539:33"
+		    SID			    "577:33"
 		    Ports		    [1, 1]
 		    Position		    [165, 169, 195, 191]
 		    ZOrder		    -8
@@ -19210,7 +19275,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "mux"
-		    SID			    "539:34"
+		    SID			    "577:34"
 		    Ports		    [3, 1]
 		    Position		    [420, 46, 445, 244]
 		    ZOrder		    -9
@@ -19247,7 +19312,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "out"
-		    SID			    "539:35"
+		    SID			    "577:35"
 		    Position		    [505, 138, 535, 152]
 		    ZOrder		    -10
 		    IconDisplay		    "Port number"
@@ -19322,12 +19387,12 @@ Model {
 		    DstPort		    1
 		    }
 		    Annotation {
-		    SID			    "539:37"
+		    SID			    "577:37"
 		    Name		    "Use behavioural HDL\nso that gets optimised \nto minimum logic"
 		    Position		    [232, 322]
 		    }
 		    Annotation {
-		    SID			    "539:36"
+		    SID			    "577:36"
 		    Name		    "If reading/writing words\nsmaller than 32 bits,\nchange address so\nthat addressing is\nbig endian in"
 		    "stead of\nlittle, otherwise\npass through"
 		    Position		    [235, 77]
@@ -19337,7 +19402,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "ram"
-		  SID			  "539:38"
+		  SID			  "577:38"
 		  Ports			  [3, 1]
 		  Position		  [340, 143, 400, 257]
 		  ZOrder		  -6
@@ -19373,7 +19438,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "sim_addr"
-		  SID			  "539:39"
+		  SID			  "577:39"
 		  Ports			  [1, 1]
 		  Position		  [110, 150, 165, 170]
 		  ZOrder		  -7
@@ -19421,7 +19486,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "sim_data_in"
-		  SID			  "539:40"
+		  SID			  "577:40"
 		  Ports			  [1, 1]
 		  Position		  [110, 190, 165, 210]
 		  ZOrder		  -8
@@ -19470,7 +19535,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "sim_data_out"
-		  SID			  "539:41"
+		  SID			  "577:41"
 		  Ports			  [1, 1]
 		  Position		  [560, 189, 615, 211]
 		  ZOrder		  -9
@@ -19508,7 +19573,7 @@ Model {
 		Block {
 		  BlockType		  SubSystem
 		  Name			  "sim_munge_in"
-		  SID			  "539:42"
+		  SID			  "577:42"
 		  Ports			  [1, 1]
 		  Position		  [225, 186, 265, 214]
 		  ZOrder		  -10
@@ -19603,7 +19668,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "din"
-		    SID			    "539:42:1"
+		    SID			    "577:42:1"
 		    Position		    [40, 40, 70, 60]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -19611,7 +19676,7 @@ Model {
 		    Block {
 		    BlockType		    SubSystem
 		    Name		    "join"
-		    SID			    "539:42:6"
+		    SID			    "577:42:6"
 		    Ports		    [2, 1]
 		    Position		    [550, 10, 630, 70]
 		    ZOrder		    3
@@ -19662,7 +19727,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "in1"
-		    SID			    "539:42:6:2"
+		    SID			    "577:42:6:2"
 		    Position		    [100, 100, 150, 120]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -19670,7 +19735,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "in2"
-		    SID			    "539:42:6:3"
+		    SID			    "577:42:6:3"
 		    Position		    [100, 140, 150, 160]
 		    ZOrder		    -2
 		    Port		    "2"
@@ -19679,7 +19744,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "concatenate"
-		    SID			    "539:42:6:4"
+		    SID			    "577:42:6:4"
 		    Ports		    [2, 1]
 		    Position		    [500, 100, 550, 160]
 		    ZOrder		    -3
@@ -19707,7 +19772,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret1"
-		    SID			    "539:42:6:5"
+		    SID			    "577:42:6:5"
 		    Ports		    [1, 1]
 		    Position		    [300, 100, 350, 120]
 		    ZOrder		    -4
@@ -19739,7 +19804,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret2"
-		    SID			    "539:42:6:6"
+		    SID			    "577:42:6:6"
 		    Ports		    [1, 1]
 		    Position		    [300, 140, 350, 160]
 		    ZOrder		    -5
@@ -19771,7 +19836,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "bus_out"
-		    SID			    "539:42:6:7"
+		    SID			    "577:42:6:7"
 		    Position		    [700, 130, 750, 150]
 		    ZOrder		    -6
 		    IconDisplay		    "Port number"
@@ -19814,7 +19879,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret"
-		    SID			    "539:42:4"
+		    SID			    "577:42:4"
 		    Ports		    [1, 1]
 		    Position		    [95, 42, 160, 58]
 		    ZOrder		    1
@@ -19845,7 +19910,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret_out"
-		    SID			    "539:42:2"
+		    SID			    "577:42:2"
 		    Ports		    [1, 1]
 		    Position		    [655, 40, 710, 60]
 		    ZOrder		    -2
@@ -19876,7 +19941,7 @@ Model {
 		    Block {
 		    BlockType		    SubSystem
 		    Name		    "split"
-		    SID			    "539:42:5"
+		    SID			    "577:42:5"
 		    Ports		    [1, 2]
 		    Position		    [190, 10, 270, 70]
 		    ZOrder		    2
@@ -20012,7 +20077,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "bus_in"
-		    SID			    "539:42:5:9"
+		    SID			    "577:42:5:9"
 		    Position		    [100, 100, 150, 120]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -20020,7 +20085,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret1"
-		    SID			    "539:42:5:10"
+		    SID			    "577:42:5:10"
 		    Ports		    [1, 1]
 		    Position		    [500, 140, 550, 160]
 		    ZOrder		    -2
@@ -20051,7 +20116,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret2"
-		    SID			    "539:42:5:11"
+		    SID			    "577:42:5:11"
 		    Ports		    [1, 1]
 		    Position		    [500, 100, 550, 120]
 		    ZOrder		    -3
@@ -20082,7 +20147,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "slice1"
-		    SID			    "539:42:5:12"
+		    SID			    "577:42:5:12"
 		    Ports		    [1, 1]
 		    Position		    [300, 140, 350, 160]
 		    ZOrder		    -4
@@ -20115,7 +20180,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "slice2"
-		    SID			    "539:42:5:13"
+		    SID			    "577:42:5:13"
 		    Ports		    [1, 1]
 		    Position		    [300, 100, 350, 120]
 		    ZOrder		    -5
@@ -20148,7 +20213,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "msb_out2"
-		    SID			    "539:42:5:14"
+		    SID			    "577:42:5:14"
 		    Position		    [700, 100, 750, 120]
 		    ZOrder		    -6
 		    IconDisplay		    "Port number"
@@ -20156,7 +20221,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "lsb_out1"
-		    SID			    "539:42:5:15"
+		    SID			    "577:42:5:15"
 		    Position		    [700, 140, 750, 160]
 		    ZOrder		    -7
 		    Port		    "2"
@@ -20204,7 +20269,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "dout"
-		    SID			    "539:42:3"
+		    SID			    "577:42:3"
 		    Position		    [780, 40, 810, 60]
 		    ZOrder		    -3
 		    IconDisplay		    "Port number"
@@ -20250,7 +20315,7 @@ Model {
 		Block {
 		  BlockType		  SubSystem
 		  Name			  "sim_munge_out"
-		  SID			  "539:43"
+		  SID			  "577:43"
 		  Ports			  [1, 1]
 		  Position		  [460, 186, 500, 214]
 		  ZOrder		  -11
@@ -20345,7 +20410,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "din"
-		    SID			    "539:43:1"
+		    SID			    "577:43:1"
 		    Position		    [40, 40, 70, 60]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -20353,7 +20418,7 @@ Model {
 		    Block {
 		    BlockType		    SubSystem
 		    Name		    "join"
-		    SID			    "539:43:6"
+		    SID			    "577:43:6"
 		    Ports		    [2, 1]
 		    Position		    [550, 10, 630, 70]
 		    ZOrder		    3
@@ -20404,7 +20469,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "in1"
-		    SID			    "539:43:6:2"
+		    SID			    "577:43:6:2"
 		    Position		    [100, 100, 150, 120]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -20412,7 +20477,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "in2"
-		    SID			    "539:43:6:3"
+		    SID			    "577:43:6:3"
 		    Position		    [100, 140, 150, 160]
 		    ZOrder		    -2
 		    Port		    "2"
@@ -20421,7 +20486,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "concatenate"
-		    SID			    "539:43:6:4"
+		    SID			    "577:43:6:4"
 		    Ports		    [2, 1]
 		    Position		    [500, 100, 550, 160]
 		    ZOrder		    -3
@@ -20449,7 +20514,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret1"
-		    SID			    "539:43:6:5"
+		    SID			    "577:43:6:5"
 		    Ports		    [1, 1]
 		    Position		    [300, 100, 350, 120]
 		    ZOrder		    -4
@@ -20481,7 +20546,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret2"
-		    SID			    "539:43:6:6"
+		    SID			    "577:43:6:6"
 		    Ports		    [1, 1]
 		    Position		    [300, 140, 350, 160]
 		    ZOrder		    -5
@@ -20513,7 +20578,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "bus_out"
-		    SID			    "539:43:6:7"
+		    SID			    "577:43:6:7"
 		    Position		    [700, 130, 750, 150]
 		    ZOrder		    -6
 		    IconDisplay		    "Port number"
@@ -20556,7 +20621,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret"
-		    SID			    "539:43:4"
+		    SID			    "577:43:4"
 		    Ports		    [1, 1]
 		    Position		    [95, 42, 160, 58]
 		    ZOrder		    1
@@ -20587,7 +20652,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret_out"
-		    SID			    "539:43:2"
+		    SID			    "577:43:2"
 		    Ports		    [1, 1]
 		    Position		    [655, 40, 710, 60]
 		    ZOrder		    -2
@@ -20618,7 +20683,7 @@ Model {
 		    Block {
 		    BlockType		    SubSystem
 		    Name		    "split"
-		    SID			    "539:43:5"
+		    SID			    "577:43:5"
 		    Ports		    [1, 2]
 		    Position		    [190, 10, 270, 70]
 		    ZOrder		    2
@@ -20754,7 +20819,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "bus_in"
-		    SID			    "539:43:5:9"
+		    SID			    "577:43:5:9"
 		    Position		    [100, 100, 150, 120]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -20762,7 +20827,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret1"
-		    SID			    "539:43:5:10"
+		    SID			    "577:43:5:10"
 		    Ports		    [1, 1]
 		    Position		    [500, 140, 550, 160]
 		    ZOrder		    -2
@@ -20793,7 +20858,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret2"
-		    SID			    "539:43:5:11"
+		    SID			    "577:43:5:11"
 		    Ports		    [1, 1]
 		    Position		    [500, 100, 550, 120]
 		    ZOrder		    -3
@@ -20824,7 +20889,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "slice1"
-		    SID			    "539:43:5:12"
+		    SID			    "577:43:5:12"
 		    Ports		    [1, 1]
 		    Position		    [300, 140, 350, 160]
 		    ZOrder		    -4
@@ -20857,7 +20922,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "slice2"
-		    SID			    "539:43:5:13"
+		    SID			    "577:43:5:13"
 		    Ports		    [1, 1]
 		    Position		    [300, 100, 350, 120]
 		    ZOrder		    -5
@@ -20890,7 +20955,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "msb_out2"
-		    SID			    "539:43:5:14"
+		    SID			    "577:43:5:14"
 		    Position		    [700, 100, 750, 120]
 		    ZOrder		    -6
 		    IconDisplay		    "Port number"
@@ -20898,7 +20963,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "lsb_out1"
-		    SID			    "539:43:5:15"
+		    SID			    "577:43:5:15"
 		    Position		    [700, 140, 750, 160]
 		    ZOrder		    -7
 		    Port		    "2"
@@ -20946,7 +21011,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "dout"
-		    SID			    "539:43:3"
+		    SID			    "577:43:3"
 		    Position		    [780, 40, 810, 60]
 		    ZOrder		    -3
 		    IconDisplay		    "Port number"
@@ -20992,7 +21057,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "sim_we"
-		  SID			  "539:44"
+		  SID			  "577:44"
 		  Ports			  [1, 1]
 		  Position		  [110, 230, 165, 250]
 		  ZOrder		  -12
@@ -21040,7 +21105,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out1"
-		  SID			  "539:45"
+		  SID			  "577:45"
 		  Position		  [665, 193, 695, 207]
 		  ZOrder		  -13
 		  IconDisplay		  "Port number"
@@ -21112,12 +21177,12 @@ Model {
 		  DstPort		  2
 		}
 		Annotation {
-		  SID			  "539:47"
+		  SID			  "577:47"
 		  Name			  "Undo data manipulation on way in and redo on way out for simulated data"
 		  Position		  [372, 308]
 		}
 		Annotation {
-		  SID			  "539:46"
+		  SID			  "577:46"
 		  Name			  "Undo address \nmanipulation for\nsimulated data"
 		  Position		  [244, 114]
 		}
@@ -21126,7 +21191,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "munge_in"
-	      SID		      "539:48"
+	      SID		      "577:48"
 	      Ports		      [1, 1]
 	      Position		      [130, 231, 170, 259]
 	      ZOrder		      -9
@@ -21221,7 +21286,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "din"
-		  SID			  "539:48:1"
+		  SID			  "577:48:1"
 		  Position		  [40, 40, 70, 60]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -21229,7 +21294,7 @@ Model {
 		Block {
 		  BlockType		  SubSystem
 		  Name			  "join"
-		  SID			  "539:48:6"
+		  SID			  "577:48:6"
 		  Ports			  [2, 1]
 		  Position		  [550, 10, 630, 70]
 		  ZOrder		  3
@@ -21280,7 +21345,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "in1"
-		    SID			    "539:48:6:2"
+		    SID			    "577:48:6:2"
 		    Position		    [100, 100, 150, 120]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -21288,7 +21353,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "in2"
-		    SID			    "539:48:6:3"
+		    SID			    "577:48:6:3"
 		    Position		    [100, 140, 150, 160]
 		    ZOrder		    -2
 		    Port		    "2"
@@ -21297,7 +21362,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "concatenate"
-		    SID			    "539:48:6:4"
+		    SID			    "577:48:6:4"
 		    Ports		    [2, 1]
 		    Position		    [500, 100, 550, 160]
 		    ZOrder		    -3
@@ -21325,7 +21390,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret1"
-		    SID			    "539:48:6:5"
+		    SID			    "577:48:6:5"
 		    Ports		    [1, 1]
 		    Position		    [300, 100, 350, 120]
 		    ZOrder		    -4
@@ -21357,7 +21422,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret2"
-		    SID			    "539:48:6:6"
+		    SID			    "577:48:6:6"
 		    Ports		    [1, 1]
 		    Position		    [300, 140, 350, 160]
 		    ZOrder		    -5
@@ -21389,7 +21454,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "bus_out"
-		    SID			    "539:48:6:7"
+		    SID			    "577:48:6:7"
 		    Position		    [700, 130, 750, 150]
 		    ZOrder		    -6
 		    IconDisplay		    "Port number"
@@ -21432,7 +21497,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "reinterpret"
-		  SID			  "539:48:4"
+		  SID			  "577:48:4"
 		  Ports			  [1, 1]
 		  Position		  [95, 42, 160, 58]
 		  ZOrder		  1
@@ -21463,7 +21528,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "reinterpret_out"
-		  SID			  "539:48:2"
+		  SID			  "577:48:2"
 		  Ports			  [1, 1]
 		  Position		  [655, 40, 710, 60]
 		  ZOrder		  -2
@@ -21494,7 +21559,7 @@ Model {
 		Block {
 		  BlockType		  SubSystem
 		  Name			  "split"
-		  SID			  "539:48:5"
+		  SID			  "577:48:5"
 		  Ports			  [1, 2]
 		  Position		  [190, 10, 270, 70]
 		  ZOrder		  2
@@ -21630,7 +21695,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "bus_in"
-		    SID			    "539:48:5:9"
+		    SID			    "577:48:5:9"
 		    Position		    [100, 100, 150, 120]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -21638,7 +21703,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret1"
-		    SID			    "539:48:5:10"
+		    SID			    "577:48:5:10"
 		    Ports		    [1, 1]
 		    Position		    [500, 140, 550, 160]
 		    ZOrder		    -2
@@ -21669,7 +21734,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret2"
-		    SID			    "539:48:5:11"
+		    SID			    "577:48:5:11"
 		    Ports		    [1, 1]
 		    Position		    [500, 100, 550, 120]
 		    ZOrder		    -3
@@ -21700,7 +21765,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "slice1"
-		    SID			    "539:48:5:12"
+		    SID			    "577:48:5:12"
 		    Ports		    [1, 1]
 		    Position		    [300, 140, 350, 160]
 		    ZOrder		    -4
@@ -21733,7 +21798,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "slice2"
-		    SID			    "539:48:5:13"
+		    SID			    "577:48:5:13"
 		    Ports		    [1, 1]
 		    Position		    [300, 100, 350, 120]
 		    ZOrder		    -5
@@ -21766,7 +21831,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "msb_out2"
-		    SID			    "539:48:5:14"
+		    SID			    "577:48:5:14"
 		    Position		    [700, 100, 750, 120]
 		    ZOrder		    -6
 		    IconDisplay		    "Port number"
@@ -21774,7 +21839,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "lsb_out1"
-		    SID			    "539:48:5:15"
+		    SID			    "577:48:5:15"
 		    Position		    [700, 140, 750, 160]
 		    ZOrder		    -7
 		    Port		    "2"
@@ -21822,7 +21887,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "dout"
-		  SID			  "539:48:3"
+		  SID			  "577:48:3"
 		  Position		  [780, 40, 810, 60]
 		  ZOrder		  -3
 		  IconDisplay		  "Port number"
@@ -21868,7 +21933,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "munge_out"
-	      SID		      "539:49"
+	      SID		      "577:49"
 	      Ports		      [1, 1]
 	      Position		      [890, 231, 930, 259]
 	      ZOrder		      -10
@@ -21963,7 +22028,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "din"
-		  SID			  "539:49:1"
+		  SID			  "577:49:1"
 		  Position		  [40, 40, 70, 60]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -21971,7 +22036,7 @@ Model {
 		Block {
 		  BlockType		  SubSystem
 		  Name			  "join"
-		  SID			  "539:49:6"
+		  SID			  "577:49:6"
 		  Ports			  [2, 1]
 		  Position		  [550, 10, 630, 70]
 		  ZOrder		  3
@@ -22022,7 +22087,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "in1"
-		    SID			    "539:49:6:2"
+		    SID			    "577:49:6:2"
 		    Position		    [100, 100, 150, 120]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -22030,7 +22095,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "in2"
-		    SID			    "539:49:6:3"
+		    SID			    "577:49:6:3"
 		    Position		    [100, 140, 150, 160]
 		    ZOrder		    -2
 		    Port		    "2"
@@ -22039,7 +22104,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "concatenate"
-		    SID			    "539:49:6:4"
+		    SID			    "577:49:6:4"
 		    Ports		    [2, 1]
 		    Position		    [500, 100, 550, 160]
 		    ZOrder		    -3
@@ -22067,7 +22132,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret1"
-		    SID			    "539:49:6:5"
+		    SID			    "577:49:6:5"
 		    Ports		    [1, 1]
 		    Position		    [300, 100, 350, 120]
 		    ZOrder		    -4
@@ -22099,7 +22164,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret2"
-		    SID			    "539:49:6:6"
+		    SID			    "577:49:6:6"
 		    Ports		    [1, 1]
 		    Position		    [300, 140, 350, 160]
 		    ZOrder		    -5
@@ -22131,7 +22196,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "bus_out"
-		    SID			    "539:49:6:7"
+		    SID			    "577:49:6:7"
 		    Position		    [700, 130, 750, 150]
 		    ZOrder		    -6
 		    IconDisplay		    "Port number"
@@ -22174,7 +22239,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "reinterpret"
-		  SID			  "539:49:4"
+		  SID			  "577:49:4"
 		  Ports			  [1, 1]
 		  Position		  [95, 42, 160, 58]
 		  ZOrder		  1
@@ -22205,7 +22270,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "reinterpret_out"
-		  SID			  "539:49:2"
+		  SID			  "577:49:2"
 		  Ports			  [1, 1]
 		  Position		  [655, 40, 710, 60]
 		  ZOrder		  -2
@@ -22236,7 +22301,7 @@ Model {
 		Block {
 		  BlockType		  SubSystem
 		  Name			  "split"
-		  SID			  "539:49:5"
+		  SID			  "577:49:5"
 		  Ports			  [1, 2]
 		  Position		  [190, 10, 270, 70]
 		  ZOrder		  2
@@ -22372,7 +22437,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "bus_in"
-		    SID			    "539:49:5:9"
+		    SID			    "577:49:5:9"
 		    Position		    [100, 100, 150, 120]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -22380,7 +22445,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret1"
-		    SID			    "539:49:5:10"
+		    SID			    "577:49:5:10"
 		    Ports		    [1, 1]
 		    Position		    [500, 140, 550, 160]
 		    ZOrder		    -2
@@ -22411,7 +22476,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "reinterpret2"
-		    SID			    "539:49:5:11"
+		    SID			    "577:49:5:11"
 		    Ports		    [1, 1]
 		    Position		    [500, 100, 550, 120]
 		    ZOrder		    -3
@@ -22442,7 +22507,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "slice1"
-		    SID			    "539:49:5:12"
+		    SID			    "577:49:5:12"
 		    Ports		    [1, 1]
 		    Position		    [300, 140, 350, 160]
 		    ZOrder		    -4
@@ -22475,7 +22540,7 @@ Model {
 		    Block {
 		    BlockType		    Reference
 		    Name		    "slice2"
-		    SID			    "539:49:5:13"
+		    SID			    "577:49:5:13"
 		    Ports		    [1, 1]
 		    Position		    [300, 100, 350, 120]
 		    ZOrder		    -5
@@ -22508,7 +22573,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "msb_out2"
-		    SID			    "539:49:5:14"
+		    SID			    "577:49:5:14"
 		    Position		    [700, 100, 750, 120]
 		    ZOrder		    -6
 		    IconDisplay		    "Port number"
@@ -22516,7 +22581,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "lsb_out1"
-		    SID			    "539:49:5:15"
+		    SID			    "577:49:5:15"
 		    Position		    [700, 140, 750, 160]
 		    ZOrder		    -7
 		    Port		    "2"
@@ -22564,7 +22629,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "dout"
-		  SID			  "539:49:3"
+		  SID			  "577:49:3"
 		  Position		  [780, 40, 810, 60]
 		  ZOrder		  -3
 		  IconDisplay		  "Port number"
@@ -22610,7 +22675,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "data_out"
-	      SID		      "539:54"
+	      SID		      "577:54"
 	      Position		      [980, 238, 1010, 252]
 	      ZOrder		      -15
 	      IconDisplay	      "Port number"
@@ -22704,9 +22769,9 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "edge_detect"
-	  SID			  "540"
+	  SID			  "578"
 	  Ports			  [1, 1]
-	  Position		  [690, 140, 735, 160]
+	  Position		  [690, 130, 735, 150]
 	  ZOrder		  618
 	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
 	  ShowName		  off
@@ -22831,7 +22896,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "in"
-	      SID		      "540:1"
+	      SID		      "578:1"
 	      Position		      [50, 53, 80, 67]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -22839,7 +22904,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "Delay"
-	      SID		      "540:2"
+	      SID		      "578:2"
 	      Ports		      [1, 1]
 	      Position		      [180, 72, 225, 88]
 	      ZOrder		      -2
@@ -22873,7 +22938,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "Inverter"
-	      SID		      "540:3"
+	      SID		      "578:3"
 	      Ports		      [1, 1]
 	      Position		      [180, 52, 225, 68]
 	      ZOrder		      -3
@@ -22903,7 +22968,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "edge_op"
-	      SID		      "540:4"
+	      SID		      "578:4"
 	      Ports		      [2, 1]
 	      Position		      [275, 48, 320, 92]
 	      ZOrder		      -4
@@ -22938,7 +23003,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "out"
-	      SID		      "540:5"
+	      SID		      "578:5"
 	      Position		      [380, 63, 410, 77]
 	      ZOrder		      -5
 	      IconDisplay	      "Port number"
@@ -22981,10 +23046,10 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "length"
-	  SID			  "541"
+	  SID			  "579"
 	  Tag			  "xps:sw_reg"
 	  Ports			  [1, 1]
-	  Position		  [1165, 117, 1265, 143]
+	  Position		  [1165, 107, 1265, 133]
 	  ZOrder		  627
 	  BackgroundColor	  "[1.000000, 1.000000, 0.000000]"
 	  AttributesFormatString  "1output"
@@ -23132,11 +23197,11 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "102"
+	    SIDHighWatermark	    "117"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
-	      SID		      "541:1"
+	      SID		      "579:1"
 	      Position		      [100, 100, 150, 120]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -23144,10 +23209,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "541:101"
+	      SID		      "579:116"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      94
+	      ZOrder		      109
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -23182,10 +23247,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "541:99"
+	      SID		      "579:114"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      92
+	      ZOrder		      107
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -23221,10 +23286,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_length_user_data_in"
-	      SID		      "541:100"
+	      SID		      "579:115"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      93
+	      ZOrder		      108
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -23256,10 +23321,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "541:98"
+	      SID		      "579:113"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      91
+	      ZOrder		      106
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -23276,22 +23341,22 @@ Model {
 	      has_advanced_control    "0"
 	      sggui_pos		      "-1,-1,-1,-1"
 	      block_type	      "delay"
-	      sg_icon_stat	      "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
+	      sg_icon_stat	      "50,20,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
 	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0"
 	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[1"
 	      "2.22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.2"
 	      "2 12.22 12.22 10.22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.2"
 	      "2 ],[1 1 1 ]);\npatch([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931"
 	      " 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor"
-	      "('black');disp('z^{-0}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	      "('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
 	    }
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "541:102"
+	      SID		      "579:117"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      95
+	      ZOrder		      110
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -23319,7 +23384,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "sim_out"
-	      SID		      "541:7"
+	      SID		      "579:7"
 	      Position		      [1300, 100, 1350, 120]
 	      ZOrder		      -7
 	      IconDisplay	      "Port number"
@@ -23365,9 +23430,9 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "run_stop"
-	  SID			  "542"
-	  Ports			  [2, 2]
-	  Position		  [130, 150, 215, 225]
+	  SID			  "580"
+	  Ports			  [3, 2]
+	  Position		  [140, 133, 215, 237]
 	  ZOrder		  617
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
@@ -23391,7 +23456,7 @@ Model {
 	  }
 	  System {
 	    Name		    "run_stop"
-	    Location		    [268, 21, 1778, 819]
+	    Location		    [263, -3, 1783, 824]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -23406,27 +23471,36 @@ Model {
 	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
+	      Name		      "valid"
+	      SID		      "581"
+	      Position		      [20, 288, 50, 302]
+	      ZOrder		      599
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
 	      Name		      "arm"
-	      SID		      "543"
+	      SID		      "582"
 	      Position		      [20, 148, 50, 162]
 	      ZOrder		      589
+	      Port		      "2"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "eof"
-	      SID		      "544"
-	      Position		      [20, 268, 50, 282]
+	      SID		      "583"
+	      Position		      [20, 248, 50, 262]
 	      ZOrder		      590
-	      Port		      "2"
+	      Port		      "3"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Reference
 	      Name		      "Constant6"
-	      SID		      "545"
+	      SID		      "584"
 	      Ports		      [0, 1]
-	      Position		      [320, 86, 345, 104]
+	      Position		      [365, 86, 390, 104]
 	      ZOrder		      596
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
@@ -23466,9 +23540,9 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "Logical"
-	      SID		      "546"
+	      SID		      "585"
 	      Ports		      [2, 1]
-	      Position		      [485, 230, 540, 290]
+	      Position		      [530, 230, 585, 290]
 	      ZOrder		      597
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
@@ -23500,10 +23574,45 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Reference
+	      Name		      "Logical1"
+	      SID		      "586"
+	      Ports		      [2, 1]
+	      Position		      [125, 235, 180, 315]
+	      ZOrder		      600
+	      ShowName		      off
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Logical"
+	      SourceType	      "Xilinx Logical Block Block"
+	      logical_function	      "AND"
+	      inputs		      "2"
+	      en		      off
+	      latency		      "0"
+	      precision		      "Full"
+	      arith_type	      "Unsigned"
+	      n_bits		      "16"
+	      bin_pt		      "0"
+	      align_bp		      on
+	      dbl_ovrd		      off
+	      xl_use_area	      off
+	      xl_area		      "[0,0,0,0,0,0,0]"
+	      has_advanced_control    "0"
+	      sggui_pos		      "-1,-1,-1,-1"
+	      block_type	      "logical"
+	      sg_icon_stat	      "55,80,2,1,white,blue,0,83a4b621,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 55 55 0 0 ],[0 0 80 80 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 55 55 0 0 ],[0 0 80 80 0 ]);\npatch([11.425 21.54 28.54 35.54 42.54 28.54 18.425 11.425 ]"
+	      ",[47.77 47.77 54.77 47.77 54.77 54.77 54.77 47.77 ],[1 1 1 ]);\npatch([18.425 28.54 21.54 11.425 18.425 ],[40.7"
+	      "7 40.77 47.77 47.77 40.77 ],[0.931 0.946 0.973 ]);\npatch([11.425 21.54 28.54 18.425 11.425 ],[33.77 33.77 40.7"
+	      "7 40.77 33.77 ],[1 1 1 ]);\npatch([18.425 42.54 35.54 28.54 21.54 11.425 18.425 ],[26.77 26.77 33.77 26.77 33.7"
+	      "7 33.77 26.77 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin i"
+	      "con text');\n\n\n\ncolor('black');disp('and');\nfprintf('','COMMENT: end icon text');"
+	    }
+	    Block {
+	      BlockType		      Reference
 	      Name		      "capture"
-	      SID		      "547"
+	      SID		      "587"
 	      Ports		      [3, 1]
-	      Position		      [385, 79, 435, 181]
+	      Position		      [430, 79, 480, 181]
 	      ZOrder		      595
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Register"
@@ -23531,9 +23640,9 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "rungen"
-	      SID		      "548"
+	      SID		      "588"
 	      Ports		      [2, 1]
-	      Position		      [200, 146, 250, 184]
+	      Position		      [245, 146, 295, 184]
 	      ZOrder		      587
 	      LibraryVersion	      "1.42"
 	      SourceBlock	      "casper_library_misc/armed_trigger"
@@ -23548,16 +23657,16 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "capt_en"
-	      SID		      "549"
-	      Position		      [620, 122, 650, 138]
+	      SID		      "589"
+	      Position		      [665, 122, 695, 138]
 	      ZOrder		      592
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
 	      Name		      "rst"
-	      SID		      "550"
-	      Position		      [620, 27, 650, 43]
+	      SID		      "590"
+	      Position		      [665, 27, 695, 43]
 	      ZOrder		      598
 	      Port		      "2"
 	      IconDisplay	      "Port number"
@@ -23585,9 +23694,9 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      SrcBlock		      "eof"
+	      SrcBlock		      "Logical1"
 	      SrcPort		      1
-	      Points		      [118, 0]
+	      Points		      [33, 0]
 	      Branch {
 		DstBlock		"Logical"
 		DstPort			2
@@ -23625,15 +23734,27 @@ Model {
 	      DstBlock		      "capture"
 	      DstPort		      2
 	    }
+	    Line {
+	      SrcBlock		      "valid"
+	      SrcPort		      1
+	      DstBlock		      "Logical1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "eof"
+	      SrcPort		      1
+	      DstBlock		      "Logical1"
+	      DstPort		      1
+	    }
 	  }
 	}
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "src_ip"
-	  SID			  "551"
+	  SID			  "591"
 	  Tag			  "xps:sw_reg"
 	  Ports			  [1, 1]
-	  Position		  [920, 387, 1020, 413]
+	  Position		  [920, 392, 1020, 418]
 	  ZOrder		  622
 	  BackgroundColor	  "[1.000000, 1.000000, 0.000000]"
 	  AttributesFormatString  "1output"
@@ -23781,11 +23902,11 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "97"
+	    SIDHighWatermark	    "112"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
-	      SID		      "551:1"
+	      SID		      "591:1"
 	      Position		      [100, 100, 150, 120]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -23793,10 +23914,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "551:96"
+	      SID		      "591:111"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      89
+	      ZOrder		      104
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -23831,10 +23952,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "551:94"
+	      SID		      "591:109"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      87
+	      ZOrder		      102
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -23870,10 +23991,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_src_ip_user_data_in"
-	      SID		      "551:95"
+	      SID		      "591:110"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      88
+	      ZOrder		      103
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -23905,10 +24026,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "551:93"
+	      SID		      "591:108"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      86
+	      ZOrder		      101
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -23925,22 +24046,22 @@ Model {
 	      has_advanced_control    "0"
 	      sggui_pos		      "-1,-1,-1,-1"
 	      block_type	      "delay"
-	      sg_icon_stat	      "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
+	      sg_icon_stat	      "50,20,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
 	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0"
 	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[1"
 	      "2.22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.2"
 	      "2 12.22 12.22 10.22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.2"
 	      "2 ],[1 1 1 ]);\npatch([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931"
 	      " 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor"
-	      "('black');disp('z^{-0}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	      "('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
 	    }
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "551:97"
+	      SID		      "591:112"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      90
+	      ZOrder		      105
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -23968,7 +24089,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "sim_out"
-	      SID		      "551:7"
+	      SID		      "591:7"
 	      Position		      [1300, 100, 1350, 120]
 	      ZOrder		      -7
 	      IconDisplay	      "Port number"
@@ -24014,9 +24135,9 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "src_ip_reg"
-	  SID			  "552"
+	  SID			  "592"
 	  Ports			  [2, 1]
-	  Position		  [540, 381, 600, 414]
+	  Position		  [540, 386, 600, 419]
 	  ZOrder		  605
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Register"
@@ -24049,10 +24170,10 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "src_port"
-	  SID			  "553"
+	  SID			  "593"
 	  Tag			  "xps:sw_reg"
 	  Ports			  [1, 1]
-	  Position		  [920, 452, 1020, 478]
+	  Position		  [920, 457, 1020, 483]
 	  ZOrder		  623
 	  BackgroundColor	  "[1.000000, 1.000000, 0.000000]"
 	  AttributesFormatString  "1output"
@@ -24200,11 +24321,11 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "102"
+	    SIDHighWatermark	    "117"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
-	      SID		      "553:1"
+	      SID		      "593:1"
 	      Position		      [100, 100, 150, 120]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -24212,10 +24333,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "553:101"
+	      SID		      "593:116"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      94
+	      ZOrder		      109
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -24250,10 +24371,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "553:99"
+	      SID		      "593:114"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      92
+	      ZOrder		      107
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -24289,10 +24410,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_pcap0_src_port_user_data_in"
-	      SID		      "553:100"
+	      SID		      "593:115"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      93
+	      ZOrder		      108
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -24324,10 +24445,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "553:98"
+	      SID		      "593:113"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      91
+	      ZOrder		      106
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -24344,22 +24465,22 @@ Model {
 	      has_advanced_control    "0"
 	      sggui_pos		      "-1,-1,-1,-1"
 	      block_type	      "delay"
-	      sg_icon_stat	      "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
+	      sg_icon_stat	      "50,20,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
 	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0"
 	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[1"
 	      "2.22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.2"
 	      "2 12.22 12.22 10.22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.2"
 	      "2 ],[1 1 1 ]);\npatch([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931"
 	      " 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor"
-	      "('black');disp('z^{-0}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	      "('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
 	    }
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "553:102"
+	      SID		      "593:117"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      95
+	      ZOrder		      110
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -24387,7 +24508,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "sim_out"
-	      SID		      "553:7"
+	      SID		      "593:7"
 	      Position		      [1300, 100, 1350, 120]
 	      ZOrder		      -7
 	      IconDisplay	      "Port number"
@@ -24433,9 +24554,9 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "src_port_reg"
-	  SID			  "554"
+	  SID			  "594"
 	  Ports			  [2, 1]
-	  Position		  [540, 446, 600, 479]
+	  Position		  [540, 451, 600, 484]
 	  ZOrder		  606
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Register"
@@ -24468,9 +24589,9 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "we"
-	  SID			  "555"
+	  SID			  "595"
 	  Ports			  [2, 1]
-	  Position		  [315, 104, 365, 191]
+	  Position		  [315, 92, 365, 183]
 	  ZOrder		  596
 	  NamePlacement		  "alternate"
 	  LibraryVersion	  "1.2"
@@ -24491,12 +24612,12 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "logical"
-	  sg_icon_stat		  "50,87,2,1,white,blue,0,83a4b621,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 87 87 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 87 87 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],[50.77 50.77 "
-	  "57.77 50.77 57.77 57.77 57.77 50.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[43.77 43.77 50.77 50.77"
-	  " 43.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[36.77 36.77 43.77 43.77 36.77 ],[1 1 1 ])"
-	  ";\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[29.77 29.77 36.77 29.77 36.77 36.77 29.77 ],[0.931 0.946 0"
+	  sg_icon_stat		  "50,91,2,1,white,blue,0,83a4b621,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 91 91 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 50 50 0 0 ],[0 0 91 91 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],[52.77 52.77 "
+	  "59.77 52.77 59.77 59.77 59.77 52.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[45.77 45.77 52.77 52.77"
+	  " 45.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[38.77 38.77 45.77 45.77 38.77 ],[1 1 1 ])"
+	  ";\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[31.77 31.77 38.77 31.77 38.77 38.77 31.77 ],[0.931 0.946 0"
 	  ".973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\n\ncolor('black');"
 	  "disp('and');\nfprintf('','COMMENT: end icon text');"
 	  Port {
@@ -24517,21 +24638,25 @@ Model {
 	Line {
 	  SrcBlock		  "valid"
 	  SrcPort		  1
-	  DstBlock		  "we"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "we"
-	  Labels		  [2, 1]
-	  SrcBlock		  "we"
-	  SrcPort		  1
-	  Points		  [0, 0; 81, 0]
+	  Points		  [40, 0]
 	  Branch {
-	    DstBlock		    "edge_detect"
+	    Points		    [0, 35]
+	    DstBlock		    "run_stop"
 	    DstPort		    1
 	  }
 	  Branch {
-	    Points		    [0, 85]
+	    DstBlock		    "we"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "we"
+	  Labels		  [1, 1]
+	  SrcBlock		  "we"
+	  SrcPort		  1
+	  Points		  [81, 0]
+	  Branch {
+	    Points		    [0, 100]
 	    Branch {
 	      Points		      [0, 95]
 	      Branch {
@@ -24557,6 +24682,10 @@ Model {
 	      DstPort		      2
 	    }
 	  }
+	  Branch {
+	    DstBlock		    "edge_detect"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  Name			  "addr"
@@ -24564,7 +24693,7 @@ Model {
 	  SrcPort		  1
 	  Points		  [27, 0]
 	  Branch {
-	    Points		    [0, -110]
+	    Points		    [0, -125]
 	    DstBlock		    "Delay"
 	    DstPort		    1
 	  }
@@ -24631,13 +24760,13 @@ Model {
 	  SrcPort		  2
 	  Points		  [277, 0]
 	  Branch {
-	    DstBlock		    "addr"
-	    DstPort		    1
-	  }
-	  Branch {
-	    Points		    [0, -75]
+	    Points		    [0, -90]
 	    DstBlock		    "Register"
 	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "addr"
+	    DstPort		    1
 	  }
 	}
 	Line {
@@ -24646,7 +24775,7 @@ Model {
 	  SrcBlock		  "arm"
 	  SrcPort		  1
 	  DstBlock		  "run_stop"
-	  DstPort		  1
+	  DstPort		  2
 	}
 	Line {
 	  Name			  "eof"
@@ -24654,7 +24783,7 @@ Model {
 	  SrcBlock		  "eof"
 	  SrcPort		  1
 	  DstBlock		  "run_stop"
-	  DstPort		  2
+	  DstPort		  3
 	}
 	Line {
 	  SrcBlock		  "Delay"
@@ -24706,14 +24835,14 @@ Model {
 	  DstPort		  1
 	}
 	Annotation {
-	  SID			  "557"
+	  SID			  "597"
 	  Name			  "length is number of 32-bit words"
-	  Position		  [1167, 79]
+	  Position		  [1167, 84]
 	}
 	Annotation {
-	  SID			  "556"
+	  SID			  "596"
 	  Name			  "First EOF after arming starts the capture\nSecond EOF after arming stops the capture"
-	  Position		  [78, 66]
+	  Position		  [78, 76]
 	  HorizontalAlignment	  "left"
 	}
       }
@@ -24989,7 +25118,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"247"
+	SIDHighWatermark	"267"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -25002,10 +25131,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "236:246"
+	  SID			  "236:266"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  239
+	  ZOrder		  259
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -25040,10 +25169,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "236:244"
+	  SID			  "236:264"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  237
+	  ZOrder		  257
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -25078,10 +25207,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_bad_frame0_user_data_in"
-	  SID			  "236:245"
+	  SID			  "236:265"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  238
+	  ZOrder		  258
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -25113,10 +25242,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "236:243"
+	  SID			  "236:263"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  236
+	  ZOrder		  256
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -25132,22 +25261,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "236:247"
+	  SID			  "236:267"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  240
+	  ZOrder		  260
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -25373,7 +25502,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"247"
+	SIDHighWatermark	"262"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -25386,10 +25515,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "410:246"
+	  SID			  "410:261"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  239
+	  ZOrder		  254
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -25424,10 +25553,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "410:244"
+	  SID			  "410:259"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  237
+	  ZOrder		  252
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -25462,10 +25591,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_bad_frame1_user_data_in"
-	  SID			  "410:245"
+	  SID			  "410:260"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  238
+	  ZOrder		  253
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -25497,10 +25626,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "410:243"
+	  SID			  "410:258"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  236
+	  ZOrder		  251
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -25516,22 +25645,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "410:247"
+	  SID			  "410:262"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  240
+	  ZOrder		  255
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -25757,7 +25886,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"247"
+	SIDHighWatermark	"262"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -25770,10 +25899,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "310:246"
+	  SID			  "310:261"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  239
+	  ZOrder		  254
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -25808,10 +25937,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "310:244"
+	  SID			  "310:259"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  237
+	  ZOrder		  252
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -25846,10 +25975,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_eof_count_fx0_user_data_in"
-	  SID			  "310:245"
+	  SID			  "310:260"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  238
+	  ZOrder		  253
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -25881,10 +26010,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "310:243"
+	  SID			  "310:258"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  236
+	  ZOrder		  251
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -25900,22 +26029,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "310:247"
+	  SID			  "310:262"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  240
+	  ZOrder		  255
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -26141,7 +26270,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"252"
+	SIDHighWatermark	"267"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -26154,10 +26283,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "411:251"
+	  SID			  "411:266"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  244
+	  ZOrder		  259
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -26192,10 +26321,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "411:249"
+	  SID			  "411:264"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  242
+	  ZOrder		  257
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -26230,10 +26359,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_eof_count_fx1_user_data_in"
-	  SID			  "411:250"
+	  SID			  "411:265"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  243
+	  ZOrder		  258
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -26265,10 +26394,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "411:248"
+	  SID			  "411:263"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  241
+	  ZOrder		  256
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -26284,22 +26413,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "411:252"
+	  SID			  "411:267"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  245
+	  ZOrder		  260
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -26525,7 +26654,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"257"
+	SIDHighWatermark	"272"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -26538,10 +26667,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "319:256"
+	  SID			  "319:271"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  249
+	  ZOrder		  264
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -26576,10 +26705,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "319:254"
+	  SID			  "319:269"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  247
+	  ZOrder		  262
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -26614,10 +26743,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_eof_regcount_fx0_user_data_in"
-	  SID			  "319:255"
+	  SID			  "319:270"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  248
+	  ZOrder		  263
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -26649,10 +26778,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "319:253"
+	  SID			  "319:268"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  246
+	  ZOrder		  261
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -26668,22 +26797,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "319:257"
+	  SID			  "319:272"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  250
+	  ZOrder		  265
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -26909,7 +27038,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"262"
+	SIDHighWatermark	"277"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -26922,10 +27051,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "412:261"
+	  SID			  "412:276"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  254
+	  ZOrder		  269
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -26960,10 +27089,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "412:259"
+	  SID			  "412:274"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  252
+	  ZOrder		  267
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -26998,10 +27127,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_eof_regcount_fx1_user_data_in"
-	  SID			  "412:260"
+	  SID			  "412:275"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  253
+	  ZOrder		  268
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -27033,10 +27162,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "412:258"
+	  SID			  "412:273"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  251
+	  ZOrder		  266
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -27052,22 +27181,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "412:262"
+	  SID			  "412:277"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  255
+	  ZOrder		  270
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -27293,7 +27422,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"237"
+	SIDHighWatermark	"252"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -27306,10 +27435,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "238:236"
+	  SID			  "238:251"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  229
+	  ZOrder		  244
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -27344,10 +27473,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "238:234"
+	  SID			  "238:249"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  227
+	  ZOrder		  242
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -27382,10 +27511,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_overrun_fx0_user_data_in"
-	  SID			  "238:235"
+	  SID			  "238:250"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  228
+	  ZOrder		  243
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -27417,10 +27546,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "238:233"
+	  SID			  "238:248"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  226
+	  ZOrder		  241
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -27436,22 +27565,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "238:237"
+	  SID			  "238:252"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  230
+	  ZOrder		  245
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -27677,7 +27806,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"247"
+	SIDHighWatermark	"262"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -27690,10 +27819,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "413:246"
+	  SID			  "413:261"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  239
+	  ZOrder		  254
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -27728,10 +27857,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "413:244"
+	  SID			  "413:259"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  237
+	  ZOrder		  252
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -27766,10 +27895,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_overrun_fx1_user_data_in"
-	  SID			  "413:245"
+	  SID			  "413:260"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  238
+	  ZOrder		  253
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -27801,10 +27930,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "413:243"
+	  SID			  "413:258"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  236
+	  ZOrder		  251
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -27820,22 +27949,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "413:247"
+	  SID			  "413:262"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  240
+	  ZOrder		  255
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -28061,7 +28190,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"237"
+	SIDHighWatermark	"252"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -28074,10 +28203,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "240:236"
+	  SID			  "240:251"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  229
+	  ZOrder		  244
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -28112,10 +28241,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "240:234"
+	  SID			  "240:249"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  227
+	  ZOrder		  242
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -28150,10 +28279,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_packet_count_fx0_user_data_in"
-	  SID			  "240:235"
+	  SID			  "240:250"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  228
+	  ZOrder		  243
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -28185,10 +28314,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "240:233"
+	  SID			  "240:248"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  226
+	  ZOrder		  241
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -28204,22 +28333,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "240:237"
+	  SID			  "240:252"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  230
+	  ZOrder		  245
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -28445,7 +28574,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"242"
+	SIDHighWatermark	"257"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -28458,10 +28587,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "414:241"
+	  SID			  "414:256"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  234
+	  ZOrder		  249
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -28496,10 +28625,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "414:239"
+	  SID			  "414:254"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  232
+	  ZOrder		  247
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -28534,10 +28663,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_packet_count_fx1_user_data_in"
-	  SID			  "414:240"
+	  SID			  "414:255"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  233
+	  ZOrder		  248
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -28569,10 +28698,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "414:238"
+	  SID			  "414:253"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  231
+	  ZOrder		  246
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -28588,22 +28717,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "414:242"
+	  SID			  "414:257"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  235
+	  ZOrder		  250
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -28829,7 +28958,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"247"
+	SIDHighWatermark	"262"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -28842,10 +28971,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "320:246"
+	  SID			  "320:261"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  239
+	  ZOrder		  254
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -28880,10 +29009,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "320:244"
+	  SID			  "320:259"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  237
+	  ZOrder		  252
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -28918,10 +29047,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_packet_regcount_fx0_user_data_in"
-	  SID			  "320:245"
+	  SID			  "320:260"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  238
+	  ZOrder		  253
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -28953,10 +29082,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "320:243"
+	  SID			  "320:258"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  236
+	  ZOrder		  251
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -28972,22 +29101,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "320:247"
+	  SID			  "320:262"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  240
+	  ZOrder		  255
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -29213,7 +29342,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"252"
+	SIDHighWatermark	"267"
 	SIDPrevWatermark	"12"
 	Block {
 	  BlockType		  Inport
@@ -29226,10 +29355,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "415:251"
+	  SID			  "415:266"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  244
+	  ZOrder		  259
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -29264,10 +29393,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "415:249"
+	  SID			  "415:264"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  242
+	  ZOrder		  257
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -29302,10 +29431,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "eovsa_fx_snoop_rx_packet_regcount_fx1_user_data_in"
-	  SID			  "415:250"
+	  SID			  "415:265"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  243
+	  ZOrder		  258
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -29337,10 +29466,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "415:248"
+	  SID			  "415:263"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  241
+	  ZOrder		  256
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -29356,22 +29485,22 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "delay"
-	  sg_icon_stat		  "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931 0.946 0.973 ]);\nfprint"
-	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-0}','tex"
-	  "mode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmo"
+	  "de','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "415:252"
+	  SID			  "415:267"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  245
+	  ZOrder		  260
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -29732,7 +29861,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "295"
+	    SIDHighWatermark	    "309"
 	    SIDPrevWatermark	    "12"
 	    Block {
 	      BlockType		      Inport
@@ -29745,10 +29874,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "eovsa_fx_snoop_swreg_rst_user_data_out"
-	      SID		      "334:289"
+	      SID		      "334:303"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      282
+	      ZOrder		      296
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway In"
 	      SourceType	      "Xilinx Gateway In Block"
@@ -29791,10 +29920,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "334:290"
+	      SID		      "334:304"
 	      Ports		      [1, 1]
 	      Position		      [1000, 100, 1050, 120]
-	      ZOrder		      283
+	      ZOrder		      297
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -29811,22 +29940,22 @@ Model {
 	      has_advanced_control    "0"
 	      sggui_pos		      "-1,-1,-1,-1"
 	      block_type	      "delay"
-	      sg_icon_stat	      "50,20,1,1,white,blue,0,24450e6f,right,,[ ],[ ]"
-	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 20 20 0 ],[0.77 0"
-	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 20 20 0 ]);\npatch([20.55 23.44 25.44 27.44 29.44 25.44 22.55 20.55 ],[1"
-	      "2.22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([22.55 25.44 23.44 20.55 22.55 ],[10.22 10.2"
-	      "2 12.22 12.22 10.22 ],[0.931 0.946 0.973 ]);\npatch([20.55 23.44 25.44 22.55 20.55 ],[8.22 8.22 10.22 10.22 8.2"
-	      "2 ],[1 1 1 ]);\npatch([22.55 29.44 27.44 25.44 23.44 20.55 22.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.931"
-	      " 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor"
-	      "('black');disp('z^{-0}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	      sg_icon_stat	      "60,56,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.8"
+	      "8 36.88 44.88 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.8"
+	      "8 36.88 28.88 ],[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1"
+	      " 1 1 ]);\npatch([20.2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0"
+	      ".946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('"
+	      "black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
 	    }
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "334:295"
+	      SID		      "334:309"
 	      Ports		      [1, 1]
 	      Position		      [1300, 100, 1350, 120]
-	      ZOrder		      288
+	      ZOrder		      302
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -29854,10 +29983,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "slice_reg"
-	      SID		      "334:294"
+	      SID		      "334:308"
 	      Ports		      [1, 1]
 	      Position		      [1100, 100, 1150, 120]
-	      ZOrder		      287
+	      ZOrder		      301
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Slice"
 	      SourceType	      "Xilinx Bit Slice Extractor Block"
