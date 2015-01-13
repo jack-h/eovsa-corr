@@ -1,0 +1,28 @@
+digraph g{
+  rankdir="LR";
+  label="Packet Buffer Read Controller State Diagrams"
+  labelloc="t"
+  edge[splines="curved"]
+
+  // Win 0 has data or not
+  subgraph W0 {
+    label=""
+    "W0=0" -> "W0=1" [label="wr0"];
+    "W0=1" -> "W0=0" [label="rd1",color=magenta];
+    "W0=1" -> "W0=0" [label="reset"];
+  }
+
+  // Main state machine
+  subgraph MAIN {
+    label=""
+    WAIT -> IDLE [label="start"];
+    IDLE -> IDLE [label="wr4(W0=0)",color=blue];
+    IDLE -> READ [label="wr4(W0=1)",color=blue];
+    READ -> IDLE [label="rdN(W0=0)",color=red];
+    READ -> READ [label="rdN(W0=1)",color=red];
+
+    // Reset to wait
+    IDLE -> WAIT [label="reset"];
+    READ -> WAIT [label="reset"];
+  }
+}
