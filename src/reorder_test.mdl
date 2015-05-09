@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.53"
+    ComputedModelVersion    "1.56"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -52,16 +52,16 @@ Model {
 	Dimension		4
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "96"
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1439.0, 738.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
+	  Offset		  [710.9407978951931, 3.4916500151157379]
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "824"
 	  Extents		  [1439.0, 738.0]
@@ -96,9 +96,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "davidm"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat May 09 17:11:13 2015"
+  LastModifiedDate	  "Sat May 09 18:02:29 2015"
   RTWModifiedTimeStamp	  352488245
-  ModelVersionFormat	  "1.%<AutoIncrement:53>"
+  ModelVersionFormat	  "1.%<AutoIncrement:56>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -873,7 +873,7 @@ Model {
   System {
     Name		    "reorder_test"
     Location		    [-17, -167, 1663, 748]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -886,7 +886,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "1108"
+    SIDHighWatermark	    "1115"
     Block {
       BlockType		      Reference
       Name		      " System Generator"
@@ -941,7 +941,7 @@ Model {
       Name		      "BitBasher"
       SID		      "518"
       Ports		      [1, 4]
-      Position		      [925, 326, 990, 419]
+      Position		      [925, 336, 990, 429]
       ZOrder		      528
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/BitBasher"
@@ -1010,7 +1010,7 @@ Model {
       Name		      "Concat"
       SID		      "517"
       Ports		      [4, 1]
-      Position		      [620, 357, 680, 433]
+      Position		      [620, 372, 680, 448]
       ZOrder		      527
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Concat"
@@ -1037,7 +1037,7 @@ Model {
       Name		      "Constant"
       SID		      "88"
       Ports		      [0, 1]
-      Position		      [115, 307, 170, 333]
+      Position		      [115, 322, 170, 348]
       ZOrder		      499
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1078,7 +1078,7 @@ Model {
       Name		      "Constant1"
       SID		      "91"
       Ports		      [0, 1]
-      Position		      [115, 212, 170, 238]
+      Position		      [115, 227, 170, 253]
       ZOrder		      502
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1119,7 +1119,7 @@ Model {
       Name		      "Constant2"
       SID		      "138"
       Ports		      [0, 1]
-      Position		      [640, 222, 695, 248]
+      Position		      [640, 237, 695, 263]
       ZOrder		      509
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1160,7 +1160,7 @@ Model {
       Name		      "Constant3"
       SID		      "139"
       Ports		      [0, 1]
-      Position		      [640, 192, 695, 218]
+      Position		      [640, 207, 695, 233]
       ZOrder		      510
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1530,7 +1530,7 @@ Model {
       BlockType		      From
       Name		      "From39"
       SID		      "1084"
-      Position		      [425, 376, 515, 394]
+      Position		      [425, 391, 515, 409]
       ZOrder		      576
       ShowName		      off
       CloseFcn		      "tagdialog Close"
@@ -1540,7 +1540,7 @@ Model {
       BlockType		      From
       Name		      "From40"
       SID		      "1085"
-      Position		      [425, 356, 515, 374]
+      Position		      [425, 371, 515, 389]
       ZOrder		      575
       ShowName		      off
       CloseFcn		      "tagdialog Close"
@@ -1550,7 +1550,7 @@ Model {
       BlockType		      From
       Name		      "From49"
       SID		      "1086"
-      Position		      [425, 416, 515, 434]
+      Position		      [425, 431, 515, 449]
       ZOrder		      574
       ShowName		      off
       CloseFcn		      "tagdialog Close"
@@ -1560,7 +1560,7 @@ Model {
       BlockType		      From
       Name		      "From50"
       SID		      "1087"
-      Position		      [425, 396, 515, 414]
+      Position		      [425, 411, 515, 429]
       ZOrder		      573
       ShowName		      off
       CloseFcn		      "tagdialog Close"
@@ -1571,7 +1571,7 @@ Model {
       Name		      "Gateway In"
       SID		      "89"
       Ports		      [1, 1]
-      Position		      [105, 250, 170, 270]
+      Position		      [105, 265, 170, 285]
       ZOrder		      500
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1617,7 +1617,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto10"
       SID		      "1088"
-      Position		      [565, 261, 680, 279]
+      Position		      [565, 276, 680, 294]
       ZOrder		      572
       ShowName		      off
       GotoTag		      "ant0_xport0"
@@ -1626,7 +1626,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto11"
       SID		      "1089"
-      Position		      [565, 291, 680, 309]
+      Position		      [565, 306, 680, 324]
       ZOrder		      571
       ShowName		      off
       GotoTag		      "ant0_xport1"
@@ -1635,7 +1635,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto12"
       SID		      "1090"
-      Position		      [560, 491, 685, 509]
+      Position		      [560, 506, 685, 524]
       ZOrder		      570
       ShowName		      off
       GotoTag		      "ant1_xport0"
@@ -1644,7 +1644,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto13"
       SID		      "1091"
-      Position		      [565, 521, 685, 539]
+      Position		      [565, 536, 685, 554]
       ZOrder		      569
       ShowName		      off
       GotoTag		      "ant1_xport1"
@@ -1654,7 +1654,7 @@ Model {
       Name		      "Pulse Generator"
       SID		      "90"
       Ports		      [0, 1]
-      Position		      [15, 244, 45, 276]
+      Position		      [15, 259, 45, 291]
       ZOrder		      501
       ShowName		      off
       Period		      "1e9"
@@ -1664,7 +1664,7 @@ Model {
       BlockType		      Terminator
       Name		      "Terminator"
       SID		      "519"
-      Position		      [1115, 330, 1125, 340]
+      Position		      [1115, 340, 1125, 350]
       ZOrder		      529
       ShowName		      off
     }
@@ -1680,7 +1680,7 @@ Model {
       BlockType		      Terminator
       Name		      "Terminator10"
       SID		      "520"
-      Position		      [1115, 355, 1125, 365]
+      Position		      [1115, 365, 1125, 375]
       ZOrder		      530
       ShowName		      off
     }
@@ -1688,7 +1688,7 @@ Model {
       BlockType		      Terminator
       Name		      "Terminator11"
       SID		      "521"
-      Position		      [1115, 380, 1125, 390]
+      Position		      [1115, 390, 1125, 400]
       ZOrder		      531
       ShowName		      off
     }
@@ -1696,7 +1696,7 @@ Model {
       BlockType		      Terminator
       Name		      "Terminator12"
       SID		      "522"
-      Position		      [1115, 405, 1125, 415]
+      Position		      [1115, 415, 1125, 425]
       ZOrder		      532
       ShowName		      off
     }
@@ -1704,7 +1704,7 @@ Model {
       BlockType		      Terminator
       Name		      "Terminator13"
       SID		      "523"
-      Position		      [505, 465, 515, 475]
+      Position		      [505, 480, 515, 490]
       ZOrder		      533
       ShowName		      off
     }
@@ -1786,14 +1786,6 @@ Model {
       SID		      "1081"
       Position		      [2110, 540, 2120, 550]
       ZOrder		      566
-      ShowName		      off
-    }
-    Block {
-      BlockType		      Terminator
-      Name		      "Terminator23"
-      SID		      "1104"
-      Position		      [1030, 230, 1040, 240]
-      ZOrder		      577
       ShowName		      off
     }
     Block {
@@ -1944,7 +1936,7 @@ Model {
       BlockType		      SubSystem
       Name		      "ct"
       SID		      "531"
-      Ports		      [3, 9]
+      Ports		      [4, 9]
       Position		      [1105, 17, 1260, 313]
       ZOrder		      534
       MinAlgLoopOccurrences   off
@@ -2036,7 +2028,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"100"
 	Block {
 	  BlockType		  Inport
 	  Name			  "new_acc"
@@ -2056,11 +2048,20 @@ Model {
 	}
 	Block {
 	  BlockType		  Inport
+	  Name			  "slot_0"
+	  SID			  "1112"
+	  Position		  [40, 298, 70, 312]
+	  ZOrder		  26
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
 	  Name			  "data_in"
 	  SID			  "534"
-	  Position		  [40, 293, 70, 307]
+	  Position		  [40, 363, 70, 377]
 	  ZOrder		  -3
-	  Port			  "3"
+	  Port			  "4"
 	  IconDisplay		  "Port number"
 	}
 	Block {
@@ -3405,38 +3406,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "Delay1"
-	  SID			  "567"
-	  Ports			  [2, 1]
-	  Position		  [3845, 582, 3890, 638]
-	  ZOrder		  -36
-	  LibraryVersion	  "1.2"
-	  SourceBlock		  "xbsIndex_r4/Delay"
-	  SourceType		  "Xilinx Delay Block"
-	  infoedit		  "Hardware notes: A delay line is a chain, each link of which is an SRL16 followed by a flip-flop."
-	  rst			  off
-	  infoeditControl	  "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
-	  en			  on
-	  latency		  "1"
-	  dbl_ovrd		  off
-	  reg_retiming		  on
-	  xl_use_area		  off
-	  xl_area		  "[0,0,0,0,0,0,0]"
-	  has_advanced_control	  "0"
-	  sggui_pos		  "-1,-1,-1,-1"
-	  block_type		  "delay"
-	  block_version		  "11.4"
-	  sg_icon_stat		  "45,56,2,1,white,blue,0,7c0ac154,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 45 45 0 0 ],[0 0 56 56 0 ]);\npatch([8.65 17.32 23.32 29.32 35.32 23.32 14.65 8.65 ],[34.66 34.66 40."
-	  "66 34.66 40.66 40.66 40.66 34.66 ],[1 1 1 ]);\npatch([14.65 23.32 17.32 8.65 14.65 ],[28.66 28.66 34.66 34.66 28.66"
-	  " ],[0.931 0.946 0.973 ]);\npatch([8.65 17.32 23.32 14.65 8.65 ],[22.66 22.66 28.66 28.66 22.66 ],[1 1 1 ]);\npatch("
-	  "[14.65 35.32 29.32 23.32 17.32 8.65 14.65 ],[16.66 16.66 22.66 16.66 22.66 22.66 16.66 ],[0.931 0.946 0.973 ]);\nfp"
-	  "rintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\ncolor('black');port_label('inpu"
-	  "t',2,'en');\n\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
-	}
-	Block {
-	  BlockType		  Reference
 	  Name			  "Delay10"
 	  SID			  "568"
 	  Ports			  [1, 1]
@@ -3581,7 +3550,7 @@ Model {
 	  rst			  off
 	  infoeditControl	  "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
 	  en			  off
-	  latency		  "1"
+	  latency		  "2"
 	  dbl_ovrd		  off
 	  reg_retiming		  on
 	  xl_use_area		  off
@@ -3590,13 +3559,13 @@ Model {
 	  sggui_pos		  "384,484,419,313"
 	  block_type		  "delay"
 	  block_version		  "11.4"
-	  sg_icon_stat		  "25,22,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	  sg_icon_stat		  "25,22,1,1,white,blue,0,85ce9542,right,,[ ],[ ]"
 	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 25 25 0 0 ],[0 0 22 22 0 ],[0.77 0.82 0.91"
 	  " ]);\nplot([0 25 25 0 0 ],[0 0 22 22 0 ]);\npatch([5.325 9.66 12.66 15.66 18.66 12.66 8.325 5.325 ],[14.33 14.33 17"
 	  ".33 14.33 17.33 17.33 17.33 14.33 ],[1 1 1 ]);\npatch([8.325 12.66 9.66 5.325 8.325 ],[11.33 11.33 14.33 14.33 11.3"
 	  "3 ],[0.931 0.946 0.973 ]);\npatch([5.325 9.66 12.66 8.325 5.325 ],[8.33 8.33 11.33 11.33 8.33 ],[1 1 1 ]);\npatch(["
 	  "8.325 18.66 15.66 12.66 9.66 5.325 8.325 ],[5.33 5.33 8.33 5.33 8.33 8.33 5.33 ],[0.931 0.946 0.973 ]);\nfprintf(''"
-	  ",'COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmode"
+	  ",'COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-2}','texmode"
 	  "','on');\nfprintf('','COMMENT: end icon text');\n"
 	}
 	Block {
@@ -3746,7 +3715,7 @@ Model {
 	  rst			  off
 	  infoeditControl	  "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
 	  en			  off
-	  latency		  "2"
+	  latency		  "1"
 	  dbl_ovrd		  off
 	  reg_retiming		  on
 	  xl_use_area		  off
@@ -3755,13 +3724,13 @@ Model {
 	  sggui_pos		  "384,484,419,313"
 	  block_type		  "delay"
 	  block_version		  "11.4"
-	  sg_icon_stat		  "25,22,1,1,white,blue,0,85ce9542,right,,[ ],[ ]"
+	  sg_icon_stat		  "25,22,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
 	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 25 25 0 0 ],[0 0 22 22 0 ],[0.77 0.82 0.91"
 	  " ]);\nplot([0 25 25 0 0 ],[0 0 22 22 0 ]);\npatch([5.325 9.66 12.66 15.66 18.66 12.66 8.325 5.325 ],[14.33 14.33 17"
 	  ".33 14.33 17.33 17.33 17.33 14.33 ],[1 1 1 ]);\npatch([8.325 12.66 9.66 5.325 8.325 ],[11.33 11.33 14.33 14.33 11.3"
 	  "3 ],[0.931 0.946 0.973 ]);\npatch([5.325 9.66 12.66 8.325 5.325 ],[8.33 8.33 11.33 11.33 8.33 ],[1 1 1 ]);\npatch(["
 	  "8.325 18.66 15.66 12.66 9.66 5.325 8.325 ],[5.33 5.33 8.33 5.33 8.33 8.33 5.33 ],[0.931 0.946 0.973 ]);\nfprintf(''"
-	  ",'COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-2}','texmode"
+	  ",'COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{-1}','texmode"
 	  "','on');\nfprintf('','COMMENT: end icon text');\n"
 	}
 	Block {
@@ -4792,6 +4761,16 @@ Model {
 	}
 	Block {
 	  BlockType		  From
+	  Name			  "From8"
+	  SID			  "1111"
+	  Position		  [3710, 558, 3785, 582]
+	  ZOrder		  25
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "slot_0"
+	}
+	Block {
+	  BlockType		  From
 	  Name			  "From9"
 	  SID			  "653"
 	  Position		  [3185, 738, 3260, 762]
@@ -5045,6 +5024,15 @@ Model {
 	}
 	Block {
 	  BlockType		  Goto
+	  Name			  "Goto34"
+	  SID			  "1113"
+	  Position		  [220, 297, 285, 313]
+	  ZOrder		  27
+	  ShowName		  off
+	  GotoTag		  "slot_0"
+	}
+	Block {
+	  BlockType		  Goto
 	  Name			  "Goto4"
 	  SID			  "681"
 	  Position		  [2750, 713, 2875, 737]
@@ -5083,7 +5071,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "Goto8"
 	  SID			  "685"
-	  Position		  [415, 290, 475, 310]
+	  Position		  [415, 360, 475, 380]
 	  ZOrder		  -154
 	  ShowName		  off
 	  GotoTag		  "data_in"
@@ -8263,6 +8251,17 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
+	  Name			  "armed_trigger"
+	  SID			  "1109"
+	  Ports			  [2, 1]
+	  Position		  [3940, 538, 3990, 662]
+	  ZOrder		  23
+	  LibraryVersion	  "1.42"
+	  SourceBlock		  "casper_library_misc/armed_trigger"
+	  SourceType		  "Armed Trigger"
+	}
+	Block {
+	  BlockType		  Reference
 	  Name			  "buffer"
 	  SID			  "785"
 	  Ports			  [6, 2]
@@ -8434,7 +8433,7 @@ Model {
 	  Name			  "delay"
 	  SID			  "789"
 	  Ports			  [1, 1]
-	  Position		  [245, 285, 275, 315]
+	  Position		  [245, 355, 275, 385]
 	  ZOrder		  -258
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
@@ -8498,7 +8497,7 @@ Model {
 	  Name			  "delay2"
 	  SID			  "791"
 	  Ports			  [1, 1]
-	  Position		  [140, 285, 170, 315]
+	  Position		  [140, 355, 170, 385]
 	  ZOrder		  -260
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
@@ -9358,9 +9357,10 @@ Model {
 	  Name			  "edge_detect2"
 	  SID			  "795"
 	  Ports			  [1, 1]
-	  Position		  [3950, 600, 3995, 620]
+	  Position		  [3845, 620, 3890, 640]
 	  ZOrder		  18
 	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
+	  ShowName		  off
 	  AttributesFormatString  "rising edges\nactive high"
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
@@ -9631,13 +9631,14 @@ Model {
 	}
 	Block {
 	  BlockType		  SubSystem
-	  Name			  "edge_detect6"
-	  SID			  "796"
+	  Name			  "edge_detect3"
+	  SID			  "1110"
 	  Ports			  [1, 1]
-	  Position		  [590, 835, 635, 855]
-	  ZOrder		  19
+	  Position		  [3845, 560, 3890, 580]
+	  ZOrder		  24
 	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
-	  AttributesFormatString  "rising edges\nactive high"
+	  ShowName		  off
+	  AttributesFormatString  "falling edges\nactive high"
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
@@ -9682,7 +9683,7 @@ Model {
 		}
 		Name			"edge"
 		Prompt			"Edge Type"
-		Value			"Rising"
+		Value			"Falling"
 		Evaluate		"off"
 	      }
 	      Object {
@@ -9729,6 +9730,282 @@ Model {
 	      }
 	      Object {
 		$ObjectID		61
+		Type			"edit"
+		Name			"y_out"
+		Prompt			"Output Y Positions"
+		Value			"[-1 -1  1  1 -1 -1 -1 -1 -1 -1]"
+		Evaluate		"off"
+		Visible			"off"
+	      }
+	      PropName		      "Parameters"
+	    }
+	  }
+	  System {
+	    Name		    "edge_detect3"
+	    Location		    [263, 45, 1111, 1385]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "5"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in"
+	      SID		      "1110:1"
+	      Position		      [50, 53, 80, 67]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Delay"
+	      SID		      "1110:2"
+	      Ports		      [1, 1]
+	      Position		      [180, 72, 225, 88]
+	      ZOrder		      -2
+	      ShowName		      off
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Delay"
+	      SourceType	      "Xilinx Delay Block"
+	      infoedit		      "Hardware notes: A delay line is a chain, each link of which is an SRL16 followed by a flip-flo"
+	      "p."
+	      rst		      off
+	      infoeditControl	      "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
+	      en		      off
+	      latency		      "1"
+	      dbl_ovrd		      off
+	      reg_retiming	      on
+	      xl_use_area	      off
+	      xl_area		      "[0, 0, 0, 0, 0, 0, 0]"
+	      has_advanced_control    "0"
+	      sggui_pos		      "-1,-1,-1,-1"
+	      block_type	      "delay"
+	      block_version	      "10.1.3"
+	      sg_icon_stat	      "45,16,1,1,white,blue,0,07b98262,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 16 16 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 45 45 0 0 ],[0 0 16 16 0 ]);\npatch([17.55 20.44 22.44 24.44 26.44 22.44 19.55 17.55 ],[1"
+	      "0.22 10.22 12.22 10.22 12.22 12.22 12.22 10.22 ],[1 1 1 ]);\npatch([19.55 22.44 20.44 17.55 19.55 ],[8.22 8.22 "
+	      "10.22 10.22 8.22 ],[0.931 0.946 0.973 ]);\npatch([17.55 20.44 22.44 19.55 17.55 ],[6.22 6.22 8.22 8.22 6.22 ],["
+	      "1 1 1 ]);\npatch([19.55 26.44 24.44 22.44 20.44 17.55 19.55 ],[4.22 4.22 6.22 4.22 6.22 6.22 4.22 ],[0.931 0.94"
+	      "6 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('bla"
+	      "ck');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Inverter"
+	      SID		      "1110:3"
+	      Ports		      [1, 1]
+	      Position		      [180, 52, 225, 68]
+	      ZOrder		      -3
+	      ShowName		      off
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Inverter"
+	      SourceType	      "Xilinx Inverter Block"
+	      infoedit		      "Bitwise logical negation (one's complement) operator."
+	      en		      off
+	      latency		      "0"
+	      dbl_ovrd		      off
+	      xl_use_area	      off
+	      xl_area		      "[0, 0, 0, 0, 0, 0, 0]"
+	      has_advanced_control    "0"
+	      sggui_pos		      "-1,-1,-1,-1"
+	      block_type	      "inv"
+	      block_version	      "10.1.3"
+	      sg_icon_stat	      "45,16,1,1,white,blue,0,267846e5,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 16 16 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 45 45 0 0 ],[0 0 16 16 0 ]);\npatch([17.55 20.44 22.44 24.44 26.44 22.44 19.55 17.55 ],[1"
+	      "0.22 10.22 12.22 10.22 12.22 12.22 12.22 10.22 ],[1 1 1 ]);\npatch([19.55 22.44 20.44 17.55 19.55 ],[8.22 8.22 "
+	      "10.22 10.22 8.22 ],[0.931 0.946 0.973 ]);\npatch([17.55 20.44 22.44 19.55 17.55 ],[6.22 6.22 8.22 8.22 6.22 ],["
+	      "1 1 1 ]);\npatch([19.55 26.44 24.44 22.44 20.44 17.55 19.55 ],[4.22 4.22 6.22 4.22 6.22 6.22 4.22 ],[0.931 0.94"
+	      "6 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('bla"
+	      "ck');disp('not');\nfprintf('','COMMENT: end icon text');"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "edge_op"
+	      SID		      "1110:4"
+	      Ports		      [2, 1]
+	      Position		      [275, 48, 320, 92]
+	      ZOrder		      -4
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Logical"
+	      SourceType	      "Xilinx Logical Block Block"
+	      logical_function	      "AND"
+	      inputs		      "2"
+	      en		      off
+	      latency		      "0"
+	      precision		      "Full"
+	      arith_type	      "Unsigned"
+	      n_bits		      "8"
+	      bin_pt		      "2"
+	      align_bp		      on
+	      dbl_ovrd		      off
+	      xl_use_area	      off
+	      xl_area		      "[0, 0, 0, 0, 0, 0, 0]"
+	      has_advanced_control    "0"
+	      sggui_pos		      "-1,-1,-1,-1"
+	      block_type	      "logical"
+	      block_version	      "10.1.3"
+	      sg_icon_stat	      "45,44,2,1,white,blue,0,83a4b621,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 44 44 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 45 45 0 0 ],[0 0 44 44 0 ]);\npatch([8.65 17.32 23.32 29.32 35.32 23.32 14.65 8.65 ],[28."
+	      "66 28.66 34.66 28.66 34.66 34.66 34.66 28.66 ],[1 1 1 ]);\npatch([14.65 23.32 17.32 8.65 14.65 ],[22.66 22.66 2"
+	      "8.66 28.66 22.66 ],[0.931 0.946 0.973 ]);\npatch([8.65 17.32 23.32 14.65 8.65 ],[16.66 16.66 22.66 22.66 16.66 "
+	      "],[1 1 1 ]);\npatch([14.65 35.32 29.32 23.32 17.32 8.65 14.65 ],[10.66 10.66 16.66 10.66 16.66 16.66 10.66 ],[0"
+	      ".931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\n\n"
+	      "color('black');disp('and');\nfprintf('','COMMENT: end icon text');"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out"
+	      SID		      "1110:5"
+	      Position		      [380, 63, 410, 77]
+	      ZOrder		      -5
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Delay"
+	      SrcPort		      1
+	      DstBlock		      "edge_op"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "in"
+	      SrcPort		      1
+	      Points		      [0, 0; 40, 0]
+	      Branch {
+		Points			[0, 20]
+		DstBlock		"Delay"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Inverter"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "edge_op"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "out"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Inverter"
+	      SrcPort		      1
+	      DstBlock		      "edge_op"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "edge_detect6"
+	  SID			  "796"
+	  Ports			  [1, 1]
+	  Position		  [590, 835, 635, 855]
+	  ZOrder		  19
+	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
+	  AttributesFormatString  "rising edges\nactive high"
+	  AncestorBlock		  "casper_library_misc/edge_detect"
+	  LibraryVersion	  "*1.42"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag7"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    62
+	    $ClassName		    "Simulink.Mask"
+	    Type		    "edge_detect"
+	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
+	    "oth)."
+	    Help		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling, or both). "
+	    " Latency is zero."
+	    Initialization	    "edge_detect_init(gcb,...\n    'edge',edge,...\n    'polarity',polarity,...\n    'x_in',x_in,."
+	    "..\n    'x_out',x_out,...\n    'y_in',y_in,...\n    'y_out',y_out);\n\nx_in_num=str2num(getfield(getfield(get_par"
+	    "am(gcb,'UserData'),'parameters'),'x_in'));\nx_out_num=str2num(getfield(getfield(get_param(gcb,'UserData'),'parame"
+	    "ters'),'x_out'));\ny_in_num=str2num(getfield(getfield(get_param(gcb,'UserData'),'parameters'),'y_in'));\ny_out_nu"
+	    "m=str2num(getfield(getfield(get_param(gcb,'UserData'),'parameters'),'y_out'));"
+	    SelfModifiable	    "on"
+	    Display		    "plot(x_in_num,0.5+y_in_num*0.2);\nplot(x_out_num,0.5+y_out_num*0.2);"
+	    IconUnits		    "normalized"
+	    Array {
+	      Type		      "Simulink.MaskParameter"
+	      Dimension		      6
+	      Object {
+		$ObjectID		63
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  3
+		  Cell			  "Rising"
+		  Cell			  "Falling"
+		  Cell			  "Both"
+		  PropName		  "TypeOptions"
+		}
+		Name			"edge"
+		Prompt			"Edge Type"
+		Value			"Rising"
+		Evaluate		"off"
+	      }
+	      Object {
+		$ObjectID		64
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  2
+		  Cell			  "Active High"
+		  Cell			  "Active Low"
+		  PropName		  "TypeOptions"
+		}
+		Name			"polarity"
+		Prompt			"Output Polarity"
+		Value			"Active High"
+		Evaluate		"off"
+	      }
+	      Object {
+		$ObjectID		65
+		Type			"edit"
+		Name			"x_in"
+		Prompt			"Input X Positions"
+		Value			"[0 0.08 0.08 0.16 0.16 0.24 0.24 0.32 0.32 0.4]"
+		Evaluate		"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		66
+		Type			"edit"
+		Name			"y_in"
+		Prompt			"Input Y Positions"
+		Value			"[-1 -1  1  1  1  1  1  1  1  1]"
+		Evaluate		"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		67
+		Type			"edit"
+		Name			"x_out"
+		Prompt			"Output X Positions"
+		Value			"[0.6 0.68 0.68 0.76 0.76 0.84 0.84 0.92 0.92 1]"
+		Evaluate		"off"
+		Visible			"off"
+	      }
+	      Object {
+		$ObjectID		68
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -11387,7 +11664,7 @@ Model {
 	  ZOrder		  22
 	  LibraryVersion	  "1.2"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag7"
+	  UserData		  "DataTag8"
 	  SourceBlock		  "xbsIndex_r4/WaveScope"
 	  SourceType		  "Xilinx WaveScope Block"
 	  infoedit		  "WaveScope"
@@ -11409,7 +11686,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "sync_out"
 	  SID			  "802"
-	  Position		  [4065, 603, 4095, 617]
+	  Position		  [4065, 593, 4095, 607]
 	  ZOrder		  -271
 	  IconDisplay		  "Port number"
 	}
@@ -12584,13 +12861,21 @@ Model {
 	  }
 	}
 	Line {
-	  SrcBlock		  "Delay1"
+	  SrcBlock		  "Delay14"
 	  SrcPort		  1
-	  DstBlock		  "edge_detect2"
-	  DstPort		  1
+	  Points		  [45, 0]
+	  Branch {
+	    Points		    [0, -75]
+	    DstBlock		    "edge_detect2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Delay19"
+	    DstPort		    1
+	  }
 	}
 	Line {
-	  SrcBlock		  "edge_detect2"
+	  SrcBlock		  "armed_trigger"
 	  SrcPort		  1
 	  DstBlock		  "sync_out"
 	  DstPort		  1
@@ -12692,27 +12977,6 @@ Model {
 	  Branch {
 	    Points		    [0, -90]
 	    DstBlock		    "Goto30"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  SrcBlock		  "Delay14"
-	  SrcPort		  1
-	  Points		  [45, 0]
-	  Branch {
-	    Points		    [0, -80]
-	    Branch {
-	      Points		      [0, -30]
-	      DstBlock		      "Delay1"
-	      DstPort		      1
-	    }
-	    Branch {
-	      DstBlock		      "Delay1"
-	      DstPort		      2
-	    }
-	  }
-	  Branch {
-	    DstBlock		    "Delay19"
 	    DstPort		    1
 	  }
 	}
@@ -13177,6 +13441,30 @@ Model {
 	  DstBlock		  "cal_fail1"
 	  DstPort		  1
 	}
+	Line {
+	  SrcBlock		  "edge_detect2"
+	  SrcPort		  1
+	  DstBlock		  "armed_trigger"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "edge_detect3"
+	  SrcPort		  1
+	  DstBlock		  "armed_trigger"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From8"
+	  SrcPort		  1
+	  DstBlock		  "edge_detect3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "slot_0"
+	  SrcPort		  1
+	  DstBlock		  "Goto34"
+	  DstPort		  1
+	}
       }
     }
     Block {
@@ -13184,7 +13472,7 @@ Model {
       Name		      "ct_tvg1"
       SID		      "2"
       Ports		      [4, 3]
-      Position		      [245, 227, 320, 313]
+      Position		      [245, 242, 320, 328]
       ZOrder		      496
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -13195,27 +13483,27 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		62
+	$ObjectID		69
 	$ClassName		"Simulink.Mask"
 	Array {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  3
 	  Object {
-	    $ObjectID		    63
+	    $ObjectID		    70
 	    Type		    "edit"
 	    Name		    "num_channels_bits"
 	    Prompt		    "Number of channels (2^?):"
 	    Value		    "12"
 	  }
 	  Object {
-	    $ObjectID		    64
+	    $ObjectID		    71
 	    Type		    "edit"
 	    Name		    "channel_bits"
 	    Prompt		    "Bits per channel:"
 	    Value		    "8"
 	  }
 	  Object {
-	    $ObjectID		    65
+	    $ObjectID		    72
 	    Type		    "edit"
 	    Name		    "ant"
 	    Prompt		    "Antenna # [0, 15]"
@@ -13944,7 +14232,7 @@ Model {
       Name		      "ct_tvg2"
       SID		      "433"
       Ports		      [4, 3]
-      Position		      [245, 457, 320, 543]
+      Position		      [245, 472, 320, 558]
       ZOrder		      526
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -13955,27 +14243,27 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		66
+	$ObjectID		73
 	$ClassName		"Simulink.Mask"
 	Array {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  3
 	  Object {
-	    $ObjectID		    67
+	    $ObjectID		    74
 	    Type		    "edit"
 	    Name		    "num_channels_bits"
 	    Prompt		    "Number of channels (2^?):"
 	    Value		    "12"
 	  }
 	  Object {
-	    $ObjectID		    68
+	    $ObjectID		    75
 	    Type		    "edit"
 	    Name		    "channel_bits"
 	    Prompt		    "Bits per channel:"
 	    Value		    "8"
 	  }
 	  Object {
-	    $ObjectID		    69
+	    $ObjectID		    76
 	    Type		    "edit"
 	    Name		    "ant"
 	    Prompt		    "Antenna # [0, 15]"
@@ -14744,7 +15032,7 @@ Model {
       Name		      "new_acc"
       SID		      "96"
       Ports		      [4, 4]
-      Position		      [775, 162, 890, 278]
+      Position		      [775, 177, 890, 293]
       ZOrder		      507
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -14774,7 +15062,7 @@ Model {
       System {
 	Name			"new_acc"
 	Location		[-17, -167, 1663, 748]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -15385,7 +15673,7 @@ Model {
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag8"
+	  UserData		  "DataTag9"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -15395,7 +15683,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    70
+	    $ObjectID		    77
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "edge_detect"
 	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
@@ -15414,7 +15702,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      6
 	      Object {
-		$ObjectID		71
+		$ObjectID		78
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -15430,7 +15718,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		72
+		$ObjectID		79
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -15445,7 +15733,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		73
+		$ObjectID		80
 		Type			"edit"
 		Name			"x_in"
 		Prompt			"Input X Positions"
@@ -15454,7 +15742,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		74
+		$ObjectID		81
 		Type			"edit"
 		Name			"y_in"
 		Prompt			"Input Y Positions"
@@ -15463,7 +15751,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		75
+		$ObjectID		82
 		Type			"edit"
 		Name			"x_out"
 		Prompt			"Output X Positions"
@@ -15472,7 +15760,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		76
+		$ObjectID		83
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -15665,21 +15953,21 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    77
+	    $ObjectID		    84
 	    $ClassName		    "Simulink.Mask"
 	    Initialization	    "count_pulses = ceil(fpga_clk_sub * (10 ^ 6) / n_pps_sub);"
 	    Array {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		78
+		$ObjectID		85
 		Type			"edit"
 		Name			"fpga_clk_sub"
 		Prompt			"FPGA Clock Frequency (MHz)"
 		Value			"0.05"
 	      }
 	      Object {
-		$ObjectID		79
+		$ObjectID		86
 		Type			"edit"
 		Name			"n_pps_sub"
 		Prompt			"Number of pulses per second (> 1)"
@@ -16206,7 +16494,7 @@ Model {
 	      AncestorBlock	      "casper_library_misc/edge_detect"
 	      LibraryVersion	      "*1.42"
 	      UserDataPersistent      on
-	      UserData		      "DataTag9"
+	      UserData		      "DataTag10"
 	      MinAlgLoopOccurrences   off
 	      PropExecContextOutsideSubsystem off
 	      RTWSystemCode	      "Auto"
@@ -16216,7 +16504,7 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		80
+		$ObjectID		87
 		$ClassName		"Simulink.Mask"
 		Type			"edge_detect"
 		Description		"Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or both)."
@@ -16234,7 +16522,7 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  6
 		  Object {
-		    $ObjectID		    81
+		    $ObjectID		    88
 		    Type		    "popup"
 		    Array {
 		    Type		    "Cell"
@@ -16250,7 +16538,7 @@ Model {
 		    Evaluate		    "off"
 		  }
 		  Object {
-		    $ObjectID		    82
+		    $ObjectID		    89
 		    Type		    "popup"
 		    Array {
 		    Type		    "Cell"
@@ -16265,7 +16553,7 @@ Model {
 		    Evaluate		    "off"
 		  }
 		  Object {
-		    $ObjectID		    83
+		    $ObjectID		    90
 		    Type		    "edit"
 		    Name		    "x_in"
 		    Prompt		    "Input X Positions"
@@ -16274,7 +16562,7 @@ Model {
 		    Visible		    "off"
 		  }
 		  Object {
-		    $ObjectID		    84
+		    $ObjectID		    91
 		    Type		    "edit"
 		    Name		    "y_in"
 		    Prompt		    "Input Y Positions"
@@ -16283,7 +16571,7 @@ Model {
 		    Visible		    "off"
 		  }
 		  Object {
-		    $ObjectID		    85
+		    $ObjectID		    92
 		    Type		    "edit"
 		    Name		    "x_out"
 		    Prompt		    "Output X Positions"
@@ -16292,7 +16580,7 @@ Model {
 		    Visible		    "off"
 		  }
 		  Object {
-		    $ObjectID		    86
+		    $ObjectID		    93
 		    Type		    "edit"
 		    Name		    "y_out"
 		    Prompt		    "Output Y Positions"
@@ -16481,7 +16769,7 @@ Model {
 	      AncestorBlock	      "casper_library_misc/edge_detect"
 	      LibraryVersion	      "*1.42"
 	      UserDataPersistent      on
-	      UserData		      "DataTag10"
+	      UserData		      "DataTag11"
 	      MinAlgLoopOccurrences   off
 	      PropExecContextOutsideSubsystem off
 	      RTWSystemCode	      "Auto"
@@ -16491,7 +16779,7 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		87
+		$ObjectID		94
 		$ClassName		"Simulink.Mask"
 		Type			"edge_detect"
 		Description		"Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or both)."
@@ -16509,7 +16797,7 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  6
 		  Object {
-		    $ObjectID		    88
+		    $ObjectID		    95
 		    Type		    "popup"
 		    Array {
 		    Type		    "Cell"
@@ -16525,7 +16813,7 @@ Model {
 		    Evaluate		    "off"
 		  }
 		  Object {
-		    $ObjectID		    89
+		    $ObjectID		    96
 		    Type		    "popup"
 		    Array {
 		    Type		    "Cell"
@@ -16540,7 +16828,7 @@ Model {
 		    Evaluate		    "off"
 		  }
 		  Object {
-		    $ObjectID		    90
+		    $ObjectID		    97
 		    Type		    "edit"
 		    Name		    "x_in"
 		    Prompt		    "Input X Positions"
@@ -16549,7 +16837,7 @@ Model {
 		    Visible		    "off"
 		  }
 		  Object {
-		    $ObjectID		    91
+		    $ObjectID		    98
 		    Type		    "edit"
 		    Name		    "y_in"
 		    Prompt		    "Input Y Positions"
@@ -16558,7 +16846,7 @@ Model {
 		    Visible		    "off"
 		  }
 		  Object {
-		    $ObjectID		    92
+		    $ObjectID		    99
 		    Type		    "edit"
 		    Name		    "x_out"
 		    Prompt		    "Output X Positions"
@@ -16567,7 +16855,7 @@ Model {
 		    Visible		    "off"
 		  }
 		  Object {
-		    $ObjectID		    93
+		    $ObjectID		    100
 		    Type		    "edit"
 		    Name		    "y_out"
 		    Prompt		    "Output Y Positions"
@@ -16937,11 +17225,11 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    94
+	    $ObjectID		    101
 	    $ClassName		    "Simulink.Mask"
 	    Object {
 	      $PropName		      "Parameters"
-	      $ObjectID		      95
+	      $ObjectID		      102
 	      $ClassName	      "Simulink.MaskParameter"
 	      Type		      "edit"
 	      Name		      "period"
@@ -17535,7 +17823,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		96
+	$ObjectID		103
 	$ClassName		"Simulink.Mask"
 	Description		"Package 32 bit data into 64 bits and identify data as coming from antenna 0 or 1"
 	Initialization		"n_x = n_x_board - 1;"
@@ -17543,35 +17831,35 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  5
 	  Object {
-	    $ObjectID		    97
+	    $ObjectID		    104
 	    Type		    "edit"
 	    Name		    "payload_bits"
 	    Prompt		    "Payload length in 64bit words (2^?)"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    98
+	    $ObjectID		    105
 	    Type		    "edit"
 	    Name		    "n_x_board"
 	    Prompt		    "Number of x-engines per ROACH board (2^?)"
 	    Value		    "2"
 	  }
 	  Object {
-	    $ObjectID		    99
+	    $ObjectID		    106
 	    Type		    "edit"
 	    Name		    "freq_chan"
 	    Prompt		    "Number of frequencies (2^?)"
 	    Value		    "12"
 	  }
 	  Object {
-	    $ObjectID		    100
+	    $ObjectID		    107
 	    Type		    "edit"
 	    Name		    "n_boards"
 	    Prompt		    "Number of  ROACH boards (2 ^ ?)"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    101
+	    $ObjectID		    108
 	    Type		    "edit"
 	    Name		    "gbe_port"
 	    Prompt		    "Port # (0 or 1)"
@@ -19367,44 +19655,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "Logical3"
-	  SID			  "905"
-	  Ports			  [2, 1]
-	  Position		  [415, 92, 440, 143]
-	  ZOrder		  -81
-	  ShowName		  off
-	  LibraryVersion	  "1.2"
-	  SourceBlock		  "xbsIndex_r4/Logical"
-	  SourceType		  "Xilinx Logical Block Block"
-	  logical_function	  "OR"
-	  inputs		  "2"
-	  en			  off
-	  latency		  "0"
-	  precision		  "Full"
-	  arith_type		  "Unsigned"
-	  n_bits		  "1"
-	  bin_pt		  "0"
-	  align_bp		  on
-	  dbl_ovrd		  off
-	  xl_use_area		  off
-	  xl_area		  "[0, 0, 0, 0, 0, 0, 0]"
-	  has_advanced_control	  "0"
-	  sggui_pos		  "23,228,419,291"
-	  block_type		  "logical"
-	  block_version		  "10.1.3"
-	  sg_icon_stat		  "25,51,2,1,white,blue,0,7ede7d88,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 25 25 0 0 ],[0 0 51 51 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 25 25 0 0 ],[0 0 51 51 0 ]);\npatch([5.325 9.66 12.66 15.66 18.66 12.66 8.325 5.325 ],[28.33 28.33 31"
-	  ".33 28.33 31.33 31.33 31.33 28.33 ],[1 1 1 ]);\npatch([8.325 12.66 9.66 5.325 8.325 ],[25.33 25.33 28.33 28.33 25.3"
-	  "3 ],[0.931 0.946 0.973 ]);\npatch([5.325 9.66 12.66 8.325 5.325 ],[22.33 22.33 25.33 25.33 22.33 ],[1 1 1 ]);\npatc"
-	  "h([8.325 18.66 15.66 12.66 9.66 5.325 8.325 ],[19.33 19.33 22.33 19.33 22.33 22.33 19.33 ],[0.931 0.946 0.973 ]);\n"
-	  "fprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\n\ncolor('black');disp('or')"
-	  ";\nfprintf('','COMMENT: end icon text');"
-	  sg_list_contents	  "{'table'=>{'logical_function'=>'popup(AND|NAND|OR|NOR|XOR|XNOR)','userSelections'=>{'logical_fu"
-	  "nction'=>'OR'}}}"
-	}
-	Block {
-	  BlockType		  Reference
 	  Name			  "Logical4"
 	  SID			  "906"
 	  Ports			  [2, 1]
@@ -19997,6 +20247,17 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
+	  Name			  "armed_trigger"
+	  SID			  "1115"
+	  Ports			  [2, 1]
+	  Position		  [395, 93, 445, 142]
+	  ZOrder		  14
+	  LibraryVersion	  "1.42"
+	  SourceBlock		  "casper_library_misc/armed_trigger"
+	  SourceType		  "Armed Trigger"
+	}
+	Block {
+	  BlockType		  Reference
 	  Name			  "clk_cnt"
 	  SID			  "925"
 	  Ports			  [2, 1]
@@ -20058,7 +20319,7 @@ Model {
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag11"
+	  UserData		  "DataTag12"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -20068,7 +20329,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    102
+	    $ObjectID		    109
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "edge_detect"
 	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
@@ -20087,7 +20348,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      6
 	      Object {
-		$ObjectID		103
+		$ObjectID		110
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -20103,7 +20364,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		104
+		$ObjectID		111
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -20118,7 +20379,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		105
+		$ObjectID		112
 		Type			"edit"
 		Name			"x_in"
 		Prompt			"Input X Positions"
@@ -20127,7 +20388,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		106
+		$ObjectID		113
 		Type			"edit"
 		Name			"y_in"
 		Prompt			"Input Y Positions"
@@ -20136,7 +20397,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		107
+		$ObjectID		114
 		Type			"edit"
 		Name			"x_out"
 		Prompt			"Output X Positions"
@@ -20145,7 +20406,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		108
+		$ObjectID		115
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -20340,7 +20601,7 @@ Model {
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag12"
+	  UserData		  "DataTag13"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -20350,7 +20611,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    109
+	    $ObjectID		    116
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "edge_detect"
 	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
@@ -20369,7 +20630,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      6
 	      Object {
-		$ObjectID		110
+		$ObjectID		117
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -20385,7 +20646,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		111
+		$ObjectID		118
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -20400,7 +20661,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		112
+		$ObjectID		119
 		Type			"edit"
 		Name			"x_in"
 		Prompt			"Input X Positions"
@@ -20409,7 +20670,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		113
+		$ObjectID		120
 		Type			"edit"
 		Name			"y_in"
 		Prompt			"Input Y Positions"
@@ -20418,7 +20679,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		114
+		$ObjectID		121
 		Type			"edit"
 		Name			"x_out"
 		Prompt			"Output X Positions"
@@ -20427,7 +20688,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		115
+		$ObjectID		122
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -20616,7 +20877,7 @@ Model {
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag13"
+	  UserData		  "DataTag14"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -20626,7 +20887,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    116
+	    $ObjectID		    123
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "edge_detect"
 	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
@@ -20645,7 +20906,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      6
 	      Object {
-		$ObjectID		117
+		$ObjectID		124
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -20661,7 +20922,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		118
+		$ObjectID		125
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -20676,7 +20937,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		119
+		$ObjectID		126
 		Type			"edit"
 		Name			"x_in"
 		Prompt			"Input X Positions"
@@ -20685,7 +20946,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		120
+		$ObjectID		127
 		Type			"edit"
 		Name			"y_in"
 		Prompt			"Input Y Positions"
@@ -20694,7 +20955,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		121
+		$ObjectID		128
 		Type			"edit"
 		Name			"x_out"
 		Prompt			"Output X Positions"
@@ -20703,7 +20964,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		122
+		$ObjectID		129
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -20892,7 +21153,7 @@ Model {
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag14"
+	  UserData		  "DataTag15"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -20902,7 +21163,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    123
+	    $ObjectID		    130
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "edge_detect"
 	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
@@ -20921,7 +21182,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      6
 	      Object {
-		$ObjectID		124
+		$ObjectID		131
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -20937,7 +21198,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		125
+		$ObjectID		132
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -20952,7 +21213,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		126
+		$ObjectID		133
 		Type			"edit"
 		Name			"x_in"
 		Prompt			"Input X Positions"
@@ -20961,7 +21222,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		127
+		$ObjectID		134
 		Type			"edit"
 		Name			"y_in"
 		Prompt			"Input Y Positions"
@@ -20970,7 +21231,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		128
+		$ObjectID		135
 		Type			"edit"
 		Name			"x_out"
 		Prompt			"Output X Positions"
@@ -20979,7 +21240,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		129
+		$ObjectID		136
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -21177,7 +21438,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    130
+	    $ObjectID		    137
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "swreg"
 	    Initialization	    "swreg_init(gcb)"
@@ -21186,7 +21447,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      10
 	      Object {
-		$ObjectID		131
+		$ObjectID		138
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -21204,7 +21465,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		132
+		$ObjectID		139
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -21222,7 +21483,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		133
+		$ObjectID		140
 		Type			"edit"
 		Name			"io_delay"
 		Prompt			"I/O delay"
@@ -21230,7 +21491,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		134
+		$ObjectID		141
 		Type			"edit"
 		Name			"sample_period"
 		Prompt			"Sample period"
@@ -21239,7 +21500,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		135
+		$ObjectID		142
 		Type			"edit"
 		Name			"names"
 		Prompt			"Name:"
@@ -21248,7 +21509,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		136
+		$ObjectID		143
 		Type			"edit"
 		Name			"bitwidths"
 		Prompt			"Bitwidth:"
@@ -21257,7 +21518,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		137
+		$ObjectID		144
 		Type			"edit"
 		Name			"arith_types"
 		Prompt			"Type (ufix=0, fix=1, bool=2):"
@@ -21266,7 +21527,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		138
+		$ObjectID		145
 		Type			"edit"
 		Name			"bin_pts"
 		Prompt			"Binary pt:"
@@ -21275,7 +21536,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		139
+		$ObjectID		146
 		Type			"checkbox"
 		Name			"sim_port"
 		Prompt			"Provide sim input/output?"
@@ -21284,7 +21545,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		140
+		$ObjectID		147
 		Type			"checkbox"
 		Name			"show_format"
 		Prompt			"Print format string?"
@@ -21310,7 +21571,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "392"
+	    SIDHighWatermark	    "412"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
@@ -21322,10 +21583,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "930:391"
+	      SID		      "930:411"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      384
+	      ZOrder		      404
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -21360,10 +21621,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "930:389"
+	      SID		      "930:409"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      382
+	      ZOrder		      402
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -21399,10 +21660,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "930:388"
+	      SID		      "930:408"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      381
+	      ZOrder		      401
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -21431,10 +21692,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "930:392"
+	      SID		      "930:412"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      385
+	      ZOrder		      405
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -21462,10 +21723,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reorder_test_packetiser0_eof_count_user_data_in"
-	      SID		      "930:390"
+	      SID		      "930:410"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      383
+	      ZOrder		      403
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -21561,7 +21822,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    141
+	    $ObjectID		    148
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "swreg"
 	    Initialization	    "swreg_init(gcb)"
@@ -21570,7 +21831,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      10
 	      Object {
-		$ObjectID		142
+		$ObjectID		149
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -21588,7 +21849,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		143
+		$ObjectID		150
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -21606,7 +21867,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		144
+		$ObjectID		151
 		Type			"edit"
 		Name			"io_delay"
 		Prompt			"I/O delay"
@@ -21614,7 +21875,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		145
+		$ObjectID		152
 		Type			"edit"
 		Name			"sample_period"
 		Prompt			"Sample period"
@@ -21623,7 +21884,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		146
+		$ObjectID		153
 		Type			"edit"
 		Name			"names"
 		Prompt			"Name:"
@@ -21632,7 +21893,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		147
+		$ObjectID		154
 		Type			"edit"
 		Name			"bitwidths"
 		Prompt			"Bitwidth:"
@@ -21641,7 +21902,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		148
+		$ObjectID		155
 		Type			"edit"
 		Name			"arith_types"
 		Prompt			"Type (ufix=0, fix=1, bool=2):"
@@ -21650,7 +21911,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		149
+		$ObjectID		156
 		Type			"edit"
 		Name			"bin_pts"
 		Prompt			"Binary pt:"
@@ -21659,7 +21920,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		150
+		$ObjectID		157
 		Type			"checkbox"
 		Name			"sim_port"
 		Prompt			"Provide sim input/output?"
@@ -21668,7 +21929,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		151
+		$ObjectID		158
 		Type			"checkbox"
 		Name			"show_format"
 		Prompt			"Print format string?"
@@ -21694,7 +21955,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "392"
+	    SIDHighWatermark	    "412"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
@@ -21706,10 +21967,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "931:391"
+	      SID		      "931:411"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      384
+	      ZOrder		      404
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -21744,10 +22005,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "931:389"
+	      SID		      "931:409"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      382
+	      ZOrder		      402
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -21783,10 +22044,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "931:388"
+	      SID		      "931:408"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      381
+	      ZOrder		      401
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -21815,10 +22076,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "931:392"
+	      SID		      "931:412"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      385
+	      ZOrder		      405
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -21846,10 +22107,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reorder_test_packetiser0_hdr_count_user_data_in"
-	      SID		      "931:390"
+	      SID		      "931:410"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      383
+	      ZOrder		      403
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -22046,7 +22307,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "Logical3"
+	  SrcBlock		  "armed_trigger"
 	  SrcPort		  1
 	  DstBlock		  "clk_cnt"
 	  DstPort		  1
@@ -22181,7 +22442,7 @@ Model {
 	Line {
 	  SrcBlock		  "From16"
 	  SrcPort		  1
-	  DstBlock		  "Logical3"
+	  DstBlock		  "armed_trigger"
 	  DstPort		  2
 	}
 	Line {
@@ -22193,7 +22454,7 @@ Model {
 	Line {
 	  SrcBlock		  "From17"
 	  SrcPort		  1
-	  DstBlock		  "Logical3"
+	  DstBlock		  "armed_trigger"
 	  DstPort		  1
 	}
 	Line {
@@ -22727,7 +22988,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		152
+	$ObjectID		159
 	$ClassName		"Simulink.Mask"
 	Description		"Package 32 bit data into 64 bits and identify data as coming from antenna 0 or 1"
 	Initialization		"n_x = n_x_board - 1;"
@@ -22735,35 +22996,35 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  5
 	  Object {
-	    $ObjectID		    153
+	    $ObjectID		    160
 	    Type		    "edit"
 	    Name		    "payload_bits"
 	    Prompt		    "Payload length in 64bit words (2^?)"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    154
+	    $ObjectID		    161
 	    Type		    "edit"
 	    Name		    "n_x_board"
 	    Prompt		    "Number of x-engines per ROACH board (2^?)"
 	    Value		    "2"
 	  }
 	  Object {
-	    $ObjectID		    155
+	    $ObjectID		    162
 	    Type		    "edit"
 	    Name		    "freq_chan"
 	    Prompt		    "Number of frequencies (2^?)"
 	    Value		    "12"
 	  }
 	  Object {
-	    $ObjectID		    156
+	    $ObjectID		    163
 	    Type		    "edit"
 	    Name		    "n_boards"
 	    Prompt		    "Number of  ROACH boards (2 ^ ?)"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    157
+	    $ObjectID		    164
 	    Type		    "edit"
 	    Name		    "gbe_port"
 	    Prompt		    "Port # (0 or 1)"
@@ -24559,44 +24820,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "Logical3"
-	  SID			  "1025"
-	  Ports			  [2, 1]
-	  Position		  [415, 92, 440, 143]
-	  ZOrder		  -81
-	  ShowName		  off
-	  LibraryVersion	  "1.2"
-	  SourceBlock		  "xbsIndex_r4/Logical"
-	  SourceType		  "Xilinx Logical Block Block"
-	  logical_function	  "OR"
-	  inputs		  "2"
-	  en			  off
-	  latency		  "0"
-	  precision		  "Full"
-	  arith_type		  "Unsigned"
-	  n_bits		  "1"
-	  bin_pt		  "0"
-	  align_bp		  on
-	  dbl_ovrd		  off
-	  xl_use_area		  off
-	  xl_area		  "[0, 0, 0, 0, 0, 0, 0]"
-	  has_advanced_control	  "0"
-	  sggui_pos		  "23,228,419,291"
-	  block_type		  "logical"
-	  block_version		  "10.1.3"
-	  sg_icon_stat		  "25,51,2,1,white,blue,0,7ede7d88,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 25 25 0 0 ],[0 0 51 51 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 25 25 0 0 ],[0 0 51 51 0 ]);\npatch([5.325 9.66 12.66 15.66 18.66 12.66 8.325 5.325 ],[28.33 28.33 31"
-	  ".33 28.33 31.33 31.33 31.33 28.33 ],[1 1 1 ]);\npatch([8.325 12.66 9.66 5.325 8.325 ],[25.33 25.33 28.33 28.33 25.3"
-	  "3 ],[0.931 0.946 0.973 ]);\npatch([5.325 9.66 12.66 8.325 5.325 ],[22.33 22.33 25.33 25.33 22.33 ],[1 1 1 ]);\npatc"
-	  "h([8.325 18.66 15.66 12.66 9.66 5.325 8.325 ],[19.33 19.33 22.33 19.33 22.33 22.33 19.33 ],[0.931 0.946 0.973 ]);\n"
-	  "fprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\n\ncolor('black');disp('or')"
-	  ";\nfprintf('','COMMENT: end icon text');"
-	  sg_list_contents	  "{'table'=>{'logical_function'=>'popup(AND|NAND|OR|NOR|XOR|XNOR)','userSelections'=>{'logical_fu"
-	  "nction'=>'OR'}}}"
-	}
-	Block {
-	  BlockType		  Reference
 	  Name			  "Logical4"
 	  SID			  "1026"
 	  Ports			  [2, 1]
@@ -25189,6 +25412,17 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
+	  Name			  "armed_trigger"
+	  SID			  "1114"
+	  Ports			  [2, 1]
+	  Position		  [400, 93, 450, 142]
+	  ZOrder		  13
+	  LibraryVersion	  "1.42"
+	  SourceBlock		  "casper_library_misc/armed_trigger"
+	  SourceType		  "Armed Trigger"
+	}
+	Block {
+	  BlockType		  Reference
 	  Name			  "clk_cnt"
 	  SID			  "1045"
 	  Ports			  [2, 1]
@@ -25250,7 +25484,7 @@ Model {
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag15"
+	  UserData		  "DataTag16"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -25260,7 +25494,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    158
+	    $ObjectID		    165
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "edge_detect"
 	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
@@ -25279,7 +25513,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      6
 	      Object {
-		$ObjectID		159
+		$ObjectID		166
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -25295,7 +25529,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		160
+		$ObjectID		167
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -25310,7 +25544,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		161
+		$ObjectID		168
 		Type			"edit"
 		Name			"x_in"
 		Prompt			"Input X Positions"
@@ -25319,7 +25553,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		162
+		$ObjectID		169
 		Type			"edit"
 		Name			"y_in"
 		Prompt			"Input Y Positions"
@@ -25328,7 +25562,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		163
+		$ObjectID		170
 		Type			"edit"
 		Name			"x_out"
 		Prompt			"Output X Positions"
@@ -25337,7 +25571,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		164
+		$ObjectID		171
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -25526,7 +25760,7 @@ Model {
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag16"
+	  UserData		  "DataTag17"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -25536,7 +25770,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    165
+	    $ObjectID		    172
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "edge_detect"
 	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
@@ -25555,7 +25789,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      6
 	      Object {
-		$ObjectID		166
+		$ObjectID		173
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -25571,7 +25805,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		167
+		$ObjectID		174
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -25586,7 +25820,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		168
+		$ObjectID		175
 		Type			"edit"
 		Name			"x_in"
 		Prompt			"Input X Positions"
@@ -25595,7 +25829,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		169
+		$ObjectID		176
 		Type			"edit"
 		Name			"y_in"
 		Prompt			"Input Y Positions"
@@ -25604,7 +25838,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		170
+		$ObjectID		177
 		Type			"edit"
 		Name			"x_out"
 		Prompt			"Output X Positions"
@@ -25613,7 +25847,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		171
+		$ObjectID		178
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -25802,7 +26036,7 @@ Model {
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag17"
+	  UserData		  "DataTag18"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -25812,7 +26046,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    172
+	    $ObjectID		    179
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "edge_detect"
 	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
@@ -25831,7 +26065,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      6
 	      Object {
-		$ObjectID		173
+		$ObjectID		180
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -25847,7 +26081,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		174
+		$ObjectID		181
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -25862,7 +26096,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		175
+		$ObjectID		182
 		Type			"edit"
 		Name			"x_in"
 		Prompt			"Input X Positions"
@@ -25871,7 +26105,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		176
+		$ObjectID		183
 		Type			"edit"
 		Name			"y_in"
 		Prompt			"Input Y Positions"
@@ -25880,7 +26114,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		177
+		$ObjectID		184
 		Type			"edit"
 		Name			"x_out"
 		Prompt			"Output X Positions"
@@ -25889,7 +26123,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		178
+		$ObjectID		185
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -26084,7 +26318,7 @@ Model {
 	  AncestorBlock		  "casper_library_misc/edge_detect"
 	  LibraryVersion	  "*1.42"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag18"
+	  UserData		  "DataTag19"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -26094,7 +26328,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    179
+	    $ObjectID		    186
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "edge_detect"
 	    Description		    "Output is active for one-cycle after each edge of the specified type (i.e. rising, falling or b"
@@ -26113,7 +26347,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      6
 	      Object {
-		$ObjectID		180
+		$ObjectID		187
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -26129,7 +26363,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		181
+		$ObjectID		188
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -26144,7 +26378,7 @@ Model {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		182
+		$ObjectID		189
 		Type			"edit"
 		Name			"x_in"
 		Prompt			"Input X Positions"
@@ -26153,7 +26387,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		183
+		$ObjectID		190
 		Type			"edit"
 		Name			"y_in"
 		Prompt			"Input Y Positions"
@@ -26162,7 +26396,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		184
+		$ObjectID		191
 		Type			"edit"
 		Name			"x_out"
 		Prompt			"Output X Positions"
@@ -26171,7 +26405,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		185
+		$ObjectID		192
 		Type			"edit"
 		Name			"y_out"
 		Prompt			"Output Y Positions"
@@ -26369,7 +26603,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    186
+	    $ObjectID		    193
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "swreg"
 	    Initialization	    "swreg_init(gcb)"
@@ -26378,7 +26612,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      10
 	      Object {
-		$ObjectID		187
+		$ObjectID		194
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -26396,7 +26630,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		188
+		$ObjectID		195
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -26414,7 +26648,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		189
+		$ObjectID		196
 		Type			"edit"
 		Name			"io_delay"
 		Prompt			"I/O delay"
@@ -26422,7 +26656,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		190
+		$ObjectID		197
 		Type			"edit"
 		Name			"sample_period"
 		Prompt			"Sample period"
@@ -26431,7 +26665,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		191
+		$ObjectID		198
 		Type			"edit"
 		Name			"names"
 		Prompt			"Name:"
@@ -26440,7 +26674,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		192
+		$ObjectID		199
 		Type			"edit"
 		Name			"bitwidths"
 		Prompt			"Bitwidth:"
@@ -26449,7 +26683,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		193
+		$ObjectID		200
 		Type			"edit"
 		Name			"arith_types"
 		Prompt			"Type (ufix=0, fix=1, bool=2):"
@@ -26458,7 +26692,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		194
+		$ObjectID		201
 		Type			"edit"
 		Name			"bin_pts"
 		Prompt			"Binary pt:"
@@ -26467,7 +26701,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		195
+		$ObjectID		202
 		Type			"checkbox"
 		Name			"sim_port"
 		Prompt			"Provide sim input/output?"
@@ -26476,7 +26710,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		196
+		$ObjectID		203
 		Type			"checkbox"
 		Name			"show_format"
 		Prompt			"Print format string?"
@@ -26502,7 +26736,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "377"
+	    SIDHighWatermark	    "397"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
@@ -26514,10 +26748,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "1050:376"
+	      SID		      "1050:396"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      369
+	      ZOrder		      389
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -26552,10 +26786,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "1050:374"
+	      SID		      "1050:394"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      367
+	      ZOrder		      387
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -26591,10 +26825,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "1050:373"
+	      SID		      "1050:393"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      366
+	      ZOrder		      386
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -26623,10 +26857,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "1050:377"
+	      SID		      "1050:397"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      370
+	      ZOrder		      390
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -26654,10 +26888,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reorder_test_packetiser1_eof_count_user_data_in"
-	      SID		      "1050:375"
+	      SID		      "1050:395"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      368
+	      ZOrder		      388
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -26753,7 +26987,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    197
+	    $ObjectID		    204
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "swreg"
 	    Initialization	    "swreg_init(gcb)"
@@ -26762,7 +26996,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      10
 	      Object {
-		$ObjectID		198
+		$ObjectID		205
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -26780,7 +27014,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		199
+		$ObjectID		206
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -26798,7 +27032,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		200
+		$ObjectID		207
 		Type			"edit"
 		Name			"io_delay"
 		Prompt			"I/O delay"
@@ -26806,7 +27040,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		201
+		$ObjectID		208
 		Type			"edit"
 		Name			"sample_period"
 		Prompt			"Sample period"
@@ -26815,7 +27049,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		202
+		$ObjectID		209
 		Type			"edit"
 		Name			"names"
 		Prompt			"Name:"
@@ -26824,7 +27058,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		203
+		$ObjectID		210
 		Type			"edit"
 		Name			"bitwidths"
 		Prompt			"Bitwidth:"
@@ -26833,7 +27067,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		204
+		$ObjectID		211
 		Type			"edit"
 		Name			"arith_types"
 		Prompt			"Type (ufix=0, fix=1, bool=2):"
@@ -26842,7 +27076,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		205
+		$ObjectID		212
 		Type			"edit"
 		Name			"bin_pts"
 		Prompt			"Binary pt:"
@@ -26851,7 +27085,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		206
+		$ObjectID		213
 		Type			"checkbox"
 		Name			"sim_port"
 		Prompt			"Provide sim input/output?"
@@ -26860,7 +27094,7 @@ Model {
 		TabName			"Setup"
 	      }
 	      Object {
-		$ObjectID		207
+		$ObjectID		214
 		Type			"checkbox"
 		Name			"show_format"
 		Prompt			"Print format string?"
@@ -26886,7 +27120,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "377"
+	    SIDHighWatermark	    "397"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "out_reg"
@@ -26898,10 +27132,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "assert_reg"
-	      SID		      "1051:376"
+	      SID		      "1051:396"
 	      Ports		      [1, 1]
 	      Position		      [200, 100, 250, 120]
-	      ZOrder		      369
+	      ZOrder		      389
 	      ShowName		      off
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Assert"
@@ -26936,10 +27170,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "cast_gw"
-	      SID		      "1051:374"
+	      SID		      "1051:394"
 	      Ports		      [1, 1]
 	      Position		      [700, 100, 750, 120]
-	      ZOrder		      367
+	      ZOrder		      387
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Convert"
 	      SourceType	      "Xilinx Type Converter Block"
@@ -26975,10 +27209,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "io_delay"
-	      SID		      "1051:373"
+	      SID		      "1051:393"
 	      Ports		      [1, 1]
 	      Position		      [600, 100, 650, 120]
-	      ZOrder		      366
+	      ZOrder		      386
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Delay"
 	      SourceType	      "Xilinx Delay Block"
@@ -27007,10 +27241,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reint1"
-	      SID		      "1051:377"
+	      SID		      "1051:397"
 	      Ports		      [1, 1]
 	      Position		      [300, 100, 350, 120]
-	      ZOrder		      370
+	      ZOrder		      390
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Reinterpret"
 	      SourceType	      "Xilinx Type Reinterpreter Block"
@@ -27038,10 +27272,10 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "reorder_test_packetiser1_hdr_count_user_data_in"
-	      SID		      "1051:375"
+	      SID		      "1051:395"
 	      Ports		      [1, 1]
 	      Position		      [900, 100, 950, 120]
-	      ZOrder		      368
+	      ZOrder		      388
 	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway Out"
 	      SourceType	      "Xilinx Gateway Out Block"
@@ -27721,7 +27955,7 @@ Model {
 	Line {
 	  SrcBlock		  "From17"
 	  SrcPort		  1
-	  DstBlock		  "Logical3"
+	  DstBlock		  "armed_trigger"
 	  DstPort		  1
 	}
 	Line {
@@ -27733,7 +27967,7 @@ Model {
 	Line {
 	  SrcBlock		  "From16"
 	  SrcPort		  1
-	  DstBlock		  "Logical3"
+	  DstBlock		  "armed_trigger"
 	  DstPort		  2
 	}
 	Line {
@@ -27865,7 +28099,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "Logical3"
+	  SrcBlock		  "armed_trigger"
 	  SrcPort		  1
 	  DstBlock		  "clk_cnt"
 	  DstPort		  1
@@ -27915,7 +28149,7 @@ Model {
       ZOrder		      567
       LibraryVersion	      "1.2"
       UserDataPersistent      on
-      UserData		      "DataTag19"
+      UserData		      "DataTag20"
       SourceBlock	      "xbsIndex_r4/WaveScope"
       SourceType	      "Xilinx WaveScope Block"
       infoedit		      "WaveScope"
@@ -27942,7 +28176,7 @@ Model {
       ZOrder		      568
       LibraryVersion	      "1.2"
       UserDataPersistent      on
-      UserData		      "DataTag20"
+      UserData		      "DataTag21"
       SourceBlock	      "xbsIndex_r4/WaveScope"
       SourceType	      "Xilinx WaveScope Block"
       infoedit		      "WaveScope"
@@ -27965,7 +28199,7 @@ Model {
       Name		      "x_eng_reorder1"
       SID		      "24"
       Ports		      [3, 3]
-      Position		      [410, 221, 490, 319]
+      Position		      [410, 236, 490, 334]
       ZOrder		      495
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -27976,7 +28210,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		208
+	$ObjectID		215
 	$ClassName		"Simulink.Mask"
 	Description		"Reorders channels for transmission to X-engines in two stages.\n\nIn the first stage, total of P channe"
 	"ls on both inputs (P/2 on each input) \nare reordered as follows:\n\nInput data0 has channels: 0, 2, 4, ..., P-2.\nIn"
@@ -27991,35 +28225,35 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  5
 	  Object {
-	    $ObjectID		    209
+	    $ObjectID		    216
 	    Type		    "edit"
 	    Name		    "freq_chan"
 	    Prompt		    "Number of Frequency Channels (2 ^ ?)"
 	    Value		    "12"
 	  }
 	  Object {
-	    $ObjectID		    210
+	    $ObjectID		    217
 	    Type		    "edit"
 	    Name		    "num_data_bits"
 	    Prompt		    "Incomin data width in bits"
 	    Value		    "16"
 	  }
 	  Object {
-	    $ObjectID		    211
+	    $ObjectID		    218
 	    Type		    "edit"
 	    Name		    "bram_latency"
 	    Prompt		    "BRAM Latency"
 	    Value		    "2"
 	  }
 	  Object {
-	    $ObjectID		    212
+	    $ObjectID		    219
 	    Type		    "edit"
 	    Name		    "n_boards"
 	    Prompt		    "Number of ROACH boards (2 ^ ?)"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    213
+	    $ObjectID		    220
 	    Type		    "edit"
 	    Name		    "n_x_board"
 	    Prompt		    "Number of X-engines per ROACH board (2 ^ ?)"
@@ -30249,7 +30483,7 @@ Model {
       Name		      "x_eng_reorder2"
       SID		      "455"
       Ports		      [3, 3]
-      Position		      [410, 451, 490, 549]
+      Position		      [410, 466, 490, 564]
       ZOrder		      525
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -30260,7 +30494,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		214
+	$ObjectID		221
 	$ClassName		"Simulink.Mask"
 	Description		"Reorders channels for transmission to X-engines in two stages.\n\nIn the first stage, total of P channe"
 	"ls on both inputs (P/2 on each input) \nare reordered as follows:\n\nInput data0 has channels: 0, 2, 4, ..., P-2.\nIn"
@@ -30275,35 +30509,35 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  5
 	  Object {
-	    $ObjectID		    215
+	    $ObjectID		    222
 	    Type		    "edit"
 	    Name		    "freq_chan"
 	    Prompt		    "Number of Frequency Channels (2 ^ ?)"
 	    Value		    "12"
 	  }
 	  Object {
-	    $ObjectID		    216
+	    $ObjectID		    223
 	    Type		    "edit"
 	    Name		    "num_data_bits"
 	    Prompt		    "Incomin data width in bits"
 	    Value		    "16"
 	  }
 	  Object {
-	    $ObjectID		    217
+	    $ObjectID		    224
 	    Type		    "edit"
 	    Name		    "bram_latency"
 	    Prompt		    "BRAM Latency"
 	    Value		    "2"
 	  }
 	  Object {
-	    $ObjectID		    218
+	    $ObjectID		    225
 	    Type		    "edit"
 	    Name		    "n_boards"
 	    Prompt		    "Number of ROACH boards (2 ^ ?)"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    219
+	    $ObjectID		    226
 	    Type		    "edit"
 	    Name		    "n_x_board"
 	    Prompt		    "Number of X-engines per ROACH board (2 ^ ?)"
@@ -32651,7 +32885,7 @@ Model {
       Labels		      [2, 1]
       SrcBlock		      "new_acc"
       SrcPort		      1
-      Points		      [78, 0; 0, -110]
+      Points		      [78, 0; 0, -135]
       DstBlock		      "ct"
       DstPort		      1
     }
@@ -32660,7 +32894,7 @@ Model {
       Labels		      [2, 1]
       SrcBlock		      "new_acc"
       SrcPort		      2
-      Points		      [149, 0; 0, -40]
+      Points		      [121, 0; 0, -90]
       DstBlock		      "ct"
       DstPort		      2
     }
@@ -32669,13 +32903,13 @@ Model {
       SrcPort		      4
       Points		      [9, 0]
       Branch {
-	Points			[0, 110]
+	Points			[0, 105]
 	DstBlock		"BitBasher"
 	DstPort			1
       }
       Branch {
 	DstBlock		"ct"
-	DstPort			3
+	DstPort			4
       }
     }
     Line {
@@ -33065,11 +33299,12 @@ Model {
     }
     Line {
       Name		      "na_s0"
-      Labels		      [1, 1]
+      Labels		      [2, 1]
       SrcBlock		      "new_acc"
       SrcPort		      3
-      DstBlock		      "Terminator23"
-      DstPort		      1
+      Points		      [146, 0; 0, -45]
+      DstBlock		      "ct"
+      DstPort		      3
     }
     Annotation {
       SID		      "1064"
@@ -33080,7 +33315,7 @@ Model {
   }
 }
 MatData {
-  NumRecords		  21
+  NumRecords		  22
   DataRecord {
     Tag			    DataTag0
     Data		    "  %)30     .    2!H   8    (     @         %    \"     $    !     0         %  0 !@    $    &    <V%V96"
@@ -33366,34 +33601,34 @@ MatData {
     "     0         !0    @    !    !     $         $  $ '1I;64.    .     8    (    !@         %    \"     $    !     0"
     "         )    \"            !! #@   #@    &    \"     8         !0    @    !     0    $         \"0    @          "
     "  ^P X    X    !@    @    &          4    (     0    $    !          D    (            \\#\\.          X    X    !"
-    "@    @    &          4    (     0    $    !          D    (            (D .    .     8    (    !@         %    \" "
-    "    $    !     0         )    \"            \") #@   #@    &    \"     8         !0    @    !     0    $         \""
-    "0    @      ( &8,_\\0 X   !0    !@    @    &          4    (     0    0    !          D    @          # 4$       $"
-    "!10       .)=       !HA$ .    0     8    (    !@         %    \"     $    \"     0         )    $           0)I   "
-    "    \"0C4 .    0     8    (    !@         %    \"     $    \"     0         )    $                    )\"H^$ .    "
-    "0     8    (    !@         %    \"     $    \"     0         )    $                       \\'\\.    .     8    (  "
-    "  !@         %    \"     $    !     0         )    \"         \"0J/A #@   #@    &    \"     8         !0    @    !"
-    "     0    $         \"0    @               X   !P 0  !@    @    &          4    (     @   !0    !          D   !  "
-    "0          X+\\       #XOP        #         \",         ,P        !+         %,         8P        !K         'L   "
-    "      @P        \"+         (\\         EP        \";         *,         IP        \"O         +,         NP      "
-    "  \"_       \" ,,         QP        #+       \" ,L       ( SP        #3         -<       ( UP       @#;         -\\"
+    "@    @    &          4    (     0    $    !          D    (            )$ .    .     8    (    !@         %    \" "
+    "    $    !     0         )    \"            \"1 #@   #@    &    \"     8         !0    @    !     0    $         \""
+    "0    @      ( OD/'S0 X   !0    !@    @    &          4    (     0    0    !          D    @          # 4$       $!"
+    "10       .)=       !HA$ .    0     8    (    !@         %    \"     $    \"     0         )    $           0)I    "
+    "   \"0C4 .    0     8    (    !@         %    \"     $    \"     0         )    $                    )\"H^$ .    0"
+    "     8    (    !@         %    \"     $    \"     0         )    $                       \\'\\.    .     8    (   "
+    " !@         %    \"     $    !     0         )    \"         \"0J/A #@   #@    &    \"     8         !0    @    ! "
+    "    0    $         \"0    @               X   !P 0  !@    @    &          4    (     @   !0    !          D   !  0"
+    "          X+\\       #XOP        #         \",         ,P        !+         %,         8P        !K         'L    "
+    "     @P        \"+         (\\         EP        \";         *,         IP        \"O         +,         NP       "
+    " \"_       \" ,,         QP        #+       \" ,L       ( SP        #3         -<       ( UP       @#;         -\\"
     "         XP       @#C       \" .<         ZP        #O       \" .\\       ( \\P        #W         /L .    .     8 "
-    "   (    !@         %    \"     $    !     0         )    \"           \"[! #@   #@    &    \"     8         !0    "
-    "@    !     0    $         \"0    @               X   #(    !@    @    &          4    (     0   !,    !          D"
-    "   \"8            \\#\\       #P/P       / _        \\#\\       #P/P       / _        \\#\\       #P/P       / _  "
-    "      \\#\\       #P/P       / _        \\#\\       #P/P       / _        \\#\\       #P/P       / _        \\#\\."
-    "    ,     8    (    !@         %    \"                0         )          X    P    !@    @    $          4    ( "
-    "    0    ,    !         !   P!O9F8 #@   #     &    \"     0         !0    @    !     @    $         $  \" &]N   . "
-    "   ,     8    (    !          %    \"     $    \"     0         0  ( ;VX   X    X    !@    @    &          4    ( "
-    "    0    $    !          D    (            .D .    ,     8    (    !          %    \"     $    $     0         0  "
-    "0 3D].10X    X    !@    @    $          4    (     0    <    !         !     '    4U1!4E1%1  .    <     8    (    "
-    " 0         %    \"     $    !     0         .    0     8    (    !          %    \"     $    /     0         0    "
-    "#P   %1I;64@:6X@<V5C;VYD<P .    .     8    (    !@         %    \"     $    !     0         )    \"    &57=F57_Z] "
-    "#@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    &    "
-    "      4    (     0    $    !          D    (            \\#\\.    .     8    (    !@         %    \"     $    !   "
-    "  0         )    \"         \" J/A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @      "
-    "         X    X    !@    @    &          4    (     0    $    !          D    (          \" /L .    .     8    (  "
-    "  !          %    \"     $    '     0         0    !P   %-405)4140 "
+    "   (    !@         %    \"     $    !     0         )    \"         !@ >I #@   #@    &    \"     8         !0    @"
+    "    !     0    $         \"0    @               X   #(    !@    @    &          4    (     0   !,    !          D "
+    "  \"8            \\#\\       #P/P       / _        \\#\\       #P/P       / _        \\#\\       #P/P       / _   "
+    "     \\#\\       #P/P       / _        \\#\\       #P/P       / _        \\#\\       #P/P       / _        \\#\\. "
+    "   ,     8    (    !@         %    \"                0         )          X    P    !@    @    $          4    (  "
+    "   0    ,    !         !   P!O9F8 #@   #     &    \"     0         !0    @    !     @    $         $  \" &]N   .  "
+    "  ,     8    (    !          %    \"     $    \"     0         0  ( ;VX   X    X    !@    @    &          4    (  "
+    "   0    $    !          D    (            .D .    ,     8    (    !          %    \"     $    $     0         0  0"
+    " 3D].10X    X    !@    @    $          4    (     0    <    !         !     '    4U1!4E1%1  .    <     8    (     "
+    "0         %    \"     $    !     0         .    0     8    (    !          %    \"     $    /     0         0    #"
+    "P   %1I;64@:6X@<V5C;VYD<P .    .     8    (    !@         %    \"     $    !     0         )    \"    % __?0;!/% #"
+    "@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    &     "
+    "     4    (     0    $    !          D    (            \\#\\.    .     8    (    !@         %    \"     $    !    "
+    " 0         )    \"         \" J/A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @       "
+    "        X    X    !@    @    &          4    (     0    $    !          D    (          \" /L .    .     8    (   "
+    " !          %    \"     $    '     0         0    !P   %-405)4140 "
   }
   DataRecord {
     Tag			    DataTag2
@@ -33494,6 +33729,30 @@ MatData {
   DataRecord {
     Tag			    DataTag6
     Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ +\\C$P<.    ( 8  "
+    " 8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >"
+    "%]I;@      >%]O=70     >5]I;@      >5]O=70       X   \"8 P  !@    @    !          4    (     0    P    !          "
+    "X    P    !@    @    $          4    (     0    0    !         !  ! !E9&=E#@   #@    &    \"     0         !0    @"
+    "    !    !@    $         $     8   !2:7-I;F<   X    X    !@    @    $          4    (     0    @    !         !   "
+    "  (    <&]L87)I='D.    0     8    (    !          %    \"     $    +     0         0    \"P   $%C=&EV92!(:6=H     "
+    "  .    ,     8    (    !          %    \"     $    $     0         0  0 >%]I;@X   !@    !@    @    $          4   "
+    " (     0   \"\\    !         !     O    6S L,\"XP.\"PP+C X+# N,38L,\"XQ-BPP+C(T+# N,C0L,\"XS,BPP+C,R+# N-%T #@   #"
+    "@    &    \"     0         !0    @    !    !0    $         $     4   !X7V]U=     X   !@    !@    @    $          4"
+    "    (     0   \"\\    !         !     O    6S N-BPP+C8X+# N-C@L,\"XW-BPP+C<V+# N.#0L,\"XX-\"PP+CDR+# N.3(L,5T #@  "
+    " #     &    \"     0         !0    @    !    !     $         $  $ 'E?:6X.    4     8    (    !          %    \"   "
+    "  $    ?     0         0    'P   %LM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,5T #@   #@    &    \"     0         !0   "
+    " @    !    !0    $         $     4   !Y7V]U=     X   !0    !@    @    $          4    (     0   !\\    !         !"
+    "     ?    6RTQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ70 .    .     8    (    !          %    \"     $    '  "
+    "   0         0    !P   $9A;&QI;F< #@   $     &    \"     0         !0    @    !    \"P    $         $     L   !!8W"
+    "1I=F4@2&EG:       #@   &     &    \"     0         !0    @    !    +P    $         $    \"\\   !;,\" P+C X(# N,#@@"
+    ",\"XQ-B P+C$V(# N,C0@,\"XR-\" P+C,R(# N,S(@,\"XT70 .    8     8    (    !          %    \"     $    O     0       "
+    "  0    +P   %LP+C8@,\"XV.\" P+C8X(# N-S8@,\"XW-B P+C@T(# N.#0@,\"XY,B P+CDR(#%=  X   !0    !@    @    $          4"
+    "    (     0   !X    !         !     >    6S$@(#$@+3$@+3$@+3$@+3$@+3$@+3$@+3$@+3%=   .    4     8    (    !        "
+    "  %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
+  }
+  DataRecord {
+    Tag			    DataTag7
+    Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
     "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ )#IO@4.    ( 8   "
     "8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >%"
     "]I;@      >%]O=70     >5]I;@      >5]O=70       X   \"8 P  !@    @    !          4    (     0    P    !          X"
@@ -33516,7 +33775,7 @@ MatData {
     "!          %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
   }
   DataRecord {
-    Tag			    DataTag7
+    Tag			    DataTag8
     Data		    "  %)30     .    ,#0   8    (     @         %    \"     $    !     0         %  0 &0    $   #5 @  <VEG;F"
     "%L                         &QA<W1?<V5L96-T961?<VEG;F%L      !H:6=H;&EG:'1E9%]S:6=N86QS        :&EG:&QI9VAT7W)E8W1?"
     ":&%N9&QE<P   '-A=F5D7W!O<VET:6]N              !S879E9%]S8W)E96YS:7IE            =&EM95]L:6UI=',                  '"
@@ -33678,7 +33937,7 @@ MatData {
     "@            TP X    X    !@    @    $          4    (     0    <    !         !     '    4U1!4E1%1  "
   }
   DataRecord {
-    Tag			    DataTag8
+    Tag			    DataTag9
     Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
     "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ )#IO@4.    ( 8   "
     "8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >%"
@@ -33700,30 +33959,6 @@ MatData {
     " 0    +P   %LP+C8@,\"XV.\" P+C8X(# N-S8@,\"XW-B P+C@T(# N.#0@,\"XY,B P+CDR(#%=  X   !0    !@    @    $          4 "
     "   (     0   !\\    !         !     ?    6RTQ(\"TQ(\" Q(\" Q(\" Q(\" Q(\" Q(\" Q(\" Q(\" Q70 .    4     8    (    "
     "!          %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
-  }
-  DataRecord {
-    Tag			    DataTag9
-    Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ +\\C$P<.    ( 8  "
-    " 8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >"
-    "%]I;@      >%]O=70     >5]I;@      >5]O=70       X   \"8 P  !@    @    !          4    (     0    P    !          "
-    "X    P    !@    @    $          4    (     0    0    !         !  ! !E9&=E#@   #@    &    \"     0         !0    @"
-    "    !    !@    $         $     8   !2:7-I;F<   X    X    !@    @    $          4    (     0    @    !         !   "
-    "  (    <&]L87)I='D.    0     8    (    !          %    \"     $    +     0         0    \"P   $%C=&EV92!(:6=H     "
-    "  .    ,     8    (    !          %    \"     $    $     0         0  0 >%]I;@X   !@    !@    @    $          4   "
-    " (     0   \"\\    !         !     O    6S L,\"XP.\"PP+C X+# N,38L,\"XQ-BPP+C(T+# N,C0L,\"XS,BPP+C,R+# N-%T #@   #"
-    "@    &    \"     0         !0    @    !    !0    $         $     4   !X7V]U=     X   !@    !@    @    $          4"
-    "    (     0   \"\\    !         !     O    6S N-BPP+C8X+# N-C@L,\"XW-BPP+C<V+# N.#0L,\"XX-\"PP+CDR+# N.3(L,5T #@  "
-    " #     &    \"     0         !0    @    !    !     $         $  $ 'E?:6X.    4     8    (    !          %    \"   "
-    "  $    ?     0         0    'P   %LM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,5T #@   #@    &    \"     0         !0   "
-    " @    !    !0    $         $     4   !Y7V]U=     X   !0    !@    @    $          4    (     0   !\\    !         !"
-    "     ?    6RTQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ70 .    .     8    (    !          %    \"     $    '  "
-    "   0         0    !P   $9A;&QI;F< #@   $     &    \"     0         !0    @    !    \"P    $         $     L   !!8W"
-    "1I=F4@2&EG:       #@   &     &    \"     0         !0    @    !    +P    $         $    \"\\   !;,\" P+C X(# N,#@@"
-    ",\"XQ-B P+C$V(# N,C0@,\"XR-\" P+C,R(# N,S(@,\"XT70 .    8     8    (    !          %    \"     $    O     0       "
-    "  0    +P   %LP+C8@,\"XV.\" P+C8X(# N-S8@,\"XW-B P+C@T(# N.#0@,\"XY,B P+CDR(#%=  X   !0    !@    @    $          4"
-    "    (     0   !X    !         !     >    6S$@(#$@+3$@+3$@+3$@+3$@+3$@+3$@+3$@+3%=   .    4     8    (    !        "
-    "  %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
   }
   DataRecord {
     Tag			    DataTag10
@@ -33800,30 +34035,6 @@ MatData {
   DataRecord {
     Tag			    DataTag13
     Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ )#IO@4.    ( 8   "
-    "8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >%"
-    "]I;@      >%]O=70     >5]I;@      >5]O=70       X   \"8 P  !@    @    !          4    (     0    P    !          X"
-    "    P    !@    @    $          4    (     0    0    !         !  ! !E9&=E#@   #@    &    \"     0         !0    @ "
-    "   !    !@    $         $     8   !2:7-I;F<   X    X    !@    @    $          4    (     0    @    !         !    "
-    " (    <&]L87)I='D.    0     8    (    !          %    \"     $    +     0         0    \"P   $%C=&EV92!(:6=H      "
-    " .    ,     8    (    !          %    \"     $    $     0         0  0 >%]I;@X   !@    !@    @    $          4    "
-    "(     0   \"\\    !         !     O    6S L,\"XP.\"PP+C X+# N,38L,\"XQ-BPP+C(T+# N,C0L,\"XS,BPP+C,R+# N-%T #@   #@"
-    "    &    \"     0         !0    @    !    !0    $         $     4   !X7V]U=     X   !@    !@    @    $          4 "
-    "   (     0   \"\\    !         !     O    6S N-BPP+C8X+# N-C@L,\"XW-BPP+C<V+# N.#0L,\"XX-\"PP+CDR+# N.3(L,5T #@   "
-    "#     &    \"     0         !0    @    !    !     $         $  $ 'E?:6X.    4     8    (    !          %    \"    "
-    " $    ?     0         0    'P   %LM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,5T #@   #@    &    \"     0         !0    "
-    "@    !    !0    $         $     4   !Y7V]U=     X   !0    !@    @    $          4    (     0   !\\    !         ! "
-    "    ?    6RTQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ70 .    .     8    (    !          %    \"     $    &   "
-    "  0         0    !@   %)I<VEN9P  #@   $     &    \"     0         !0    @    !    \"P    $         $     L   !!8W1"
-    "I=F4@2&EG:       #@   &     &    \"     0         !0    @    !    +P    $         $    \"\\   !;,\" P+C X(# N,#@@,"
-    "\"XQ-B P+C$V(# N,C0@,\"XR-\" P+C,R(# N,S(@,\"XT70 .    8     8    (    !          %    \"     $    O     0        "
-    " 0    +P   %LP+C8@,\"XV.\" P+C8X(# N-S8@,\"XW-B P+C@T(# N.#0@,\"XY,B P+CDR(#%=  X   !0    !@    @    $          4 "
-    "   (     0   !\\    !         !     ?    6RTQ(\"TQ(\" Q(\" Q(\" Q(\" Q(\" Q(\" Q(\" Q(\" Q70 .    4     8    (    "
-    "!          %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
-  }
-  DataRecord {
-    Tag			    DataTag14
-    Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
     "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ +\\C$P<.    ( 8  "
     " 8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >"
     "%]I;@      >%]O=70     >5]I;@      >5]O=70       X   \"8 P  !@    @    !          4    (     0    P    !          "
@@ -33844,6 +34055,30 @@ MatData {
     "  0    +P   %LP+C8@,\"XV.\" P+C8X(# N-S8@,\"XW-B P+C@T(# N.#0@,\"XY,B P+CDR(#%=  X   !0    !@    @    $          4"
     "    (     0   !X    !         !     >    6S$@(#$@+3$@+3$@+3$@+3$@+3$@+3$@+3$@+3%=   .    4     8    (    !        "
     "  %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
+  }
+  DataRecord {
+    Tag			    DataTag14
+    Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ )#IO@4.    ( 8   "
+    "8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >%"
+    "]I;@      >%]O=70     >5]I;@      >5]O=70       X   \"8 P  !@    @    !          4    (     0    P    !          X"
+    "    P    !@    @    $          4    (     0    0    !         !  ! !E9&=E#@   #@    &    \"     0         !0    @ "
+    "   !    !@    $         $     8   !2:7-I;F<   X    X    !@    @    $          4    (     0    @    !         !    "
+    " (    <&]L87)I='D.    0     8    (    !          %    \"     $    +     0         0    \"P   $%C=&EV92!(:6=H      "
+    " .    ,     8    (    !          %    \"     $    $     0         0  0 >%]I;@X   !@    !@    @    $          4    "
+    "(     0   \"\\    !         !     O    6S L,\"XP.\"PP+C X+# N,38L,\"XQ-BPP+C(T+# N,C0L,\"XS,BPP+C,R+# N-%T #@   #@"
+    "    &    \"     0         !0    @    !    !0    $         $     4   !X7V]U=     X   !@    !@    @    $          4 "
+    "   (     0   \"\\    !         !     O    6S N-BPP+C8X+# N-C@L,\"XW-BPP+C<V+# N.#0L,\"XX-\"PP+CDR+# N.3(L,5T #@   "
+    "#     &    \"     0         !0    @    !    !     $         $  $ 'E?:6X.    4     8    (    !          %    \"    "
+    " $    ?     0         0    'P   %LM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,5T #@   #@    &    \"     0         !0    "
+    "@    !    !0    $         $     4   !Y7V]U=     X   !0    !@    @    $          4    (     0   !\\    !         ! "
+    "    ?    6RTQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ70 .    .     8    (    !          %    \"     $    &   "
+    "  0         0    !@   %)I<VEN9P  #@   $     &    \"     0         !0    @    !    \"P    $         $     L   !!8W1"
+    "I=F4@2&EG:       #@   &     &    \"     0         !0    @    !    +P    $         $    \"\\   !;,\" P+C X(# N,#@@,"
+    "\"XQ-B P+C$V(# N,C0@,\"XR-\" P+C,R(# N,S(@,\"XT70 .    8     8    (    !          %    \"     $    O     0        "
+    " 0    +P   %LP+C8@,\"XV.\" P+C8X(# N-S8@,\"XW-B P+C@T(# N.#0@,\"XY,B P+CDR(#%=  X   !0    !@    @    $          4 "
+    "   (     0   !\\    !         !     ?    6RTQ(\"TQ(\" Q(\" Q(\" Q(\" Q(\" Q(\" Q(\" Q(\" Q70 .    4     8    (    "
+    "!          %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
   }
   DataRecord {
     Tag			    DataTag15
@@ -33896,6 +34131,30 @@ MatData {
   DataRecord {
     Tag			    DataTag17
     Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ +\\C$P<.    ( 8  "
+    " 8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >"
+    "%]I;@      >%]O=70     >5]I;@      >5]O=70       X   \"8 P  !@    @    !          4    (     0    P    !          "
+    "X    P    !@    @    $          4    (     0    0    !         !  ! !E9&=E#@   #@    &    \"     0         !0    @"
+    "    !    !@    $         $     8   !2:7-I;F<   X    X    !@    @    $          4    (     0    @    !         !   "
+    "  (    <&]L87)I='D.    0     8    (    !          %    \"     $    +     0         0    \"P   $%C=&EV92!(:6=H     "
+    "  .    ,     8    (    !          %    \"     $    $     0         0  0 >%]I;@X   !@    !@    @    $          4   "
+    " (     0   \"\\    !         !     O    6S L,\"XP.\"PP+C X+# N,38L,\"XQ-BPP+C(T+# N,C0L,\"XS,BPP+C,R+# N-%T #@   #"
+    "@    &    \"     0         !0    @    !    !0    $         $     4   !X7V]U=     X   !@    !@    @    $          4"
+    "    (     0   \"\\    !         !     O    6S N-BPP+C8X+# N-C@L,\"XW-BPP+C<V+# N.#0L,\"XX-\"PP+CDR+# N.3(L,5T #@  "
+    " #     &    \"     0         !0    @    !    !     $         $  $ 'E?:6X.    4     8    (    !          %    \"   "
+    "  $    ?     0         0    'P   %LM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,2PM,5T #@   #@    &    \"     0         !0   "
+    " @    !    !0    $         $     4   !Y7V]U=     X   !0    !@    @    $          4    (     0   !\\    !         !"
+    "     ?    6RTQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ+\"TQ70 .    .     8    (    !          %    \"     $    '  "
+    "   0         0    !P   $9A;&QI;F< #@   $     &    \"     0         !0    @    !    \"P    $         $     L   !!8W"
+    "1I=F4@2&EG:       #@   &     &    \"     0         !0    @    !    +P    $         $    \"\\   !;,\" P+C X(# N,#@@"
+    ",\"XQ-B P+C$V(# N,C0@,\"XR-\" P+C,R(# N,S(@,\"XT70 .    8     8    (    !          %    \"     $    O     0       "
+    "  0    +P   %LP+C8@,\"XV.\" P+C8X(# N-S8@,\"XW-B P+C@T(# N.#0@,\"XY,B P+CDR(#%=  X   !0    !@    @    $          4"
+    "    (     0   !X    !         !     >    6S$@(#$@+3$@+3$@+3$@+3$@+3$@+3$@+3$@+3%=   .    4     8    (    !        "
+    "  %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
+  }
+  DataRecord {
+    Tag			    DataTag18
+    Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
     "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ )#IO@4.    ( 8   "
     "8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >%"
     "]I;@      >%]O=70     >5]I;@      >5]O=70       X   \"8 P  !@    @    !          4    (     0    P    !          X"
@@ -33918,7 +34177,7 @@ MatData {
     "!          %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
   }
   DataRecord {
-    Tag			    DataTag18
+    Tag			    DataTag19
     Data		    "  %)30     .    L 8   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
     "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ +\\C$P<.    ( 8  "
     " 8    (     @         %    \"     $    !     0         %  0 \"0    $    _    9&5F875L=', 961G90      <&]L87)I='D >"
@@ -33942,7 +34201,7 @@ MatData {
     "  %    \"     $    ?     0         0    'P   %LM,2 M,2 @,2 @,2 M,2 M,2 M,2 M,2 M,2 M,5T "
   }
   DataRecord {
-    Tag			    DataTag19
+    Tag			    DataTag20
     Data		    "  %)30     .    (#0   8    (     @         %    \"     $    !     0         %  0 &0    $   #5 @  <VEG;F"
     "%L                         &QA<W1?<V5L96-T961?<VEG;F%L      !H:6=H;&EG:'1E9%]S:6=N86QS        :&EG:&QI9VAT7W)E8W1?"
     ":&%N9&QE<P   '-A=F5D7W!O<VET:6]N              !S879E9%]S8W)E96YS:7IE            =&EM95]L:6UI=',                  '"
@@ -34078,7 +34337,7 @@ MatData {
     "  $    !          D    (          \" ,\\ .    .     8    (    !@         %    \"     $    !     0         )    \" "
     "           / _#@         .    .     8    (    !@         %    \"     $    !     0         )    \"            !Q #@"
     "   #@    &    \"     8         !0    @    !     0    $         \"0    @            <0 X    X    !@    @    &      "
-    "    4    (     0    $    !          D    (      \" !%@Q $$.    4     8    (    !@         %    \"     $    $     0"
+    "    4    (     0    $    !          D    (        +T#R\\T .    4     8    (    !@         %    \"     $    $     0"
     "         )    (           8&Q       \"@8D       .R20       <'M #@   $     &    \"     8         !0    @    !     @"
     "    $         \"0   !           $\":0       D(U #@   $     &    \"     8         !0    @    !     @    $         \""
     "0   !                    \"0J/A #@   $     &    \"     8         !0    @    !     @    $         \"0   !          "
@@ -34104,7 +34363,7 @@ MatData {
     "   #3 #@   #@    &    \"     0         !0    @    !    !P    $         $     <   !35$%25$5$  "
   }
   DataRecord {
-    Tag			    DataTag20
+    Tag			    DataTag21
     Data		    "  %)30     .    :#<   8    (     @         %    \"     $    !     0         %  0 &0    $   #5 @  <VEG;F"
     "%L                         &QA<W1?<V5L96-T961?<VEG;F%L      !H:6=H;&EG:'1E9%]S:6=N86QS        :&EG:&QI9VAT7W)E8W1?"
     ":&%N9&QE<P   '-A=F5D7W!O<VET:6]N              !S879E9%]S8W)E96YS:7IE            =&EM95]L:6UI=',                  '"
@@ -34248,31 +34507,31 @@ MatData {
     "          4    (     0    0    !         !  ! !T:6UE#@   #@    &    \"     8         !0    @    !     0    $      "
     "   \"0    @            00 X    X    !@    @    &          4    (     0    $    !          D    (            -< .  "
     "  .     8    (    !@         %    \"     $    !     0         )    \"            / _#@         .    .     8    (  "
-    "  !@         %    \"     $    !     0         )    \"            \"! #@   #@    &    \"     8         !0    @    !"
-    "     0    $         \"0    @            @0 X    X    !@    @    &          4    (     0    $    !          D    ( "
-    "       !H&$_4 .    4     8    (    !@         %    \"     $    $     0         )    (           0%E        @94    "
-    "   .R20       <'M #@   $     &    \"     8         !0    @    !     @    $         \"0   !           $\":0       D"
-    "(U #@   $     &    \"     8         !0    @    !     @    $         \"0   !                    \"0J/A #@   $     &"
-    "    \"     8         !0    @    !     @    $         \"0   !                       /!_#@   #@    &    \"     8    "
-    "     !0    @    !     0    $         \"0    @         D*CX0 X    X    !@    @    &          4    (     0    $    !"
-    "          D    (               .    $ $   8    (    !@         %    \"     (    .     0         )    X            "
-    ".\"_        ^+\\         P         C         #,         2P        !3         &,         :P        ![         (,   "
-    "      BP        \"/         )<         FP        \"C         *<         KP        \"S         +L         OP       "
-    "@##         ,<         RP       @#+       \" ,\\         TP        #7 #@   #@    &    \"     8         !0    @    "
-    "!     0    $         \"0    @         0\"340 X    X    !@    @    &          4    (     0    $    !          D    "
+    "  !@         %    \"     $    !     0         )    \"            !A #@   #@    &    \"     8         !0    @    ! "
+    "    0    $         \"0    @            80 X    X    !@    @    &          4    (     0    $    !          D    (  "
+    "    \" %K!'\\T .    4     8    (    !@         %    \"     $    $     0         )    (           0%E        @94   "
+    "    .R20       <'M #@   $     &    \"     8         !0    @    !     @    $         \"0   !           $\":0       "
+    "D(U #@   $     &    \"     8         !0    @    !     @    $         \"0   !                    \"0J/A #@   $     "
+    "&    \"     8         !0    @    !     @    $         \"0   !                       /!_#@   #@    &    \"     8   "
+    "      !0    @    !     0    $         \"0    @         D*CX0 X    X    !@    @    &          4    (     0    $    "
+    "!          D    (               .    $ $   8    (    !@         %    \"     (    .     0         )    X           "
+    " .\"_        ^+\\         P         C         #,         2P        !3         &,         :P        ![         (,  "
+    "       BP        \"/         )<         FP        \"C         *<         KP        \"S         +L         OP      "
+    " @##         ,<         RP       @#+       \" ,\\         TP        #7 #@   #@    &    \"     8         !0    @   "
+    " !     0    $         \"0    @         H ;F0 X    X    !@    @    &          4    (     0    $    !          D    "
     "(               .    F     8    (    !@         %    \"     $    -     0         )    :            / _        \\#\\"
     "       #P/P       / _        \\#\\       #P/P       / _        \\#\\       #P/P       / _        \\#\\       #P/P "
     "      / _#@   #     &    \"     8         !0    @               $         \"0         .    ,     8    (    !      "
     "    %    \"     $    #     0         0  , ;V9F  X    P    !@    @    $          4    (     0    (    !         !  "
     " @!O;@  #@   #     &    \"     0         !0    @    !     @    $         $  \" &]N   .    .     8    (    !@      "
     "   %    \"     $    !     0         )    \"            \"A #@   #     &    \"     0         !0    @    !    !     "
-    "$         $  $ $Y/3D4.    .     8    (    !          %    \"     $    '     0         0    !P   %-405)4140 #@   ' "
-    "    &    \"     $         !0    @    !     0    $         #@   $     &    \"     0         !0    @    !    #P    $"
-    "         $     \\   !4:6UE(&EN('-E8V]N9', #@   #@    &    \"     8         !0    @    !     0    $         \"0    "
-    "@    53=$4;2+40 X    X    !@    @    &          4    (     0    $    !          D    (            \"$ .    .     8"
-    "    (    !@         %    \"     $    !     0         )    \"            / _#@   #@    &    \"     8         !0    "
-    "@    !     0    $         \"0    @         @*CX0 X    X    !@    @    &          4    (     0    $    !          D"
-    "    (               .    .     8    (    !@         %    \"     $    !     0         )    \"           @#7 #@   #@"
-    "    &    \"     0         !0    @    !    !P    $         $     <   !35$%25$5$  "
+    "$         $  $ $Y/3D4.    ,     8    (    !          %    \"     $    $     0         0  0 1$].10X   !P    !@    @"
+    "    !          4    (     0    $    !          X   !     !@    @    $          4    (     0    \\    !         !  "
+    "   /    5&EM92!I;B!S96-O;F1S  X    X    !@    @    &          4    (     0    $    !          D    (         )\"HZ"
+    "$ .    .     8    (    !@         %    \"     $    !     0         )    \"             A #@   #@    &    \"     8 "
+    "        !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    &          4    (     0    $  "
+    "  !          D    (         (\"H^$ .    .     8    (    !@         %    \"     $    !     0         )    \"       "
+    "        #@   #@    &    \"     8         !0    @    !     0    $         \"0    @          ( UP X   !     !@    @ "
+    "   $          4    (     0    H    !         !     *    4$521D]234E.1P        "
   }
 }
