@@ -3,8 +3,8 @@ function [dout, vout, acc_end, acc_count, acc_count_pps, xdata, xvalid, xeof] = 
     baselines_per_channel = 20;
     valids_per_channel = 11;
     channels_per_dump = 4096/8;
-    dumps_per_acc = 2;
-    n_accs = 8;
+    dumps_per_acc = 10;
+    n_accs = 4;
 
     din = zeros(baselines_per_channel, channels_per_dump, dumps_per_acc, n_accs);
     vin = zeros(baselines_per_channel, channels_per_dump, dumps_per_acc, n_accs);
