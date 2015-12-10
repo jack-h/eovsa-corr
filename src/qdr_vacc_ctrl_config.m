@@ -1,5 +1,5 @@
 
-function qdr_vacc_ctrl_config_test(this_block)
+function qdr_vacc_ctrl_config(this_block)
 
   % Revision History:
   %
@@ -130,9 +130,9 @@ function qdr_vacc_ctrl_config_test(this_block)
 
   %    this_block.addFile('');
   %    this_block.addFile('');
-  this_block.addFile('/home/jack/github/jack-h/mlib_devel/ox_library/hdl_lib/general_lib/delay.v');
-  this_block.addFile('/home/jack/github/jack-h/mlib_devel/ox_library/hdl_lib/general_lib/sync_delay.v');
-  this_block.addFile('/home/jack/github/jack-h/mlib_devel/ox_library/hdl_lib/vacc/qdr_vacc_ctrl.v');
+  this_block.addFile('vacc/delay.v');
+  this_block.addFile('vacc/sync_delay.v');
+  this_block.addFile('vacc/qdr_vacc_ctrl.v');
 
 return;
 
