@@ -7,33 +7,33 @@ AREA_GROUP "fft_direct_pblock" RANGE=CLOCKREGION_X0Y2:CLOCKREGION_X0Y3;
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/pfb_fft_f26129f62c/fft_wideband_real/fft_wideband_real1_35f3f79cd7/fft_biplex_real_4x_73d6afc5b4/bi_real_unscr_4x_0fc4d6e073" AREA_GROUP = "fft_direct_pblock";
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/pfb_fft_f26129f62c/fft_wideband_real/fft_wideband_real1_35f3f79cd7/fft_direct_b0b762bfca" AREA_GROUP = "fft_direct_pblock";
 
-AREA_GROUP "xeng_pblock" RANGE=CLOCKREGION_X0Y7:CLOCKREGION_X1Y8;
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/xeng*" AREA_GROUP = "xeng_pblock";
+#AREA_GROUP "xeng_pblock" RANGE=CLOCKREGION_X0Y7:CLOCKREGION_X1Y8;
+#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/xeng*" AREA_GROUP = "xeng_pblock";
+#
+#AREA_GROUP "packetizer_x_pblock" RANGE=CLOCKREGION_X1Y7:CLOCKREGION_X1Y8;
+#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/packetizer_x*" AREA_GROUP = "packetizer_x_pblock";
 
-AREA_GROUP "packetizer_x_pblock" RANGE=CLOCKREGION_X1Y7:CLOCKREGION_X1Y8;
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/packetizer_x*" AREA_GROUP = "packetizer_x_pblock";
-
-# polarimetry is pretty huge
-AREA_GROUP "clkreg_x1y0_x1y1_pblock" RANGE=CLOCKREGION_X1Y0:CLOCKREGION_X1Y1;
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/polarimetry_*" AREA_GROUP = "clkreg_x1y0_x1y1_pblock";
-
+## polarimetry is pretty huge
+#AREA_GROUP "clkreg_x1y0_x1y1_pblock" RANGE=CLOCKREGION_X1Y0:CLOCKREGION_X1Y1;
+#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/polarimetry_*" AREA_GROUP = "clkreg_x1y0_x1y1_pblock";
+#
 # power_cal is not so big
 AREA_GROUP "clkreg_x1y2_pblock" RANGE=CLOCKREGION_X1Y2:CLOCKREGION_X1Y2;
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/power_cal_*" AREA_GROUP = "clkreg_x1y2_pblock";
 
-# vector_acc uses lots of BRAM
-AREA_GROUP "clkreg_x1y3_x1y4_pblock" RANGE=CLOCKREGION_X1Y3:CLOCKREGION_X1Y4;
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/vector_acc*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
-# Throw these in with vector_acc
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/acc_sync_*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/fifo2/*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/f_x_*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
-
-# Put QDR controllers and QDR sniffers near other QDR areas
-AREA_GROUP "qdr_pblock" RANGE=SLICE_X88Y200:SLICE_X107Y359;
-INST "qdr?_controller/*" AREA_GROUP = "qdr_pblock";
-# Put these instances in qdr_pblock as their inputs are clocked by adc1_clk180
-# yet these instances themsleves are clocked by adc1_clk, so the setup/hold
-# requirement is half a clock cycle!
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/f_x_*/adress_select40/*" AREA_GROUP = "qdr_pblock";
-INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/f_x_*/adress_select46/*" AREA_GROUP = "qdr_pblock";
+## vector_acc uses lots of BRAM
+#AREA_GROUP "clkreg_x1y3_x1y4_pblock" RANGE=CLOCKREGION_X1Y3:CLOCKREGION_X1Y4;
+#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/vector_acc*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
+## Throw these in with vector_acc
+#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/acc_sync_*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
+#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/fifo2/*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
+#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/f_x_*" AREA_GROUP = "clkreg_x1y3_x1y4_pblock";
+#
+## Put QDR controllers and QDR sniffers near other QDR areas
+#AREA_GROUP "qdr_pblock" RANGE=SLICE_X88Y200:SLICE_X107Y359;
+#INST "qdr?_controller/*" AREA_GROUP = "qdr_pblock";
+## Put these instances in qdr_pblock as their inputs are clocked by adc1_clk180
+## yet these instances themsleves are clocked by adc1_clk, so the setup/hold
+## requirement is half a clock cycle!
+#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/f_x_*/adress_select40/*" AREA_GROUP = "qdr_pblock";
+#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/f_x_*/adress_select46/*" AREA_GROUP = "qdr_pblock";
