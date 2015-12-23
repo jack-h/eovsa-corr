@@ -1,14 +1,14 @@
 # Pblock constraints for eovsa-corr
 
-AREA_GROUP "biplex_core_pblock" RANGE=CLOCKREGION_X0Y4:CLOCKREGION_X0Y6;
+AREA_GROUP "biplex_core_pblock" RANGE=CLOCKREGION_X0Y3:CLOCKREGION_X0Y5;
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/pfb_fft_f26129f62c/fft_wideband_real/fft_wideband_real1_35f3f79cd7/fft_biplex_real_4x_73d6afc5b4/biplex_core_9360c04954" AREA_GROUP = "biplex_core_pblock";
 
-AREA_GROUP "fft_direct_pblock" RANGE=CLOCKREGION_X0Y2:CLOCKREGION_X0Y3;
+AREA_GROUP "fft_direct_pblock" RANGE=CLOCKREGION_X0Y1:CLOCKREGION_X0Y2;
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/pfb_fft_f26129f62c/fft_wideband_real/fft_wideband_real1_35f3f79cd7/fft_biplex_real_4x_73d6afc5b4/bi_real_unscr_4x_0fc4d6e073" AREA_GROUP = "fft_direct_pblock";
 INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/pfb_fft_f26129f62c/fft_wideband_real/fft_wideband_real1_35f3f79cd7/fft_direct_b0b762bfca" AREA_GROUP = "fft_direct_pblock";
 
-#AREA_GROUP "xeng_pblock" RANGE=CLOCKREGION_X0Y7:CLOCKREGION_X1Y8;
-#INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/xeng*" AREA_GROUP = "xeng_pblock";
+AREA_GROUP "xeng_pblock" RANGE=CLOCKREGION_X0Y6:CLOCKREGION_X1Y8;
+INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/xeng*" AREA_GROUP = "xeng_pblock";
 #
 #AREA_GROUP "packetizer_x_pblock" RANGE=CLOCKREGION_X1Y7:CLOCKREGION_X1Y8;
 #INST "eovsa_corr_XSG_core_config/eovsa_corr_XSG_core_config/eovsa_corr_x0/packetizer_x*" AREA_GROUP = "packetizer_x_pblock";
