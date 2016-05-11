@@ -73,67 +73,67 @@ function fft_wideband_real_core_config(this_block)
   if (this_block.inputTypesKnown)
     % do input type checking, dynamic output type and generic setup in this code block.
 
-    if (this_block.port('in00').width ~= 18);
+    if (this_block.port('in00').width ~= 12);
       this_block.setError('Input data type for port "in00" must have width=18.');
     end
 
-    if (this_block.port('in01').width ~= 18);
+    if (this_block.port('in01').width ~= 12);
       this_block.setError('Input data type for port "in01" must have width=18.');
     end
 
-    if (this_block.port('in02').width ~= 18);
+    if (this_block.port('in02').width ~= 12);
       this_block.setError('Input data type for port "in02" must have width=18.');
     end
 
-    if (this_block.port('in03').width ~= 18);
+    if (this_block.port('in03').width ~= 12);
       this_block.setError('Input data type for port "in03" must have width=18.');
     end
 
-    if (this_block.port('in10').width ~= 18);
+    if (this_block.port('in10').width ~= 12);
       this_block.setError('Input data type for port "in10" must have width=18.');
     end
 
-    if (this_block.port('in11').width ~= 18);
+    if (this_block.port('in11').width ~= 12);
       this_block.setError('Input data type for port "in11" must have width=18.');
     end
 
-    if (this_block.port('in12').width ~= 18);
+    if (this_block.port('in12').width ~= 12);
       this_block.setError('Input data type for port "in12" must have width=18.');
     end
 
-    if (this_block.port('in13').width ~= 18);
+    if (this_block.port('in13').width ~= 12);
       this_block.setError('Input data type for port "in13" must have width=18.');
     end
 
-    if (this_block.port('in20').width ~= 18);
+    if (this_block.port('in20').width ~= 12);
       this_block.setError('Input data type for port "in20" must have width=18.');
     end
 
-    if (this_block.port('in21').width ~= 18);
+    if (this_block.port('in21').width ~= 12);
       this_block.setError('Input data type for port "in21" must have width=18.');
     end
 
-    if (this_block.port('in22').width ~= 18);
+    if (this_block.port('in22').width ~= 12);
       this_block.setError('Input data type for port "in22" must have width=18.');
     end
 
-    if (this_block.port('in23').width ~= 18);
+    if (this_block.port('in23').width ~= 12);
       this_block.setError('Input data type for port "in23" must have width=18.');
     end
 
-    if (this_block.port('in30').width ~= 18);
+    if (this_block.port('in30').width ~= 12);
       this_block.setError('Input data type for port "in30" must have width=18.');
     end
 
-    if (this_block.port('in31').width ~= 18);
+    if (this_block.port('in31').width ~= 12);
       this_block.setError('Input data type for port "in31" must have width=18.');
     end
 
-    if (this_block.port('in32').width ~= 18);
+    if (this_block.port('in32').width ~= 12);
       this_block.setError('Input data type for port "in32" must have width=18.');
     end
 
-    if (this_block.port('in33').width ~= 18);
+    if (this_block.port('in33').width ~= 12);
       this_block.setError('Input data type for port "in33" must have width=18.');
     end
 
