@@ -1,0 +1,13 @@
+# testbench outputs
+*.out
+*.vcd
+*.sav
+
+#golden vector files
+*.dat
+
+# vim swap files
+*.swp
+
+#log files
+*.log
