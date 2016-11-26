@@ -33,16 +33,18 @@ AREA_GROUP "fir_tap3" RANGE=RAMB18_X4Y112:RAMB18_X4Y143;
 AREA_GROUP "fir_tap3" RANGE=RAMB36_X4Y56:RAMB36_X4Y71;
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/xeng_hdl_uint_*" AREA_GROUP = "xeng_core";
+INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/xeng0_vacc*" AREA_GROUP = "xeng_core";
 AREA_GROUP "xeng_core" RANGE=DSP48_X7Y100:DSP48_X13Y141;
 AREA_GROUP "xeng_core" RANGE=RAMB18_X7Y100:RAMB18_X13Y141;
 AREA_GROUP "xeng_core" RANGE=RAMB36_X7Y50:RAMB36_X13Y70;
+AREA_GROUP "xeng_core" RANGE=SLICE_X116Y240:SLICE_X209Y359;
 
-INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_??????????/fft_wideband_real/fft_wideband_real1_??????????/fft_biplex_real_4x_??????????/bi_real_unscr_4x_??????????" AREA_GROUP = "fft_biplex";
-INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_??????????/fft_wideband_real/fft_wideband_real1_??????????/fft_biplex_real_4x_??????????/biplex_core_??????????" AREA_GROUP = "fft_biplex";
+INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_*/bi_real_unscr_4x_*" AREA_GROUP = "fft_biplex";
+INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_*/biplex_core_*" AREA_GROUP = "fft_biplex";
 AREA_GROUP "fft_biplex" RANGE=DSP48_X0Y24:DSP48_X6Y87;
 AREA_GROUP "fft_biplex" RANGE=RAMB18_X0Y24:RAMB18_X6Y87;
 AREA_GROUP "fft_biplex" RANGE=RAMB36_X0Y12:RAMB36_X6Y43;
-INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_e9cd03ccf2/fft_wideband_real/fft_wideband_real1_35f3f79cd7/fft_direct_b0b762bfca" AREA_GROUP = "fft_direct";
+INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_*/fft_direct_*" AREA_GROUP = "fft_direct";
 AREA_GROUP "fft_direct" RANGE=DSP48_X0Y0:DSP48_X6Y23;
 AREA_GROUP "fft_direct" RANGE=RAMB18_X0Y0:RAMB18_X6Y23;
 AREA_GROUP "fft_direct" RANGE=RAMB36_X0Y0:RAMB36_X6Y11;
@@ -56,12 +58,37 @@ INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/f_x_??????????/x_eng_reorder*" AREA_GROUP = "post_fft";
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/f_x_??????????/ct_*" AREA_GROUP = "post_fft";
+INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/eq*" AREA_GROUP = "post_fft";
 
 AREA_GROUP "post_fft" RANGE=DSP48_X7Y0:DSP48_X13Y63;
 AREA_GROUP "post_fft" RANGE=RAMB18_X7Y0:RAMB18_X14Y63;
 AREA_GROUP "post_fft" RANGE=RAMB36_X7Y0:RAMB36_X14Y31;
+#AREA_GROUP "post_fft" RANGE=SLICE_X116Y0:SLICE_X209Y157;
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/packet_buffer*" AREA_GROUP = "packet_buffer";
 AREA_GROUP "packet_buffer" RANGE=DSP48_X7Y64:DSP48_X13Y97;
 AREA_GROUP "packet_buffer" RANGE=RAMB18_X8Y64:RAMB18_X13Y97;
 AREA_GROUP "packet_buffer" RANGE=RAMB36_X8Y32:RAMB36_X13Y48;
+
+INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_??????????/power_td*" AREA_GROUP = "post_fir";
+INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/auto_shutoff*" AREA_GROUP = "post_fir";
+#AREA_GROUP "post_fir" RANGE=SLICE_X0Y220:SLICE_X81Y279;
+AREA_GROUP "post_fir" RANGE=DSP48_X0Y88:DSP48_X6Y111;
+AREA_GROUP "post_fir" RANGE=RAMB18_X0Y88:RAMB18_X6Y111;
+AREA_GROUP "post_fir" RANGE=RAMB36_X0Y44:RAMB36_X6Y55;
+
+# TGE receive buffers
+
+INST "eovsa_corr_300mhz_Rx_Tx_FX1/eovsa_corr_300mhz_Rx_Tx_FX1/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP" AREA_GROUP = "rx_tx1";
+INST "eovsa_corr_300mhz_Rx_Tx_FX1/eovsa_corr_300mhz_Rx_Tx_FX1/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP" AREA_GROUP = "rx_tx1";
+INST "eovsa_corr_300mhz_Rx_Tx_FX1/eovsa_corr_300mhz_Rx_Tx_FX1/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/BU2/U0/grf.rf/mem/dout_i_*" AREA_GROUP = "rx_tx1";
+AREA_GROUP "rx_tx1" RANGE=SLICE_X170Y245:SLICE_X181Y259;
+AREA_GROUP "rx_tx1" RANGE=RAMB18_X11Y98:RAMB18_X12Y103;
+AREA_GROUP "rx_tx1" RANGE=RAMB36_X11Y49:RAMB36_X12Y51;
+
+INST "eovsa_corr_300mhz_Rx_Tx_FX0/eovsa_corr_300mhz_Rx_Tx_FX0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP" AREA_GROUP = "rx_tx0";
+INST "eovsa_corr_300mhz_Rx_Tx_FX0/eovsa_corr_300mhz_Rx_Tx_FX0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP" AREA_GROUP = "rx_tx0";
+INST "eovsa_corr_300mhz_Rx_Tx_FX0/eovsa_corr_300mhz_Rx_Tx_FX0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/BU2/U0/grf.rf/mem/dout_i_*" AREA_GROUP = "rx_tx0";
+AREA_GROUP "rx_tx0" RANGE=SLICE_X170Y265:SLICE_X181Y279;
+AREA_GROUP "rx_tx0" RANGE=RAMB18_X11Y106:RAMB18_X12Y111;
+AREA_GROUP "rx_tx0" RANGE=RAMB36_X11Y53:RAMB36_X12Y55;
