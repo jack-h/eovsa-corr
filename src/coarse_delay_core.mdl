@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.12"
+    ComputedModelVersion    "1.14"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [11.0, 22.0, 2115.0, 1088.0]
+      Location		      [10.0, -1.0, 2117.0, 1115.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,16 +55,16 @@ Model {
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [2077.0, 901.0]
-	  ZoomFactor		  [1.7499999999999998]
-	  Offset		  [-14.285714285714381, -7.9045758928572241]
+	  Extents		  [2079.0, 928.0]
+	  ZoomFactor		  [1.7499999999999996]
+	  Offset		  [-14.285714285714334, -7.9045758928572241]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "31:248"
-	  Extents		  [1884.0, 870.0]
+	  Extents		  [2079.0, 928.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [-1.875, 0.0]
 	}
@@ -73,7 +73,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "31:284"
-	  Extents		  [1884.0, 870.0]
+	  Extents		  [2079.0, 928.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -82,7 +82,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "31"
-	  Extents		  [2077.0, 901.0]
+	  Extents		  [2079.0, 928.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [-3.5, 0.0]
 	}
@@ -91,7 +91,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "44"
-	  Extents		  [1884.0, 870.0]
+	  Extents		  [2079.0, 928.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [-739.5, -355.0]
 	}
@@ -105,9 +105,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jackh"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Feb 28 14:43:50 2016"
-  RTWModifiedTimeStamp	  378570796
-  ModelVersionFormat	  "1.%<AutoIncrement:12>"
+  LastModifiedDate	  "Sat Nov 26 11:47:52 2016"
+  RTWModifiedTimeStamp	  402061641
+  ModelVersionFormat	  "1.%<AutoIncrement:14>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -874,7 +874,7 @@ Model {
   }
   System {
     Name		    "coarse_delay_core"
-    Location		    [11, 22, 2126, 1110]
+    Location		    [10, -1, 2127, 1114]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -917,7 +917,7 @@ Model {
       Impl_file		      "ISE Defaults"
       testbench		      off
       simulink_period	      "1"
-      sysclk_period	      "5"
+      sysclk_period	      "3"
       dcm_input_clock_period  "100"
       incr_netlist	      off
       trim_vbits	      "Everywhere in SubSystem"
@@ -927,7 +927,7 @@ Model {
       deprecated_control      off
       eval_field	      "0"
       has_advanced_control    "0"
-      sggui_pos		      "327,239,464,470"
+      sggui_pos		      "328,237,464,470"
       block_type	      "sysgen"
       block_version	      "11.4"
       sg_icon_stat	      "46,45,0,0,token,white,0,58c5b5770fe5f7c311f53dbc6e73f0f6,right,,[ ],[ ]"
@@ -1193,8 +1193,8 @@ Model {
       Position		      [1090, 18, 1125, 162]
       ZOrder		      8
       Floating		      off
-      Location		      [695, 222, 1655, 727]
-      Open		      on
+      Location		      [696, 224, 1656, 729]
+      Open		      off
       NumInputPorts	      "5"
       ZoomMode		      "yonly"
       List {
@@ -1437,7 +1437,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "max_delay"
 	    Prompt		    "Max Delay (Sample Clks)"
-	    Value		    "16384"
+	    Value		    "16384*2"
 	  }
 	  Object {
 	    $ObjectID		    25
@@ -1481,7 +1481,7 @@ Model {
       }
       System {
 	Name			"coarse_delay"
-	Location		[11, 22, 2126, 1110]
+	Location		[10, -1, 2127, 1114]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1575,7 +1575,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "12"
+	  n_bits		  "13"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1615,7 +1615,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "12"
+	  n_bits		  "13"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1655,7 +1655,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "12"
+	  n_bits		  "13"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -2008,7 +2008,7 @@ Model {
 	  ZOrder		  8
 	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
 	  AncestorBlock		  "casper_library_reorder/barrel_switcher"
-	  LibraryVersion	  "1.21"
+	  LibraryVersion	  "*1.21"
 	  UserDataPersistent	  on
 	  UserData		  "DataTag2"
 	  MinAlgLoopOccurrences	  off
@@ -2050,7 +2050,7 @@ Model {
 	  }
 	  System {
 	    Name		    "barrel_switcher"
-	    Location		    [11, 22, 1933, 1079]
+	    Location		    [10, -1, 2127, 1114]
 	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -2795,7 +2795,7 @@ Model {
 	  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type "
 	  "is ordinarily unsigned with binary point at zero, but can be Boolean when the slice is one bit wide.<br><br>Hardwar"
 	  "e notes: In hardware this block costs nothing."
-	  nbits			  "12"
+	  nbits			  "13"
 	  boolean_output	  off
 	  mode			  "Lower Bit Location + Width"
 	  bit1			  "0"
@@ -2849,7 +2849,7 @@ Model {
 		Type			"edit"
 		Name			"ram_bits"
 		Prompt			"Max delay (2^?)"
-		Value			"12"
+		Value			"13"
 	      }
 	      Object {
 		$ObjectID		34
@@ -2871,7 +2871,7 @@ Model {
 	  }
 	  System {
 	    Name		    "delay_dp0"
-	    Location		    [11, 22, 1933, 1079]
+	    Location		    [10, -1, 2127, 1114]
 	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -3222,7 +3222,7 @@ Model {
 		Type			"edit"
 		Name			"ram_bits"
 		Prompt			"Max delay (2^?)"
-		Value			"12"
+		Value			"13"
 	      }
 	      Object {
 		$ObjectID		38
@@ -3595,7 +3595,7 @@ Model {
 		Type			"edit"
 		Name			"ram_bits"
 		Prompt			"Max delay (2^?)"
-		Value			"12"
+		Value			"13"
 	      }
 	      Object {
 		$ObjectID		42
@@ -3968,7 +3968,7 @@ Model {
 		Type			"edit"
 		Name			"ram_bits"
 		Prompt			"Max delay (2^?)"
-		Value			"12"
+		Value			"13"
 	      }
 	      Object {
 		$ObjectID		46
@@ -5073,7 +5073,7 @@ Model {
       inherit_from_input      off
       hdl_port		      "on"
       has_advanced_control    "0"
-      sggui_pos		      "-1,-1,-1,-1"
+      sggui_pos		      "20,20,559,803"
       block_type	      "gatewayin"
       block_version	      "11.4"
       sg_icon_stat	      "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
@@ -5631,7 +5631,7 @@ MatData {
     "        #@   #     &    \"     0         !0    @    !     @    $         $  \" \"TQ   .    ,     8    (    !      "
     "    %    \"     $    #     0         0  , ;V9F  X    X    !@    @    $          4    (     0    8    !         !  "
     "   &    9F8Q-S4Y   .    2     8    (    !          %    \"     $    3     0         0    $P   \"XO8V]A<G-E7V1E;&%Y"
-    "7V-O<F4       X    P    !@    @    $          4    (     0    $    !         !   0 U    #@   $     &    \"     0  "
+    "7V-O<F4       X    P    !@    @    $          4    (     0    $    !         !   0 S    #@   $     &    \"     0  "
     "       !0    @    !    #0    $         $     T   !#;&]C:R!%;F%B;&5S    #@   #     &    \"     0         !0    @   "
     " !     P    $         $  # #$P,  .    .     8    (    !@         %    \"     $    !     0         )    \"         "
     "      #@   #@    &    \"     8         !0    @    !     0    $         \"0    @               X    P    !@    @   "
@@ -5715,7 +5715,7 @@ MatData {
     "#<U=         X    P    !@    @    $          4    (     0    (    !         !   @ M,0  #@   #     &    \"     0   "
     "      !0    @    !     P    $         $  # &]F9@ .    .     8    (    !          %    \"     $    &     0         "
     "0    !@   &9F,3<U.0  #@   $@    &    \"     0         !0    @    !    $P    $         $    !,    N+V-O87)S95]D96QA"
-    ">5]C;W)E       .    ,     8    (    !          %    \"     $    !     0         0  $ -0    X   !     !@    @    $ "
+    ">5]C;W)E       .    ,     8    (    !          %    \"     $    !     0         0  $ ,P    X   !     !@    @    $ "
     "         4    (     0    T    !         !     -    0VQO8VL@16YA8FQE<P    X    P    !@    @    $          4    (   "
     "  0    ,    !         !   P Q,#  #@   #@    &    \"     8         !0    @    !     0    $         \"0    @        "
     "       X    X    !@    @    &          4    (     0    $    !          D    (               .    ,     8    (    !"
@@ -5727,7 +5727,7 @@ MatData {
   DataRecord {
     Tag			    DataTag1
     Data		    "  %)30     .    , 4   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ (4K-0$.    H 0   "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ #7)H@ .    H 0   "
     "8    (     @         %    \"     $    !     0         %  0 #@    $   !4    9&5F875L=',       !M87A?9&5L87D      &Y"
     "?:6YP=71S7V)I=', 8G)A;5]L871E;F-Y  !B<F%M7W1Y<&4      &%S>6YC                  X   #( @  !@    @    !          4  "
     "  (     0    H    !          X   !     !@    @    $          4    (     0    D    !         !     )    ;6%X7V1E;&%"
@@ -5738,7 +5738,7 @@ MatData {
     "       0 X   !     !@    @    $          4    (     0    D    !         !     )    8G)A;5]T>7!E          X   !    "
     " !@    @    $          4    (     0    D    !         !     )    1'5A;\"!0;W)T          X    X    !@    @    $    "
     "      4    (     0    4    !         !     %    87-Y;F,    .    ,     8    (    !          %    \"     $    #     "
-    "0         0  , ;V9F  X    X    !@    @    &          4    (     0    $    !          D    (            T$ .    .  "
+    "0         0  , ;V9F  X    X    !@    @    &          4    (     0    $    !          D    (            X$ .    .  "
     "   8    (    !@         %    \"     $    !     0         )    \"             ! #@   #@    &    \"     8         !0"
     "    @    !     0    $         \"0    @            00 X   !     !@    @    $          4    (     0    D    !       "
     "  !     )    1'5A;\"!0;W)T          X    P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
@@ -5759,58 +5759,58 @@ MatData {
   DataRecord {
     Tag			    DataTag3
     Data		    "  %)30     .    : ,   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ * ;' 0.    V (   "
-    "8    (     @         %    \"     $    !     0         %  0 #0    $    T    9&5F875L=',      ')A;5]B:71S      !B<F%"
-    "M7VQA=&5N8WD 87-Y;F,                .    J $   8    (     0         %    \"     $    &     0         .    .     8 "
-    "   (    !          %    \"     $    (     0         0    \"    ')A;5]B:71S#@   #@    &    \"     8         !0    @"
-    "    !     0    $         \"0    @            D0 X   !     !@    @    $          4    (     0    P    !         !  "
-    "   ,    8G)A;5]L871E;F-Y      X    X    !@    @    &          4    (     0    $    !          D    (             $"
-    " .    .     8    (    !          %    \"     $    %     0         0    !0   &%S>6YC    #@   #     &    \"     0   "
-    "      !0    @    !     P    $         $  # &]F9@ .    .     8    (    !@         %    \"     $    !     0         "
-    ")    \"            \"A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X  "
-    "  P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ /\\B[00.    V (  "
+    " 8    (     @         %    \"     $    !     0         %  0 #0    $    T    9&5F875L=',      ')A;5]B:71S      !B<F"
+    "%M7VQA=&5N8WD 87-Y;F,                .    J $   8    (     0         %    \"     $    &     0         .    .     8"
+    "    (    !          %    \"     $    (     0         0    \"    ')A;5]B:71S#@   #@    &    \"     8         !0    "
+    "@    !     0    $         \"0    @            D0 X   !     !@    @    $          4    (     0    P    !         ! "
+    "    ,    8G)A;5]L871E;F-Y      X    X    !@    @    &          4    (     0    $    !          D    (             "
+    "$ .    .     8    (    !          %    \"     $    %     0         0    !0   &%S>6YC    #@   #     &    \"     0  "
+    "       !0    @    !     P    $         $  # &]F9@ .    .     8    (    !@         %    \"     $    !     0        "
+    " )    \"            \"I #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X "
+    "   P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
   }
   DataRecord {
     Tag			    DataTag4
     Data		    "  %)30     .    : ,   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ * ;' 0.    V (   "
-    "8    (     @         %    \"     $    !     0         %  0 #0    $    T    9&5F875L=',      ')A;5]B:71S      !B<F%"
-    "M7VQA=&5N8WD 87-Y;F,                .    J $   8    (     0         %    \"     $    &     0         .    .     8 "
-    "   (    !          %    \"     $    (     0         0    \"    ')A;5]B:71S#@   #@    &    \"     8         !0    @"
-    "    !     0    $         \"0    @            D0 X   !     !@    @    $          4    (     0    P    !         !  "
-    "   ,    8G)A;5]L871E;F-Y      X    X    !@    @    &          4    (     0    $    !          D    (             $"
-    " .    .     8    (    !          %    \"     $    %     0         0    !0   &%S>6YC    #@   #     &    \"     0   "
-    "      !0    @    !     P    $         $  # &]F9@ .    .     8    (    !@         %    \"     $    !     0         "
-    ")    \"            \"A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X  "
-    "  P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ /\\B[00.    V (  "
+    " 8    (     @         %    \"     $    !     0         %  0 #0    $    T    9&5F875L=',      ')A;5]B:71S      !B<F"
+    "%M7VQA=&5N8WD 87-Y;F,                .    J $   8    (     0         %    \"     $    &     0         .    .     8"
+    "    (    !          %    \"     $    (     0         0    \"    ')A;5]B:71S#@   #@    &    \"     8         !0    "
+    "@    !     0    $         \"0    @            D0 X   !     !@    @    $          4    (     0    P    !         ! "
+    "    ,    8G)A;5]L871E;F-Y      X    X    !@    @    &          4    (     0    $    !          D    (             "
+    "$ .    .     8    (    !          %    \"     $    %     0         0    !0   &%S>6YC    #@   #     &    \"     0  "
+    "       !0    @    !     P    $         $  # &]F9@ .    .     8    (    !@         %    \"     $    !     0        "
+    " )    \"            \"I #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X "
+    "   P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
   }
   DataRecord {
     Tag			    DataTag5
     Data		    "  %)30     .    : ,   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ * ;' 0.    V (   "
-    "8    (     @         %    \"     $    !     0         %  0 #0    $    T    9&5F875L=',      ')A;5]B:71S      !B<F%"
-    "M7VQA=&5N8WD 87-Y;F,                .    J $   8    (     0         %    \"     $    &     0         .    .     8 "
-    "   (    !          %    \"     $    (     0         0    \"    ')A;5]B:71S#@   #@    &    \"     8         !0    @"
-    "    !     0    $         \"0    @            D0 X   !     !@    @    $          4    (     0    P    !         !  "
-    "   ,    8G)A;5]L871E;F-Y      X    X    !@    @    &          4    (     0    $    !          D    (             $"
-    " .    .     8    (    !          %    \"     $    %     0         0    !0   &%S>6YC    #@   #     &    \"     0   "
-    "      !0    @    !     P    $         $  # &]F9@ .    .     8    (    !@         %    \"     $    !     0         "
-    ")    \"            \"A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X  "
-    "  P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ /\\B[00.    V (  "
+    " 8    (     @         %    \"     $    !     0         %  0 #0    $    T    9&5F875L=',      ')A;5]B:71S      !B<F"
+    "%M7VQA=&5N8WD 87-Y;F,                .    J $   8    (     0         %    \"     $    &     0         .    .     8"
+    "    (    !          %    \"     $    (     0         0    \"    ')A;5]B:71S#@   #@    &    \"     8         !0    "
+    "@    !     0    $         \"0    @            D0 X   !     !@    @    $          4    (     0    P    !         ! "
+    "    ,    8G)A;5]L871E;F-Y      X    X    !@    @    &          4    (     0    $    !          D    (             "
+    "$ .    .     8    (    !          %    \"     $    %     0         0    !0   &%S>6YC    #@   #     &    \"     0  "
+    "       !0    @    !     P    $         $  # &]F9@ .    .     8    (    !@         %    \"     $    !     0        "
+    " )    \"            \"I #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X "
+    "   P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
   }
   DataRecord {
     Tag			    DataTag6
     Data		    "  %)30     .    : ,   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ * ;' 0.    V (   "
-    "8    (     @         %    \"     $    !     0         %  0 #0    $    T    9&5F875L=',      ')A;5]B:71S      !B<F%"
-    "M7VQA=&5N8WD 87-Y;F,                .    J $   8    (     0         %    \"     $    &     0         .    .     8 "
-    "   (    !          %    \"     $    (     0         0    \"    ')A;5]B:71S#@   #@    &    \"     8         !0    @"
-    "    !     0    $         \"0    @            D0 X   !     !@    @    $          4    (     0    P    !         !  "
-    "   ,    8G)A;5]L871E;F-Y      X    X    !@    @    &          4    (     0    $    !          D    (             $"
-    " .    .     8    (    !          %    \"     $    %     0         0    !0   &%S>6YC    #@   #     &    \"     0   "
-    "      !0    @    !     P    $         $  # &]F9@ .    .     8    (    !@         %    \"     $    !     0         "
-    ")    \"            \"A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X  "
-    "  P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ /\\B[00.    V (  "
+    " 8    (     @         %    \"     $    !     0         %  0 #0    $    T    9&5F875L=',      ')A;5]B:71S      !B<F"
+    "%M7VQA=&5N8WD 87-Y;F,                .    J $   8    (     0         %    \"     $    &     0         .    .     8"
+    "    (    !          %    \"     $    (     0         0    \"    ')A;5]B:71S#@   #@    &    \"     8         !0    "
+    "@    !     0    $         \"0    @            D0 X   !     !@    @    $          4    (     0    P    !         ! "
+    "    ,    8G)A;5]L871E;F-Y      X    X    !@    @    &          4    (     0    $    !          D    (             "
+    "$ .    .     8    (    !          %    \"     $    %     0         0    !0   &%S>6YC    #@   #     &    \"     0  "
+    "       !0    @    !     P    $         $  # &]F9@ .    .     8    (    !@         %    \"     $    !     0        "
+    " )    \"            \"I #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X "
+    "   P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
   }
   DataRecord {
     Tag			    DataTag7
