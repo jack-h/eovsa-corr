@@ -9,28 +9,28 @@
 #INST "*qdr?_sniffer/*"   AREA_GROUP = "clkreg_x1y6_pblock";
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/coarse_delay*.ram" AREA_GROUP = "coarse_delay_ram";
-AREA_GROUP "coarse_delay_ram" RANGE=RAMB18_X0Y112:RAMB18_X0Y143;
-AREA_GROUP "coarse_delay_ram" RANGE=RAMB36_X0Y56:RAMB36_X0Y71;
+AREA_GROUP "coarse_delay_ram" RANGE=RAMB18_X0Y112:RAMB18_X1Y143;
+AREA_GROUP "coarse_delay_ram" RANGE=RAMB36_X0Y56:RAMB36_X1Y71;
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_??????????/pfb_fir_real/pfb_fir_??????????/pol?_in?_first_tap_??????????/*" AREA_GROUP = "fir_tap0";
-AREA_GROUP "fir_tap0" RANGE=DSP48_X1Y112:DSP48_X1Y143;
-AREA_GROUP "fir_tap0" RANGE=RAMB18_X1Y112:RAMB18_X1Y143;
-AREA_GROUP "fir_tap0" RANGE=RAMB36_X1Y56:RAMB36_X1Y71;
+AREA_GROUP "fir_tap0" RANGE=DSP48_X2Y112:DSP48_X2Y143;
+AREA_GROUP "fir_tap0" RANGE=RAMB18_X2Y112:RAMB18_X2Y143;
+AREA_GROUP "fir_tap0" RANGE=RAMB36_X2Y56:RAMB36_X2Y71;
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_??????????/pfb_fir_real/pfb_fir_??????????/pol?_in?_tap2_??????????/*" AREA_GROUP = "fir_tap1";
-AREA_GROUP "fir_tap1" RANGE=DSP48_X2Y112:DSP48_X2Y143;
-AREA_GROUP "fir_tap1" RANGE=RAMB18_X2Y112:RAMB18_X2Y143;
-AREA_GROUP "fir_tap1" RANGE=RAMB36_X2Y56:RAMB36_X2Y71;
+AREA_GROUP "fir_tap1" RANGE=DSP48_X3Y112:DSP48_X3Y143;
+AREA_GROUP "fir_tap1" RANGE=RAMB18_X3Y112:RAMB18_X3Y143;
+AREA_GROUP "fir_tap1" RANGE=RAMB36_X3Y56:RAMB36_X3Y71;
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_??????????/pfb_fir_real/pfb_fir_??????????/pol?_in?_tap3_??????????/*" AREA_GROUP = "fir_tap2";
-AREA_GROUP "fir_tap2" RANGE=DSP48_X3Y112:DSP48_X3Y143;
-AREA_GROUP "fir_tap2" RANGE=RAMB18_X3Y112:RAMB18_X3Y143;
-AREA_GROUP "fir_tap2" RANGE=RAMB36_X3Y56:RAMB36_X3Y71;
+AREA_GROUP "fir_tap2" RANGE=DSP48_X4Y112:DSP48_X4Y143;
+AREA_GROUP "fir_tap2" RANGE=RAMB18_X4Y112:RAMB18_X4Y143;
+AREA_GROUP "fir_tap2" RANGE=RAMB36_X4Y56:RAMB36_X4Y71;
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/pfb_fft_??????????/pfb_fir_real/pfb_fir_??????????/pol?_in?_last_tap_??????????/*" AREA_GROUP = "fir_tap3";
-AREA_GROUP "fir_tap3" RANGE=DSP48_X4Y112:DSP48_X5Y143;
-AREA_GROUP "fir_tap3" RANGE=RAMB18_X4Y112:RAMB18_X4Y143;
-AREA_GROUP "fir_tap3" RANGE=RAMB36_X4Y56:RAMB36_X4Y71;
+AREA_GROUP "fir_tap3" RANGE=DSP48_X5Y112:DSP48_X6Y143;
+AREA_GROUP "fir_tap3" RANGE=RAMB18_X5Y112:RAMB18_X5Y143;
+AREA_GROUP "fir_tap3" RANGE=RAMB36_X5Y56:RAMB36_X5Y71;
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/xeng_hdl_uint_*" AREA_GROUP = "xeng_core";
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/xeng0_vacc*" AREA_GROUP = "xeng_core";
