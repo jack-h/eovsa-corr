@@ -30,3 +30,12 @@
 /eovsa_fx_snoop/bit_files/*
 # ...then UN-ignore eovsa_fx_snoop/bit_files/*.bof.gz files.
 !/eovsa_fx_snoop/bit_files/*.bof.gz
+
+# Ignore all files in eovsa_corr directory...
+/eovsa_corr_300mhz/*
+# ...then UN-ignore eovsa_corr_300mhz/bit_files directory...
+!/eovsa_corr_300mhz/bit_files
+# ...then ignore all files in eovsa_corr_300mhz/bit_files directory...
+/eovsa_corr_300mhz/bit_files/*
+# ...then UN-ignore eovsa_corr_300mhz/bit_files/*.bof.gz files.
+!/eovsa_corr_300mhz/bit_files/*.bof.gz
