@@ -55,7 +55,7 @@ INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/packetizer_p*" AREA_GROUP = "post_fft";
 
-INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/f_x_??????????/x_eng_reorder*" AREA_GROUP = "post_fft";
+#INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/f_x_??????????/x_eng_reorder*" AREA_GROUP = "post_fft";
 
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/f_x_??????????/ct_*" AREA_GROUP = "post_fft";
 INST "eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_XSG_core_config/eovsa_corr_300mhz_x0/eq*" AREA_GROUP = "post_fft";
