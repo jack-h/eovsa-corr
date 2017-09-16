@@ -10,7 +10,7 @@ import numpy as n
 ##### GENERATION PARAMETERS #####
 acc_len = 128
 p_samples = 4
-n_ants = 32
+n_ants = 16
 bitwidth = 4
 OUTPUT_FILE = 'golden_inputs.dat'
 

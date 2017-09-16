@@ -50,8 +50,9 @@ module component_tracker(
     parameter PLATFORM = "VIRTEX5";     // FPGA platform
     parameter VALID_DELAY = 1024;       //Number of clock cycles between valid data entering tap chain and valid data leaving
     
+    localparam N_POLS = 2;
     localparam P_FACTOR = 1 << P_FACTOR_BITS;
-    localparam INPUT_WIDTH = 2*2*BITWIDTH*P_FACTOR;
+    localparam INPUT_WIDTH = N_POLS*2*BITWIDTH*P_FACTOR;
     localparam CORRECTION_ACC_WIDTH = P_FACTOR_BITS+SERIAL_ACC_LEN_BITS+BITWIDTH+1+1+1;
     localparam ANT_BITS = `log2(N_ANTS);
     localparam SERIAL_ACC_LEN = 1<<SERIAL_ACC_LEN_BITS;
@@ -75,10 +76,10 @@ module component_tracker(
     output buf_sel_out;
     
     //split the inputs into x/y/re/im ready for accumulating
-    wire [INPUT_WIDTH/4 -1:0] x_re;
-    wire [INPUT_WIDTH/4 -1:0] x_im;
-    wire [INPUT_WIDTH/4 -1:0] y_re;
-    wire [INPUT_WIDTH/4 -1:0] y_im;
+    wire [INPUT_WIDTH/(N_POLS*2) -1:0] x_re;
+    wire [INPUT_WIDTH/(N_POLS*2) -1:0] x_im;
+    wire [INPUT_WIDTH/(N_POLS*2) -1:0] y_re;
+    wire [INPUT_WIDTH/(N_POLS*2) -1:0] y_im;
     
     // a generate is required to hook these up, since the real/imag parts an not contiguous at the inputs
     genvar i;
@@ -86,9 +87,9 @@ module component_tracker(
         for (i=0; i<P_FACTOR; i=i+1) begin : comp_input_assign
             // We assign the uint versions of the real parts (this cancels out a constant factor later on in the correction values)
             assign x_re[(i+1)*BITWIDTH -1 : i*BITWIDTH] = din_uint[2*P_FACTOR*BITWIDTH + (2*i+2)*BITWIDTH-1 : 2*P_FACTOR*BITWIDTH + (2*i+1)*BITWIDTH];
-            assign x_im[(i+1)*BITWIDTH -1 : i*BITWIDTH] = din[2*P_FACTOR*BITWIDTH + (2*i+1)*BITWIDTH-1 : 2*P_FACTOR*BITWIDTH + (2*i)*BITWIDTH];
+            assign x_im[(i+1)*BITWIDTH -1 : i*BITWIDTH] =      din[2*P_FACTOR*BITWIDTH + (2*i+1)*BITWIDTH-1 : 2*P_FACTOR*BITWIDTH + (2*i)*BITWIDTH];
             assign y_re[(i+1)*BITWIDTH -1 : i*BITWIDTH] = din_uint[(2*i+2)*BITWIDTH-1 : (2*i+1)*BITWIDTH];
-            assign y_im[(i+1)*BITWIDTH -1 : i*BITWIDTH] = din[(2*i+1)*BITWIDTH-1 : (2*i)*BITWIDTH];
+            assign y_im[(i+1)*BITWIDTH -1 : i*BITWIDTH] =      din[(2*i+1)*BITWIDTH-1 : (2*i)*BITWIDTH];
         end //comp_input_assign
     endgenerate
     
@@ -150,7 +151,12 @@ module component_tracker(
     wire [ADD_TREE_O_WIDTH+1+1 -1 : 0] x_re_m_im;
     wire [ADD_TREE_O_WIDTH+1+1 -1 : 0] y_re_p_im;
     wire [ADD_TREE_O_WIDTH+1+1 -1 : 0] y_re_m_im;
-    
+
+    reg comp_add_sync; //A sync which incurs the same delay as the add/sub operations below
+    always @(posedge(clk)) begin
+        comp_add_sync <= adder_tree_sync;
+    end
+
     adder #(
         .A_WIDTH(ADD_TREE_O_WIDTH+1), //+1 for conversion of real parts to signed
         .B_WIDTH(ADD_TREE_O_WIDTH),
@@ -209,7 +215,7 @@ module component_tracker(
         .din({x_re_p_im, x_re_m_im, y_re_p_im, y_re_m_im}),
         .dout_a({x_re_p_im_acc_a, x_re_m_im_acc_a, y_re_p_im_acc_a, y_re_m_im_acc_a}),
         .dout_b({x_re_p_im_acc_b, x_re_m_im_acc_b, y_re_p_im_acc_b, y_re_m_im_acc_b}),
-        .sync(adder_tree_sync)
+        .sync(comp_add_sync)
         );
         
     ////////////////////////////////////////////////////////////////////

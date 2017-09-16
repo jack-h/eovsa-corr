@@ -20,7 +20,7 @@ module xeng_preproc(
     parameter BRAM_LATENCY = 2;         //Latency of brams in delay chain
     parameter FIRST_DSP_REGISTERS = 2;  //number of registers on the input of the first DSP slice in the chain
     parameter DSP_REGISTERS = 2;        //number of registers on the input of all others DSP slices in the chain
-	 parameter N_POLS = 2;					 //number of polarisations
+	parameter N_POLS = 2;					 //number of polarisations
     
     localparam P_FACTOR = 1<<P_FACTOR_BITS;                          //number of parallel cmults
     localparam INPUT_WIDTH = N_POLS*BITWIDTH*2*(1<<P_FACTOR_BITS);   //width of complex in/out bus

@@ -172,7 +172,7 @@ module xeng_sp_top(
                 .DSP_REGISTERS(DSP_REGISTERS),
                 .ACC_MUX_LATENCY(ACC_MUX_LATENCY),
                 .N_ANTS(N_ANTS),
-                .N_POLS(1),
+                .N_POLS(N_POLS),
                 .TAP_SEPARATION(t)
             ) bl_tap_inst (
                 .clk(clk), 

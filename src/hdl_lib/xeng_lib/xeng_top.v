@@ -31,14 +31,16 @@ module xeng_top(
     //parameter DEMUX_FACTOR = 1;         //Demux Factor -- NOT YET IMPLEMENTED
     parameter MCNT_WIDTH = 48;          //MCNT bus width
     
-    localparam MULT_LATENCY = ((1<<P_FACTOR_BITS)-1 + (FIRST_DSP_REGISTERS+2));         //Multiplier Latency (= latency of first DSP + 1 for every additional DSP)
-    localparam ADD_LATENCY = 1;                                                         //Adder latency (currently hardcoded to 1)
-    localparam P_FACTOR = 1<<P_FACTOR_BITS;                                             //number of parallel cmults
-    localparam INPUT_WIDTH = 2*BITWIDTH*2*(1<<P_FACTOR_BITS);                           //width of complex in/out bus (dual pol)
-    localparam ACC_WIDTH = 4*2*((2*BITWIDTH+1)+P_FACTOR_BITS+SERIAL_ACC_LEN_BITS);      //width of complex acc in/out bus (4 stokes)
-    localparam N_TAPS = N_ANTS/2 + 1;                                                   //number of taps (including auto)
-    localparam CORRECTION_ACC_WIDTH = P_FACTOR_BITS+SERIAL_ACC_LEN_BITS+BITWIDTH+1+1+1; //width of correlation correction factors -- see the component_tracker block for reasoning
-    localparam SERIAL_ACC_LEN = (1<<SERIAL_ACC_LEN_BITS);                               //Serial accumulation length
+    localparam N_POLS = 2;
+    localparam N_STOKES = 4;
+    localparam MULT_LATENCY = ((1<<P_FACTOR_BITS)-1 + (FIRST_DSP_REGISTERS+2));           //Multiplier Latency (= latency of first DSP + 1 for every additional DSP)
+    localparam ADD_LATENCY = 1;                                                           //Adder latency (currently hardcoded to 1)
+    localparam P_FACTOR = 1<<P_FACTOR_BITS;                                               //number of parallel cmults
+    localparam INPUT_WIDTH = N_POLS*BITWIDTH*2*(1<<P_FACTOR_BITS);                        //width of complex in/out bus
+    localparam ACC_WIDTH = N_STOKES*2*((2*BITWIDTH+1)+P_FACTOR_BITS+SERIAL_ACC_LEN_BITS); //width of complex acc in/out bus
+    localparam N_TAPS = N_ANTS/2 + 1;                                                     //number of taps (including auto)
+    localparam CORRECTION_ACC_WIDTH = P_FACTOR_BITS+SERIAL_ACC_LEN_BITS+BITWIDTH+1+1+1;   //width of correlation correction factors -- see the component_tracker block for reasoning
+    localparam SERIAL_ACC_LEN = (1<<SERIAL_ACC_LEN_BITS);                                 //Serial accumulation length
     
     input clk;                          //clock input
     input ce;                           //clock enable input (not used -- for simulink compatibility only)
@@ -46,8 +48,8 @@ module xeng_top(
     input [INPUT_WIDTH-1:0] din;        //data input should be {{X_real, X_imag}*parallel samples, {Y_real, Y_imag}*parallel samples} 
     input vld;                          //data in valid flag -- should be held high for whole window
     input [MCNT_WIDTH-1:0] mcnt;        //mcnt timestamp
-    output [ACC_WIDTH-1:0] dout;      //accumulation output (all 4 stokes) 
-    output [ACC_WIDTH-1:0] dout_uncorr;      //accumulation output (all 4 stokes) with uint convert uncorrected
+    output [ACC_WIDTH-1:0] dout;        //accumulation output (all 4 stokes) 
+    output [ACC_WIDTH-1:0] dout_uncorr; //accumulation output (all 4 stokes) with uint convert uncorrected
     output sync_out;                    //sync output
     output vld_out;                     //data output valid flag
     output window_vld_out;              //data output window valid flag
@@ -106,7 +108,8 @@ module xeng_top(
         .BITWIDTH(BITWIDTH),
         .BRAM_LATENCY(BRAM_LATENCY),
         .FIRST_DSP_REGISTERS(FIRST_DSP_REGISTERS),
-        .DSP_REGISTERS(DSP_REGISTERS)
+        .DSP_REGISTERS(DSP_REGISTERS),
+		.N_POLS(N_POLS)
     ) xeng_preproc_inst (
         .clk(clk),
         .ce(ce),
@@ -136,7 +139,8 @@ module xeng_top(
         .FIRST_DSP_REGISTERS(FIRST_DSP_REGISTERS),
         .DSP_REGISTERS(DSP_REGISTERS),
         .ACC_MUX_LATENCY(ACC_MUX_LATENCY),
-        .N_ANTS(N_ANTS)
+        .N_ANTS(N_ANTS),
+        .N_POLS(N_POLS)
     ) auto_tap_inst (
         .clk(clk),
         .ce(ce),
@@ -168,6 +172,7 @@ module xeng_top(
                 .DSP_REGISTERS(DSP_REGISTERS),
                 .ACC_MUX_LATENCY(ACC_MUX_LATENCY),
                 .N_ANTS(N_ANTS),
+                .N_POLS(N_POLS),
                 .TAP_SEPARATION(t)
             ) bl_tap_inst (
                 .clk(clk), 

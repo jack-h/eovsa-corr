@@ -1,5 +1,5 @@
 `define DEBUG
-`define USE_CLOG2
+//`define USE_CLOG2
 
 /* Currently, Xilinx doesn't support $clog2, but iverilog doesn't support
  * constant user functions. Decide which to use here
@@ -33,7 +33,7 @@ module tb_xeng_top();
     localparam ACC_MUX_LATENCY       = 2;  //Latency of the mux to place the accumulation result on the xeng shift reg
     localparam FIRST_DSP_REGISTERS   = 2;  //number of registers on the input of the first DSP slice in the chain
     localparam DSP_REGISTERS         = 2;  //number of registers on the input of all others DSP slices in the chain
-    localparam N_ANTS                = 32; //number of (dual pol) antenna inputs
+    localparam N_ANTS                = 16; //number of (dual pol) antenna inputs
     localparam BRAM_LATENCY          = 2;  //Latency of brams in delay chain
     localparam DEMUX_FACTOR          = 1;  //Demux Factor -- NOT YET IMPLEMENTED
     localparam MCNT_WIDTH            = 48; //MCNT bus width
@@ -52,13 +52,19 @@ module tb_xeng_top();
     reg clk;                          //clock input
     reg ce;                           //clock enable input (not used -- for simulink compatibility only)
     reg sync_in;                      //sync input
-    reg [INPUT_WIDTH-1:0] din;        //data input should be {{X_real, X_imag}*parallel samples, {Y_real, Y_imag}*parallel samples} 
+    wire [INPUT_WIDTH-1:0] din;        //data input should be {{X_real, X_imag}*parallel samples, {Y_real, Y_imag}*parallel samples} 
     reg vld;                          //data in valid flag -- should be held high for whole window
     reg  [MCNT_WIDTH-1:0] mcnt;        //mcnt timestamp
     wire [ACC_WIDTH-1:0] dout;      //accumulation output (all 4 stokes)
-    wire [ACC_WIDTH-1:0] dout_uncorr;      //accumulation output (all 4 stokes) with uint convert uncorrected
+    wire  [ACC_WIDTH-1:0] dout_uncorr;      //accumulation output (all 4 stokes) with uint convert uncorrected
+    reg  [ACC_WIDTH-1:0] doutR;      //accumulation output (all 4 stokes)
+    reg [ACC_WIDTH-1:0] dout_uncorrR;      //accumulation output (all 4 stokes) with uint convert uncorrected
+    reg  [ACC_WIDTH-1:0] doutRR;      //accumulation output (all 4 stokes)
+    reg [ACC_WIDTH-1:0] dout_uncorrRR;      //accumulation output (all 4 stokes) with uint convert uncorrected
     wire sync_out;                    //sync output
     wire vld_out;                     //data output valid flag
+    reg vld_outR;                     //data output valid flag
+    reg vld_outRR;                     //data output valid flag
     wire [MCNT_WIDTH-1:0] mcnt_out;   //mcnt of data being output
 
     reg [BITWIDTH-1:0] test_val;
@@ -107,11 +113,16 @@ module tb_xeng_top();
     // Initial values
     integer gold_in;
     initial begin
-        gold_in = $fopenr("golden_inputs.dat"); //open file for reading
+        gold_in = $fopen("/home/jackh/casper/eovsa-corr/src/hdl_lib/xeng_lib/golden_inputs.dat", "r"); //open file for reading
+		  if(gold_in == 0)
+            begin
+            $display("Could not open golden input file ...");
+            $finish;
+        end
         clk = 0;
         ce = 0;
         sync_in = 0;
-        din = 0;
+        //din = 0;
         vld = 0;
         mcnt = 0;
         test_val = 4'b1001; 
@@ -143,18 +154,18 @@ module tb_xeng_top();
     end
 
     //generate data
-    localparam P_FACTOR_HARDCODE = 1<<2; //hack
-    reg [BITWIDTH-1:0] file_val[2*P_FACTOR_HARDCODE-1:0];
-    wire [2*P_FACTOR_HARDCODE*BITWIDTH-1:0] dat_single_pol = {file_val[7],file_val[6],file_val[5],file_val[4],
+    reg [BITWIDTH-1:0] file_val[2*P_FACTOR-1:0];
+    wire [2*P_FACTOR*BITWIDTH-1:0] dat_single_pol = {file_val[7],file_val[6],file_val[5],file_val[4],
                                                     file_val[3],file_val[2],file_val[1], file_val[0]};
     //wire [2*P_FACTOR*BITWIDTH-1:0] dat_single_pol = {file_val[1],file_val[0]};
     wire [2*P_FACTOR*BITWIDTH-1:0] zero_uint = {2*P_FACTOR{1'b1,{(BITWIDTH-1){1'b0}}}};
     wire [2*P_FACTOR*BITWIDTH-1:0] zero_int = {2*P_FACTOR{1'b0,{(BITWIDTH-1){1'b0}}}};
                                                     
+    assign din = {dat_single_pol[INPUT_WIDTH/2-1:0],zero_int};
 
     integer null;
-    always @(input_ctr) begin
-        if (input_ctr == 32'b0) begin
+    always @(posedge(clk)) begin
+        if (sync_in) begin
             null = $fseek(gold_in, 0, 0); //Go to beginning of file
         end
         null = $fscanf(gold_in, "%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n", file_val[7], file_val[6], file_val[5],
@@ -162,26 +173,35 @@ module tb_xeng_top();
         //null = $fscanf(gold_in, "%d\n%d\n", file_val[1], file_val[0]);
 
         //din = {dat_single_pol[INPUT_WIDTH/2-1:0],dat_single_pol[INPUT_WIDTH/2-1:0]};
-        din = {dat_single_pol[INPUT_WIDTH/2-1:0],zero_int};
     end
 
-    wire [ACC_WIDTH/8 -1 : 0] xx_r = dout_uncorr[8*(ACC_WIDTH/8)-1:7*(ACC_WIDTH/8)];
-    wire [ACC_WIDTH/8 -1 : 0] xx_i = dout_uncorr[7*(ACC_WIDTH/8)-1:6*(ACC_WIDTH/8)];
-    wire [ACC_WIDTH/8 -1 : 0] yy_r = dout_uncorr[6*(ACC_WIDTH/8)-1:5*(ACC_WIDTH/8)];
-    wire [ACC_WIDTH/8 -1 : 0] yy_i = dout_uncorr[5*(ACC_WIDTH/8)-1:4*(ACC_WIDTH/8)];
-    wire [ACC_WIDTH/8 -1 : 0] xy_r = dout_uncorr[4*(ACC_WIDTH/8)-1:3*(ACC_WIDTH/8)];
-    wire [ACC_WIDTH/8 -1 : 0] xy_i = dout_uncorr[3*(ACC_WIDTH/8)-1:2*(ACC_WIDTH/8)];
-    wire [ACC_WIDTH/8 -1 : 0] yx_r = dout_uncorr[2*(ACC_WIDTH/8)-1:1*(ACC_WIDTH/8)];
-    wire [ACC_WIDTH/8 -1 : 0] yx_i = dout_uncorr[1*(ACC_WIDTH/8)-1:0*(ACC_WIDTH/8)];
+    // Compensate for the latency of the bl-order generator
+    always @(posedge(clk)) begin
+        dout_uncorrR <= dout_uncorr;
+        dout_uncorrRR <= dout_uncorrR;
+        doutR <= dout;
+        doutRR <= doutR;
+        vld_outR <= vld_out;
+        vld_outRR <= vld_outR;
+    end
 
-    wire [ACC_WIDTH/8 +0 -1 : 0] xx_r_c = dout[8*(ACC_WIDTH/8 + 0)-1:7*(ACC_WIDTH/8 + 0)];
-    wire [ACC_WIDTH/8 +0 -1 : 0] xx_i_c = dout[7*(ACC_WIDTH/8 + 0)-1:6*(ACC_WIDTH/8 + 0)];
-    wire [ACC_WIDTH/8 +0 -1 : 0] yy_r_c = dout[6*(ACC_WIDTH/8 + 0)-1:5*(ACC_WIDTH/8 + 0)];
-    wire [ACC_WIDTH/8 +0 -1 : 0] yy_i_c = dout[5*(ACC_WIDTH/8 + 0)-1:4*(ACC_WIDTH/8 + 0)];
-    wire [ACC_WIDTH/8 +0 -1 : 0] xy_r_c = dout[4*(ACC_WIDTH/8 + 0)-1:3*(ACC_WIDTH/8 + 0)];
-    wire [ACC_WIDTH/8 +0 -1 : 0] xy_i_c = dout[3*(ACC_WIDTH/8 + 0)-1:2*(ACC_WIDTH/8 + 0)];
-    wire [ACC_WIDTH/8 +0 -1 : 0] yx_r_c = dout[2*(ACC_WIDTH/8 + 0)-1:1*(ACC_WIDTH/8 + 0)];
-    wire [ACC_WIDTH/8 +0 -1 : 0] yx_i_c = dout[1*(ACC_WIDTH/8 + 0)-1:0*(ACC_WIDTH/8 + 0)];
+    wire [ACC_WIDTH/8 -1 : 0] xx_r = dout_uncorrR[8*(ACC_WIDTH/8)-1:7*(ACC_WIDTH/8)];
+    wire [ACC_WIDTH/8 -1 : 0] xx_i = dout_uncorrR[7*(ACC_WIDTH/8)-1:6*(ACC_WIDTH/8)];
+    wire [ACC_WIDTH/8 -1 : 0] yy_r = dout_uncorrR[6*(ACC_WIDTH/8)-1:5*(ACC_WIDTH/8)];
+    wire [ACC_WIDTH/8 -1 : 0] yy_i = dout_uncorrR[5*(ACC_WIDTH/8)-1:4*(ACC_WIDTH/8)];
+    wire [ACC_WIDTH/8 -1 : 0] xy_r = dout_uncorrR[4*(ACC_WIDTH/8)-1:3*(ACC_WIDTH/8)];
+    wire [ACC_WIDTH/8 -1 : 0] xy_i = dout_uncorrR[3*(ACC_WIDTH/8)-1:2*(ACC_WIDTH/8)];
+    wire [ACC_WIDTH/8 -1 : 0] yx_r = dout_uncorrR[2*(ACC_WIDTH/8)-1:1*(ACC_WIDTH/8)];
+    wire [ACC_WIDTH/8 -1 : 0] yx_i = dout_uncorrR[1*(ACC_WIDTH/8)-1:0*(ACC_WIDTH/8)];
+
+    wire [ACC_WIDTH/8 +0 -1 : 0] xx_r_c = doutR[8*(ACC_WIDTH/8 + 0)-1:7*(ACC_WIDTH/8 + 0)];
+    wire [ACC_WIDTH/8 +0 -1 : 0] xx_i_c = doutR[7*(ACC_WIDTH/8 + 0)-1:6*(ACC_WIDTH/8 + 0)];
+    wire [ACC_WIDTH/8 +0 -1 : 0] yy_r_c = doutR[6*(ACC_WIDTH/8 + 0)-1:5*(ACC_WIDTH/8 + 0)];
+    wire [ACC_WIDTH/8 +0 -1 : 0] yy_i_c = doutR[5*(ACC_WIDTH/8 + 0)-1:4*(ACC_WIDTH/8 + 0)];
+    wire [ACC_WIDTH/8 +0 -1 : 0] xy_r_c = doutR[4*(ACC_WIDTH/8 + 0)-1:3*(ACC_WIDTH/8 + 0)];
+    wire [ACC_WIDTH/8 +0 -1 : 0] xy_i_c = doutR[3*(ACC_WIDTH/8 + 0)-1:2*(ACC_WIDTH/8 + 0)];
+    wire [ACC_WIDTH/8 +0 -1 : 0] yx_r_c = doutR[2*(ACC_WIDTH/8 + 0)-1:1*(ACC_WIDTH/8 + 0)];
+    wire [ACC_WIDTH/8 +0 -1 : 0] yx_i_c = doutR[1*(ACC_WIDTH/8 + 0)-1:0*(ACC_WIDTH/8 + 0)];
 
     initial begin
         $display("clock \t buf \t antA \t antB \t xx_r \t xx_i \t yy_r \t yy_i \t xy_r \t xy_i \t yx_r \t yx_i");
@@ -190,7 +210,15 @@ module tb_xeng_top();
     always @(posedge(clk)) begin
         //$display("SYNC %d, INPUT COUNT: %d, INPUT {%d,%d}{%d,%d}{%d,%d}{%d,%d}", sync_in, input_ctr, file_val[7], file_val[6], file_val[5], file_val[4],
         //                                                            file_val[3], file_val[2], file_val[1], file_val[0]);
-        if(vld_out) begin
+        if(sync_in) begin
+            $display("SYNC IN at clock %d", clk_counter);
+        end
+        if(sync_out) begin
+            $display("SYNC OUT at clock %d", clk_counter);
+        end
+        //$display("DATA IN at clock %d: %d+%di", clk_counter,din[INPUT_WIDTH-1:INPUT_WIDTH-4], din[INPUT_WIDTH-5:INPUT_WIDTH-8]);
+		  
+		  if(vld_outR) begin
             $display("%d %d (%d,%d)\t%d(%d)\t%d(%d)\t%d(%d)\t%d(%d)\t%d(%d)\t%d(%d)\t%d(%d)\t%d(%d)",
                     clk_counter,buf_sel, ant_a_sel, ant_b_sel,
                     xx_r, xx_r_c, xx_i, xx_i_c, yy_r, yy_r_c, yy_i, yy_i_c,

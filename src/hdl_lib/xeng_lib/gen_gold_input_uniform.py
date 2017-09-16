@@ -9,13 +9,14 @@ import numpy as n
 
 ##### GENERATION PARAMETERS #####
 acc_len = 128
-p_samples = 4
-n_ants = 32
+n_pols = 2
+p_samples = 2
+n_ants = 16
 bitwidth = 4
 OUTPUT_FILE = 'golden_inputs.dat'
 
 # The number of random samples required for a complete x-engine run
-n_samp = acc_len * p_samples * n_ants
+n_samp = acc_len * p_samples * n_ants * n_pols
 # random number bounds -- generate uints
 low_bound = 0
 high_bound = (2**bitwidth) - 1
@@ -30,10 +31,11 @@ except:
     exit()
 
 for i in range(n_ants):
-    for j in range(p_samples):
-        for k in range(acc_len):
-            f.write('%d\n' %rand_real[0])
-            f.write('%d\n' %rand_imag[0])
+    for k in range(acc_len):
+        for p in range(n_pols):
+            for j in range(p_samples):
+                f.write('%d\n' %rand_imag[0])
+                f.write('%d\n' %rand_real[0])
 
 f.close()
 
